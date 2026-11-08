@@ -59,6 +59,9 @@ navigation:
       - page: Grader Validation
         path: ../docs/grader-validation.mdx
         slug: grader-validation
+      - page: Assess Plugins
+        path: ../docs/plugin-assessment.mdx
+        slug: plugin-assessment
       - page: Eval Datasets
         path: ../docs/eval-datasets.mdx
         slug: eval-datasets
