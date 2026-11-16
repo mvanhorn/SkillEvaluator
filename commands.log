@@ -1,0 +1,285 @@
+# commands.log — captured 2026-11-16T19:38:15.280352+00:00
+# platform: Linux 6.12.113+ x86_64
+# python: 3.12.3
+
+$ /workspace/.venv/bin/python -m skillevaluator.cli quality-check /tmp/junit-demo/text-analyzer --min-score 80 -r cli,junit -o /tmp/junit-demo/pass-reports
+# exit_code=0
+             SkillEvaluator Validation Results              
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details                             ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  PASS  │ 1 checks passed; quality B 88.8/100 │
+└───────────┴────────┴─────────────────────────────────────┘
+
+╭───────────────────────╮
+│ Non-blocking Findings │
+╰───────────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 88.8/100 (Grade: B)
+  Skill Type: script-based
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ text-anal… │   B   │  88.8 │         75 │        95 │         95 │       100 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[PASS] Validation passed
+
+Summary:
+  • Checks performed: 1
+
+Details:
+  [OK] quality_score: Score: 88.8/100 (Grade: B) (overall_score=88.8, grade=B, 
+skill_type=script-based)
+Issues:
+  1. [QUALITY-MEDIUM] No documented scripts in table format
+     File:    /tmp/junit-demo/text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add '## Available Scripts' with table: | Script | Purpose | 
+Arguments |
+
+  2. [QUALITY-MEDIUM] Instructions don't mention 'run_script'
+     File:    /tmp/junit-demo/text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add explicit run_script() call examples
+
+  3. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    /tmp/junit-demo/text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  4. [QUALITY-LOW] Description very long (312 chars, recommend 50-150)
+     File:    /tmp/junit-demo/text-analyzer/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Keep descriptions concise for progressive disclosure
+
+  5. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    /tmp/junit-demo/text-analyzer/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+
+[PASS] Passed required checks
+Tier 1: 1 of 1 checks passed; 0 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+
+junit report: /tmp/junit-demo/pass-reports/skillevaluator-quality.junit.xml
+
+$ cat /tmp/junit-demo/pass-reports/skillevaluator-quality.junit.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SkillEvaluator" tests="6" failures="0" errors="0" skipped="0" time="0">
+  <testsuite name="QUALITY" tests="6" failures="0" errors="0" skipped="0" time="0">
+    <testcase name="quality_correctness" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No documented scripts in table format
+Suggestion: Add '## Available Scripts' with table: | Script | Purpose | Arguments |</system-out>
+    </testcase>
+    <testcase name="quality_correctness-2" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: Instructions don't mention 'run_script'
+Suggestion: Add explicit run_script() call examples</system-out>
+    </testcase>
+    <testcase name="quality_correctness-3" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: SKILL_SPEC recommended field missing: 'metadata.tags'
+Suggestion: Add 'tags' under metadata: — Categorization tags (under metadata:, list of 1-5 items)</system-out>
+    </testcase>
+    <testcase name="quality_discoverability" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: Description very long (312 chars, recommend 50-150)
+Suggestion: Keep descriptions concise for progressive disclosure</system-out>
+    </testcase>
+    <testcase name="quality_reliability" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No prerequisites/requirements documented
+Suggestion: Document dependencies, API keys, or setup needed</system-out>
+    </testcase>
+    <testcase name="quality_score" classname="QUALITY" time="0">
+      <system-out>Score: 88.8/100 (Grade: B)</system-out>
+    </testcase>
+    <system-out>Score: 88.8/100 (Grade: B)
+Threshold: 80/100</system-out>
+  </testsuite>
+</testsuites>
+
+$ /workspace/.venv/bin/python -m skillevaluator.cli quality-check /tmp/junit-demo/regressed-text-analyzer --min-score 80 -r cli,junit -o /tmp/junit-demo/fail-reports
+# exit_code=1
+      SkillEvaluator Validation Results       
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details               ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  FAIL  │ 1 errors, 12 warnings │
+└───────────┴────────┴───────────────────────┘
+
+╭─────────────────╮
+│ Failure Details │
+╰─────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 72.8/100 (Grade: C)
+  Skill Type: script-based
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ regressed… │   C   │  72.8 │         65 │        65 │         75 │       100 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[FAIL] Validation failed
+
+Summary:
+  • Checks performed: 1
+  • Errors: 1
+  • Warnings: 12
+
+Errors:
+  • Quality score 72.8/100 is below the required 80/100 in 
+/tmp/junit-demo/regressed-text-analyzer/SKILL.md
+
+Issues:
+  1. [QUALITY-MEDIUM] No documented scripts in table format
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add '## Available Scripts' with table: | Script | Purpose | 
+Arguments |
+
+  2. [QUALITY-MEDIUM] Instructions don't mention 'run_script'
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add explicit run_script() call examples
+
+  3. [QUALITY-LOW] No examples provided
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add example usage with code blocks
+
+  4. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  5. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  6. [QUALITY-MEDIUM] Description too short (16 chars, recommend 50-150)
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add more context: what tasks does this skill handle?
+
+  7. [QUALITY-LOW] Description doesn't mention WHEN to use this skill
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add trigger context: 'Use for...', 'When you need to...'
+
+  8. [QUALITY-LOW] No '## Purpose' section
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  9. [QUALITY-LOW] No mention of error handling or validation
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document expected errors and how to handle them
+
+  10. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  11. [QUALITY-LOW] No limitations documented
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  12. [QUALITY-LOW] No troubleshooting section documented
+     File:    /tmp/junit-demo/regressed-text-analyzer/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+
+[FAIL] Changes required
+Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Not eligible
+
+junit report: /tmp/junit-demo/fail-reports/skillevaluator-quality.junit.xml
+Error: quality check failed
+
+$ cat /tmp/junit-demo/fail-reports/skillevaluator-quality.junit.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SkillEvaluator" tests="14" failures="1" errors="0" skipped="0" time="0">
+  <testsuite name="QUALITY" tests="14" failures="1" errors="0" skipped="0" time="0">
+    <testcase name="quality_correctness" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No documented scripts in table format
+Suggestion: Add '## Available Scripts' with table: | Script | Purpose | Arguments |</system-out>
+    </testcase>
+    <testcase name="quality_correctness-2" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: Instructions don't mention 'run_script'
+Suggestion: Add explicit run_script() call examples</system-out>
+    </testcase>
+    <testcase name="quality_correctness-3" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No examples provided
+Suggestion: Add example usage with code blocks</system-out>
+    </testcase>
+    <testcase name="quality_correctness-4" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: SKILL_SPEC recommended field missing: 'metadata.author'
+Suggestion: Add 'author' under metadata: — Author name or team (under metadata:)</system-out>
+    </testcase>
+    <testcase name="quality_correctness-5" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: SKILL_SPEC recommended field missing: 'metadata.tags'
+Suggestion: Add 'tags' under metadata: — Categorization tags (under metadata:, list of 1-5 items)</system-out>
+    </testcase>
+    <testcase name="quality_discoverability" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: Description too short (16 chars, recommend 50-150)
+Suggestion: Add more context: what tasks does this skill handle?</system-out>
+    </testcase>
+    <testcase name="quality_discoverability-2" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: Description doesn't mention WHEN to use this skill
+Suggestion: Add trigger context: 'Use for...', 'When you need to...'</system-out>
+    </testcase>
+    <testcase name="quality_discoverability-3" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No '## Purpose' section
+Suggestion: Add purpose section to clarify use cases</system-out>
+    </testcase>
+    <testcase name="quality_reliability" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No mention of error handling or validation
+Suggestion: Document expected errors and how to handle them</system-out>
+    </testcase>
+    <testcase name="quality_reliability-2" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No prerequisites/requirements documented
+Suggestion: Document dependencies, API keys, or setup needed</system-out>
+    </testcase>
+    <testcase name="quality_reliability-3" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No limitations documented
+Suggestion: Add '## Limitations' section with known issues/constraints</system-out>
+    </testcase>
+    <testcase name="quality_reliability-4" classname="QUALITY" time="0" file="SKILL.md">
+      <system-out>SKILL.md: No troubleshooting section documented
+Suggestion: Add '## Troubleshooting' with Error/Cause/Solution patterns</system-out>
+    </testcase>
+    <testcase name="quality_score" classname="QUALITY" time="0">
+      <system-out>Score: 72.8/100 (Grade: C)</system-out>
+    </testcase>
+    <testcase name="gate_failure" classname="QUALITY" time="0">
+      <failure message="Quality score 72.8/100 is below the required 80/100 in /tmp/junit-demo/regressed-text-analyzer/SKILL.md" type="failure">Quality score 72.8/100 is below the required 80/100 in /tmp/junit-demo/regressed-text-analyzer/SKILL.md</failure>
+    </testcase>
+    <system-out>Score: 72.8/100 (Grade: C)
+Threshold: 80/100</system-out>
+  </testsuite>
+</testsuites>
+
+
+$ /tmp/junit-consumer-venv/bin/junit2html /tmp/junit-demo/pass-reports/skillevaluator-quality.junit.xml /tmp/junit-demo/pass.junit.html
+# exit_code=0
+
+$ /tmp/junit-consumer-venv/bin/junit2html /tmp/junit-demo/fail-reports/skillevaluator-quality.junit.xml /tmp/junit-demo/fail.junit.html
+# exit_code=0
