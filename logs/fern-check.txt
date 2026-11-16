@@ -1,0 +1,2 @@
+command: ./fern/node_modules/.bin/fern check
+result: Found 0 errors

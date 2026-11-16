@@ -1,0 +1,127 @@
+=== Demo: pre-commit hooks for offline Tier 1 skill checks ===
+scratch: /tmp/precommit-hooks-demo
+hook repo: /workspace
+
+$ git init -b main
+Initialized empty Git repository in /tmp/precommit-hooks-demo/.git/
+exit: 0
+
+$ git config user.name Matt Van Horn
+exit: 0
+
+$ git config user.email mvanhorn@users.noreply.github.com
+exit: 0
+
+$ git add skills .pre-commit-config.yaml
+exit: 0
+
+# Run the shipped hooks against the starter skill
+
+$ pre-commit try-repo /workspace --all-files --verbose
+[INFO] Initializing environment for ../../workspace.
+===============================================================================
+Using config:
+===============================================================================
+repos:
+-   repo: ../../workspace
+    rev: dccfbcacf818230ca63fd2b250719bce1e2f095b
+    hooks:
+    -   id: skillevaluator-lint-scripts
+    -   id: skillevaluator-quality
+    -   id: skillevaluator-schema
+===============================================================================
+[INFO] Installing environment for ../../workspace.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+SkillEvaluator script lint...............................................Passed
+- hook id: skillevaluator-lint-scripts
+- duration: 0.35s
+
+PASS  text-analyzer  lint-scripts
+
+SkillEvaluator quality score.............................................Passed
+- hook id: skillevaluator-quality
+- duration: 0.34s
+
+PASS  text-analyzer  quality  88.8/100
+
+SkillEvaluator schema....................................................Passed
+- hook id: skillevaluator-schema
+- duration: 0.34s
+
+PASS  text-analyzer  schema
+exit: 0
+
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
+exit: 0
+
+# Commit that should pass
+
+$ git commit -m Initial skill passes quality, schema, and script lint
+[main (root-commit) 62da3a1] Initial skill passes quality, schema, and script lint
+ 5 files changed, 228 insertions(+)
+ create mode 100644 .pre-commit-config.yaml
+ create mode 100644 skills/text-analyzer/SKILL.md
+ create mode 100644 skills/text-analyzer/evals/evals.json
+ create mode 100644 skills/text-analyzer/evals/evals2.json
+ create mode 100755 skills/text-analyzer/scripts/analyze_text.py
+SkillEvaluator quality score.............................................Passed
+SkillEvaluator schema....................................................Passed
+SkillEvaluator script lint...............................................Passed
+exit: 0
+shortened SKILL.md description to 'Text statistics.'
+
+$ git add skills/text-analyzer/SKILL.md
+exit: 0
+
+# Commit that should be refused (quality score below --min-score 85)
+
+$ git commit -m Shorten description
+SkillEvaluator quality score.............................................Failed
+- hook id: skillevaluator-quality
+- exit code: 1
+
+FAIL  text-analyzer  quality  82.5/100  (min 85)
+
+SkillEvaluator schema....................................................Passed
+SkillEvaluator script lint...............................................Passed
+exit: 1
+restored a complete description
+
+$ git add skills/text-analyzer/SKILL.md
+exit: 0
+
+# Commit that should pass after the fix
+
+$ git commit -m Restore a complete skill description
+[main f94e11e] Restore a complete skill description
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+SkillEvaluator quality score.............................................Passed
+SkillEvaluator schema....................................................Passed
+SkillEvaluator script lint...............................................Passed
+exit: 0
+
+=== Demo complete ===
+
+# Confirm the fixed skill still passes with a score line
+$ pre-commit run --all-files --verbose
+SkillEvaluator quality score.............................................Passed
+- hook id: skillevaluator-quality
+- duration: 0.35s
+
+PASS  text-analyzer  quality  88.8/100
+
+SkillEvaluator schema....................................................Passed
+- hook id: skillevaluator-schema
+- duration: 0.34s
+
+PASS  text-analyzer  schema
+
+SkillEvaluator script lint...............................................Passed
+- hook id: skillevaluator-lint-scripts
+- duration: 0.35s
+
+PASS  text-analyzer  lint-scripts
+
+exit: 0
