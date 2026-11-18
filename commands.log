@@ -1,0 +1,217 @@
+# commands.log — captured 2026-11-18T17:59:05Z
+# platform: Linux 6.12.113+ x86_64
+# python: 3.13.18
+# cli: skillevaluator, version 1.0.1
+# venv: /tmp/doctor-json-demo (clean uv venv; editable install of this checkout with [all])
+# before: PYTHONPATH=/tmp/se-baseline/src (upstream affe1acc3d0a24877c5d508d96ac69663a7fd92a)
+
+# --- before table (upstream main) ---
+$ PYTHONPATH=/tmp/se-baseline/src skillevaluator doctor --tier 1
+[3m                                             SkillEvaluator Doctor (Tier 1)                                             [0m
+[1m [0m[1mCheck       [0m[1m [0m [1m [0m[1mStatus[0m[1m [0m [1m [0m[1mDetails                                                                                       [0m[1m [0m
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[1m [0m[1mCLI package [0m[1m [0m  pass     skillevaluator 1.0.1                                                                           
+[1m [0m[1mSkillSpector[0m[1m [0m  pass     2.13.4 at /tmp/doctor-json-demo/bin/uv (uv tool run)                                           
+[1m [0m[1mBandit      [0m[1m [0m  pass     1.9.4 at /tmp/doctor-json-demo/bin/bandit                                                      
+[1m [0m[1mSemgrep     [0m[1m [0m  fail     not installed. Optional; install separately with: brew install semgrep (macOS) or uv tool      
+[1m              [0m           install semgrep                                                                                
+[1m [0m[1mGitleaks    [0m[1m [0m  pass     8.30.0 at /home/ubuntu/.local/share/skillevaluator/runtimes/gitleaks/8.30.0/gitleaks (managed) 
+# exit_code=1
+
+# --- after table (feat/doctor-json) ---
+$ skillevaluator doctor --tier 1
+[3m                                             SkillEvaluator Doctor (Tier 1)                                             [0m
+[1m [0m[1mCheck       [0m[1m [0m [1m [0m[1mStatus[0m[1m [0m [1m [0m[1mDetails                                                                                       [0m[1m [0m
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[1m [0m[1mCLI package [0m[1m [0m  pass     skillevaluator 1.0.1                                                                           
+[1m [0m[1mSkillSpector[0m[1m [0m  pass     2.13.4 at /tmp/doctor-json-demo/bin/uv (uv tool run)                                           
+[1m [0m[1mBandit      [0m[1m [0m  pass     1.9.4 at /tmp/doctor-json-demo/bin/bandit                                                      
+[1m [0m[1mSemgrep     [0m[1m [0m  fail     not installed. Optional; install separately with: brew install semgrep (macOS) or uv tool      
+[1m              [0m           install semgrep                                                                                
+[1m [0m[1mGitleaks    [0m[1m [0m  pass     8.30.0 at /home/ubuntu/.local/share/skillevaluator/runtimes/gitleaks/8.30.0/gitleaks (managed) 
+# exit_code=1
+
+# --- after json (pretty) ---
+$ skillevaluator doctor --tier 1 --json | python -m json.tool
+# exit_code=1
+{
+    "schema_version": 1,
+    "command": "doctor",
+    "tiers": [
+        {
+            "tier": "1",
+            "status": "fail",
+            "checks": [
+                {
+                    "check": "CLI package",
+                    "status": "pass",
+                    "detail": "skillevaluator 1.0.1"
+                },
+                {
+                    "check": "SkillSpector",
+                    "status": "pass",
+                    "detail": "2.13.4 at /tmp/doctor-json-demo/bin/uv (uv tool run)"
+                },
+                {
+                    "check": "Bandit",
+                    "status": "pass",
+                    "detail": "1.9.4 at /tmp/doctor-json-demo/bin/bandit"
+                },
+                {
+                    "check": "Semgrep",
+                    "status": "fail",
+                    "detail": "not installed. Optional; install separately with: brew install semgrep (macOS) or uv tool install semgrep"
+                },
+                {
+                    "check": "Gitleaks",
+                    "status": "pass",
+                    "detail": "8.30.0 at /home/ubuntu/.local/share/skillevaluator/runtimes/gitleaks/8.30.0/gitleaks (managed)"
+                }
+            ]
+        }
+    ],
+    "status": "fail"
+}
+
+# --- malformed SKILLEVALUATOR_SEMGREP_PATH ---
+$ SKILLEVALUATOR_SEMGREP_PATH=/nonexistent/semgrep skillevaluator doctor --tier 1 --json | python -m json.tool; echo $?
+# exit_code=1
+{
+    "schema_version": 1,
+    "command": "doctor",
+    "tiers": [
+        {
+            "tier": "1",
+            "status": "fail",
+            "checks": [
+                {
+                    "check": "CLI package",
+                    "status": "pass",
+                    "detail": "skillevaluator 1.0.1"
+                },
+                {
+                    "check": "SkillSpector",
+                    "status": "pass",
+                    "detail": "2.13.4 at /tmp/doctor-json-demo/bin/uv (uv tool run)"
+                },
+                {
+                    "check": "Bandit",
+                    "status": "pass",
+                    "detail": "1.9.4 at /tmp/doctor-json-demo/bin/bandit"
+                },
+                {
+                    "check": "Semgrep",
+                    "status": "fail",
+                    "detail": "SKILLEVALUATOR_SEMGREP_PATH must name an absolute executable file; got '/nonexistent/semgrep'"
+                },
+                {
+                    "check": "Gitleaks",
+                    "status": "pass",
+                    "detail": "8.30.0 at /home/ubuntu/.local/share/skillevaluator/runtimes/gitleaks/8.30.0/gitleaks (managed)"
+                }
+            ]
+        }
+    ],
+    "status": "fail"
+}
+# echoed $?: 1
+
+# --- jq failing checks ---
+$ jq '.tiers[].checks[] | select(.status=="fail")' readiness.json
+{
+  "check": "Semgrep",
+  "status": "fail",
+  "detail": "SKILLEVALUATOR_SEMGREP_PATH must name an absolute executable file; got '/nonexistent/semgrep'"
+}
+# exit_code=0
+
+# --- health-check --tier all --json ---
+$ skillevaluator health-check --tier all --json | python -m json.tool; echo $?
+# exit_code=1
+{
+    "schema_version": 1,
+    "command": "health-check",
+    "tiers": [
+        {
+            "tier": "1",
+            "status": "fail",
+            "checks": [
+                {
+                    "check": "CLI package",
+                    "status": "pass",
+                    "detail": "skillevaluator 1.0.1"
+                },
+                {
+                    "check": "SkillSpector",
+                    "status": "pass",
+                    "detail": "2.13.4 at /tmp/doctor-json-demo/bin/uv (uv tool run)"
+                },
+                {
+                    "check": "Bandit",
+                    "status": "pass",
+                    "detail": "1.9.4 at /tmp/doctor-json-demo/bin/bandit"
+                },
+                {
+                    "check": "Semgrep",
+                    "status": "fail",
+                    "detail": "not installed. Optional; install separately with: brew install semgrep (macOS) or uv tool install semgrep"
+                },
+                {
+                    "check": "Gitleaks",
+                    "status": "pass",
+                    "detail": "8.30.0 at /home/ubuntu/.local/share/skillevaluator/runtimes/gitleaks/8.30.0/gitleaks (managed)"
+                }
+            ]
+        },
+        {
+            "tier": "2",
+            "status": "fail",
+            "checks": [
+                {
+                    "check": "CLI package",
+                    "status": "pass",
+                    "detail": "skillevaluator 1.0.1"
+                },
+                {
+                    "check": "Embedding provider",
+                    "status": "fail",
+                    "detail": "No provider is configured.\n\nFor NVIDIA Build, set:\n  export SKILL_EVAL_EMBEDDING_PROVIDER=nv_build\n  export NVIDIA_API_KEY='your-api-key'\n  Get a key: https://build.nvidia.com\n\nOther SKILL_EVAL_EMBEDDING_PROVIDER values and their keys:\n  openai     -> OPENAI_API_KEY\n\nMore providers and setup options:\n  https://docs.nvidia.com/skills/skillevaluator/configuration"
+                },
+                {
+                    "check": "LLM provider",
+                    "status": "fail",
+                    "detail": "No provider is configured.\n\nFor NVIDIA Build, set:\n  export SKILL_EVAL_LLM_PROVIDER=nv_build\n  export NVIDIA_API_KEY='your-api-key'\n  Get a key: https://build.nvidia.com\n\nOther SKILL_EVAL_LLM_PROVIDER values and their keys:\n  openai     -> OPENAI_API_KEY\n  anthropic  -> ANTHROPIC_API_KEY\n\nMore providers and setup options:\n  https://docs.nvidia.com/skills/skillevaluator/configuration"
+                }
+            ]
+        },
+        {
+            "tier": "3",
+            "status": "fail",
+            "checks": [
+                {
+                    "check": "CLI package",
+                    "status": "pass",
+                    "detail": "skillevaluator 1.0.1"
+                },
+                {
+                    "check": "Public LLM provider",
+                    "status": "fail",
+                    "detail": "No provider is configured.\n\nFor NVIDIA Build, set:\n  export SKILL_EVAL_LLM_PROVIDER=nv_build\n  export NVIDIA_API_KEY='your-api-key'\n  Get a key: https://build.nvidia.com\n\nOther SKILL_EVAL_LLM_PROVIDER values and their keys:\n  openai     -> OPENAI_API_KEY\n  anthropic  -> ANTHROPIC_API_KEY\n\nMore providers and setup options:\n  https://docs.nvidia.com/skills/skillevaluator/configuration"
+                },
+                {
+                    "check": "Harbor agents",
+                    "status": "warn",
+                    "detail": "automatic selection requires a configured provider"
+                },
+                {
+                    "check": "docker prerequisite",
+                    "status": "fail",
+                    "detail": "Docker Compose v2 is required for Tier 3 Docker mode: [Errno 2] No such file or directory: 'docker'"
+                }
+            ]
+        }
+    ],
+    "status": "fail"
+}
+# echoed $?: 1
+

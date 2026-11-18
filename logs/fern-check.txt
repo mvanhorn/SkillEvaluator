@@ -1,0 +1,11 @@
+Found 0 errors and 1 warning in 0.000 seconds. Run fern check --warnings to print out the warnings not shown.
+                                          ╭──────────────────────────────────╮
+                                          │                                  │
+                                          │        Upgrades available        │
+                                          │                                  │
+                                          │     Fern 5.121.0 → 5.222.1       │
+                                          │   (Run fern upgrade to update)   │
+                                          │                                  │
+                                          ╰──────────────────────────────────╯
+
+EXIT:0

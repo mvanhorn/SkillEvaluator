@@ -1,0 +1,6 @@
+=== BASELINE ruff format --check (will-touch files) ===
+[1;31merror[0m[1m:[0m [1mFailed to format [0m[1mCHANGELOG.md[0m[1m:[0m Markdown formatting is experimental, enable preview mode.
+[1;31merror[0m[1m:[0m [1mFailed to parse[0m [1mdocs/ci-integration.mdx[0m[36m:[0m1[36m:[0m4[36m:[0m Expected an expression
+[1;31merror[0m[1m:[0m [1mFailed to parse[0m [1mdocs/cli-reference.mdx[0m[36m:[0m1[36m:[0m4[36m:[0m Expected an expression
+5 files already formatted
+EXIT:0
