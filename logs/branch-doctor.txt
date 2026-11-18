@@ -1,0 +1,12 @@
+                         SkillEvaluator Doctor (Tier 1)                         
+ Check          Status   Details                                                
+────────────────────────────────────────────────────────────────────────────────
+ CLI package    pass     skillevaluator 1.0.1                                   
+ SkillSpector   pass     2.13.4 at /agent/repos/SkillEvaluator/.venv/bin/uv (uv 
+                         tool run)                                              
+ Bandit         pass     1.9.4 at /agent/repos/SkillEvaluator/.venv/bin/bandit  
+ Semgrep        fail     not installed. Optional; install separately with: brew 
+                         install semgrep (macOS) or uv tool install semgrep     
+ Gitleaks       pass     8.30.0 at                                              
+                         /home/ubuntu/.local/share/skillevaluator/runtimes/git… 
+                         (managed)                                              

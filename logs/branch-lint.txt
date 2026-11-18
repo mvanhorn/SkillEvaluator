@@ -1,0 +1,4 @@
+=== BRANCH make lint ===
+python3 -m ruff check src tests
+All checks passed!
+EXIT:0

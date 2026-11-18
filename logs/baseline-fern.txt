@@ -1,0 +1,2 @@
+=== BASELINE fern check (upstream/main worktree) ===
+Found 0 errors and 1 warning (Fern upgrade available). EXIT:0

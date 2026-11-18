@@ -1,0 +1,6 @@
+=== platform ===
+Linux cursor 6.12.113+ #1 SMP PREEMPT_DYNAMIC Mon Nov 16 16:06:22 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+python:
+Python 3.13.18
+upstream:
+affe1acc3d0a24877c5d508d96ac69663a7fd92a

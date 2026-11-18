@@ -1,0 +1,2 @@
+python3 -m pytest
+make: *** [Makefile:9: test] Terminated

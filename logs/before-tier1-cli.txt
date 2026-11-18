@@ -1,0 +1,68 @@
+$ uv run skillevaluator tier1 /tmp/repro/CoalFace/skills/coalface --no-llm --checks security -r cli -r json -o /tmp/demo-assets/before/coalface-tier1
+[1/1] security ...
+INFO     Running skillspector on /tmp/repro/CoalFace/skills/coalface            
+INFO     Running skillspector: /tmp/se-upstream-main/.venv/bin/uv tool run      
+         --quiet --from...                                                      
+[1/1] security done in 6.7s (incomplete: skillspector)
+llm skipped: LLM checks disabled by --no-llm.
+        SkillEvaluator Validation Results        
+┏━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator     ┃ Status ┃ Details              ┃
+┡━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━┩
+│ Security Scan │  FAIL  │ 3 errors, 1 warnings │
+└───────────────┴────────┴──────────────────────┘
+
+╭─────────────────╮
+│ Failure Details │
+╰─────────────────╯
+
+[Security Scan]
+Detect security vulnerabilities and PII/secrets
+[FAIL] Validation failed
+
+Summary:
+  • Errors: 3 (2 high)
+  • Warnings: 1
+
+Execution errors:
+  • skillspector JSON field 'analysis_completeness' reports incomplete analysis 
+(status 'partial'): SKILL.md:150 [reference_resolution; reference_missing]; 
+scripts/admission.mjs [static; static_parse_limit; 
+analyzers=static_patterns_tool_misuse]; scripts/machine-reading.mjs [static; 
+static_parse_limit; analyzers=static_patterns_tool_misuse]; security scan did 
+not complete
+
+Warnings:
+  [WARN] Workflow scope: llm skipped. LLM checks disabled by --no-llm.
+
+Issues:
+  1. [SECURITY-HIGH] Rogue Agent: self-update
+     File:    SKILL.md:149
+     Check:   Self-Modification (RA1)
+     Content: VE subagent tool (Claude Code `Agent`/`Task` · each platform its 
+ow...
+     Fix:     Skill modifies its own code, configuration, or behavior at 
+runtime. Self-modification enables an agent to escalate privileges, disable 
+safety constraints, or install persistent backdoors. Prevent the skill from 
+modifying its own code, SKILL.md, or configuration files. Treat skill files as 
+read-only at runtime.
+
+  2. [SECURITY-HIGH] Rogue Agent: Self-update
+     File:    SKILL.md:150
+     Check:   Self-Modification (RA1)
+     Content: dirs' `coal/coalface.json`, `.claude` → `.agents` → `.gemini`; 
+**(3...
+     Fix:     Skill modifies its own code, configuration, or behavior at 
+runtime. Self-modification enables an agent to escalate privileges, disable 
+safety constraints, or install persistent backdoors. Prevent the skill from 
+modifying its own code, SKILL.md, or configuration files. Treat skill files as 
+read-only at runtime.
+
+
+[FAIL] Changes required
+Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+
+json report: /tmp/demo-assets/before/coalface-tier1/skillevaluator-tier1.json
+Error: Tier 1 checks failed or were incomplete
+EXIT:1

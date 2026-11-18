@@ -1,0 +1,57 @@
+{
+  "records": [
+    {
+      "stage": "skillspector",
+      "reported_status": "partial",
+      "ledger_exceptions": [
+        {
+          "path": "SKILL.md",
+          "phase": "reference_resolution",
+          "reason_code": "reference_missing",
+          "start_line": 150,
+          "end_line": 150
+        },
+        {
+          "path": "scripts/admission.mjs",
+          "phase": "static",
+          "reason_code": "static_parse_limit",
+          "analyzers": [
+            "static_patterns_tool_misuse"
+          ],
+          "omitted_analyzers": 0,
+          "parser_diagnostic": {
+            "cause": "runtime_dependent",
+            "check": "command_string_runtime",
+            "unchecked_scope": "remaining_input",
+            "start_line": 74,
+            "end_line": 170,
+            "full_input_checked": false
+          }
+        },
+        {
+          "path": "scripts/machine-reading.mjs",
+          "phase": "static",
+          "reason_code": "static_parse_limit",
+          "analyzers": [
+            "static_patterns_tool_misuse"
+          ],
+          "omitted_analyzers": 0,
+          "parser_diagnostic": {
+            "cause": "runtime_dependent",
+            "check": "command_string_runtime",
+            "unchecked_scope": "remaining_input",
+            "start_line": 104,
+            "end_line": 236,
+            "full_input_checked": false
+          }
+        }
+      ],
+      "limitations": [
+        "Analyzer static_patterns_tool_misuse status: degraded."
+      ],
+      "omitted_exceptions": 0,
+      "omitted_limitations": 0
+    }
+  ],
+  "omitted_records": 0
+}

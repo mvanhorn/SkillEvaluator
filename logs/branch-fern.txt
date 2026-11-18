@@ -1,0 +1,21 @@
+=== fern check (feature branch) ===
+=== BRANCH fern check ===
+Found 0 errors and 1 warning in 0.000 seconds. Run fern check --warnings to print out the warnings not shown.
+FERN_EXIT:0
+=== BRANCH make build ===
+python3 -m build
+[93mWARNING[0m Both NO_COLOR and FORCE_COLOR environment variables are set, disabling color
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools >= 77
+  - wheel
+* Getting build dependencies for sdist...
+running egg_info
+writing src/skillevaluator.egg-info/PKG-INFO
+writing dependency_links to src/skillevaluator.egg-info/dependency_links.txt
+writing entry points to src/skillevaluator.egg-info/entry_points.txt
+writing requirements to src/skillevaluator.egg-info/requires.txt
+writing top-level names to src/skillevaluator.egg-info/top_level.txt
+reading manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'

@@ -1,0 +1,5 @@
+[1;31merror[0m[1m:[0m [1mFailed to format [0m[1mCHANGELOG.md[0m[1m:[0m Markdown formatting is experimental, enable preview mode.
+[1;31merror[0m[1m:[0m [1mFailed to parse[0m [1mdocs/tier1-reference.mdx[0m[36m:[0m1[36m:[0m4[36m:[0m Expected an expression
+Would reformat: [1msrc/skillevaluator/validators/security.py[0m
+Would reformat: [1mtests/fixtures/skillspector-2.13.4-mjs-runtime-parse-limit-no-llm.json[0m
+2 files would be reformatted, 7 files already formatted

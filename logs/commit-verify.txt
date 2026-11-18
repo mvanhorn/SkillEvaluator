@@ -1,0 +1,19 @@
+=== git log -1 --format ===
+Matt Van Horn <mvanhorn@users.noreply.github.com>
+Matt Van Horn <mvanhorn@users.noreply.github.com>
+N
+fix(security): show where SkillSpector parse limits apply in incomplete scans
+
+Incomplete SkillSpector scans dropped parser_diagnostic on static_parse_limit rows, so JavaScript helpers showed no span, cause, or check.
+
+Label those rows from a well-formed diagnostic, keep a bounded copy in skillspector_completeness, and hint when every parse-limit row is runtime_dependent. The security check stays INCOMPLETE.
+
+Signed-off-by: Matt Van Horn <mvanhorn@users.noreply.github.com>
+
+=== git cat-file gpgsig count ===
+0
+=== git rev-list --count upstream/main..HEAD ===
+1
+=== git rev-parse ===
+6fc9ff3efc2d13a24cb07ddb42ddc617256d220f
+affe1acc3d0a24877c5d508d96ac69663a7fd92a

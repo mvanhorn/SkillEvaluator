@@ -1,0 +1,36 @@
+[
+  {
+    "path": "scripts/admission.mjs",
+    "phase": "static",
+    "reason_code": "static_parse_limit",
+    "analyzers": [
+      "static_patterns_tool_misuse"
+    ],
+    "omitted_analyzers": 0,
+    "parser_diagnostic": {
+      "cause": "runtime_dependent",
+      "check": "command_string_runtime",
+      "unchecked_scope": "remaining_input",
+      "start_line": 74,
+      "end_line": 170,
+      "full_input_checked": false
+    }
+  },
+  {
+    "path": "scripts/machine-reading.mjs",
+    "phase": "static",
+    "reason_code": "static_parse_limit",
+    "analyzers": [
+      "static_patterns_tool_misuse"
+    ],
+    "omitted_analyzers": 0,
+    "parser_diagnostic": {
+      "cause": "runtime_dependent",
+      "check": "command_string_runtime",
+      "unchecked_scope": "remaining_input",
+      "start_line": 104,
+      "end_line": 236,
+      "full_input_checked": false
+    }
+  }
+]

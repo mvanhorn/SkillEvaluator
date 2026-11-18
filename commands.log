@@ -1,0 +1,225 @@
+# commands.log — SkillSpector parser locations in incomplete scans
+# Platform: Linux 6.12.113+ x86_64, Python 3.13.18 via uv, SkillEvaluator 1.0.1
+# Upstream tip: affe1acc3d0a24877c5d508d96ac69663a7fd92a
+# SkillSpector: 2.13.4 (pinned SKILLSPECTOR_WHEEL_URL)
+# CoalFace: https://github.com/TheColliery/CoalFace @ f7574dfb45ec5eb7bb4861ea2a9efb020a66cf86
+# Replay of real captured command output.
+
+$ uname -a
+Linux cursor 6.12.113+ #1 SMP PREEMPT_DYNAMIC Mon Nov 16 16:06:22 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+EXIT:0
+
+$ uv run python -V
+Python 3.13.18
+EXIT:0
+
+$ git remote add upstream https://github.com/NVIDIA/SkillEvaluator.git && git fetch upstream main && git checkout -b feat/skillspector-parser-locations upstream/main
+# upstream/main = affe1acc3d0a24877c5d508d96ac69663a7fd92a
+EXIT:0
+
+$ gh issue view 784 -R NVIDIA/SkillEvaluator --json number,state,assignees,title,comments
+state OPEN
+assignees []
+title [BUG]: Tier 1 security check fails as INCOMPLETE on a skill whose only gaps are two ES-module helpers (static_parse_limit)
+comments 1
+# Reporter-only follow-up. No maintainer assignment or handling comment.
+EXIT:0
+
+$ gh pr list -R NVIDIA/SkillEvaluator --state open --search "784 OR parser_diagnostic OR static_parse_limit"
+# no open PRs
+EXIT:0
+
+$ rg -n parser_diagnostic src
+# no matches on untouched upstream/main
+EXIT:1
+
+$ git clone https://github.com/TheColliery/CoalFace /tmp/repro/CoalFace && git -C /tmp/repro/CoalFace checkout f7574dfb45ec5eb7bb4861ea2a9efb020a66cf86
+EXIT:0
+
+$ git -C /tmp/repro/CoalFace rev-parse HEAD
+f7574dfb45ec5eb7bb4861ea2a9efb020a66cf86
+EXIT:0
+
+# --- baseline gates on untouched upstream/main worktree /tmp/se-upstream-main ---
+
+$ uv run make lint
+python3 -m ruff check src tests
+All checks passed!
+EXIT:0
+
+$ uv run make build
+Successfully built skillevaluator-1.0.1.tar.gz and skillevaluator-1.0.1-py3-none-any.whl
+EXIT:0
+
+$ ./fern/node_modules/.bin/fern check
+Found 0 errors and 1 warning in 0.000 seconds.
+# warning is the Fern CLI upgrade notice (5.121.0 → 5.223.0)
+EXIT:0
+
+$ uv run ruff format --check src/skillevaluator/validators/security.py
+Would reformat: src/skillevaluator/validators/security.py
+# pre-existing wrapping on upstream/main; not reformatted
+EXIT:1
+
+$ uv run make test
+python3 -m pytest
+collected 39709 items / 19 deselected / 39690 selected
+# hung in tests/test_harbor_secure_docker_environment.py::test_windows_transfer_repeated_cancellation_reaps_process_and_removes_partial_output (~29%)
+# killed
+EXIT:143
+
+$ uv run python -m pytest -n auto --tb=line --deselect tests/test_harbor_secure_docker_environment.py::test_windows_transfer_repeated_cancellation_reaps_process_and_removes_partial_output
+4 workers [39689 items]
+==== 50 failed, 39468 passed, 171 skipped, 65 warnings in 442.92s (0:07:22) ====
+# failures: missing Docker client, Rich markup wrapping, NeMo Gym process-group (same set as the feature branch)
+EXIT:1
+
+# --- before: untouched upstream/main, CoalFace skills/coalface ---
+
+$ uv run skillevaluator tier1 /tmp/repro/CoalFace/skills/coalface --no-llm --checks security -r cli -r json -o /tmp/demo-assets/before/coalface-tier1
+[1/1] security done in 6.7s (incomplete: skillspector)
+│ Security Scan │  FAIL  │ 3 errors, 1 warnings │
+Execution errors:
+  • skillspector JSON field 'analysis_completeness' reports incomplete analysis
+(status 'partial'): SKILL.md:150 [reference_resolution; reference_missing];
+scripts/admission.mjs [static; static_parse_limit;
+analyzers=static_patterns_tool_misuse]; scripts/machine-reading.mjs [static;
+static_parse_limit; analyzers=static_patterns_tool_misuse]; security scan did
+not complete
+[FAIL] Changes required
+Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+json report: /tmp/demo-assets/before/coalface-tier1/skillevaluator-tier1.json
+Error: Tier 1 checks failed or were incomplete
+EXIT:1
+
+$ uvx --from https://github.com/NVIDIA/SkillSpector/releases/download/v2.13.4/skillspector-2.13.4-py3-none-any.whl skillspector scan /tmp/repro/CoalFace/skills/coalface --no-llm --format json --output /tmp/demo-assets/raw/coalface-skillspector.json
+# scanner JSON row for scripts/admission.mjs has start_line: null and parser_diagnostic start_line 74 end_line 170 cause runtime_dependent check command_string_runtime
+# scripts/machine-reading.mjs: start_line null, parser_diagnostic 104-236, same cause/check
+EXIT:0
+
+# --- after: feat/skillspector-parser-locations ---
+
+$ uv run skillevaluator tier1 /tmp/repro/CoalFace/skills/coalface --no-llm --checks security -r cli -r json -o /tmp/demo-assets/after/coalface-tier1
+[1/1] security done in 6.9s (incomplete: skillspector)
+│ Security Scan │  FAIL  │ 3 errors, 1 warnings │
+Execution errors:
+  • skillspector JSON field 'analysis_completeness' reports incomplete analysis
+(status 'partial'): SKILL.md:150 [reference_resolution; reference_missing];
+scripts/admission.mjs:74-170 [static; static_parse_limit; runtime_dependent
+command_string_runtime; analyzers=static_patterns_tool_misuse];
+scripts/machine-reading.mjs:104-236 [static; static_parse_limit;
+runtime_dependent command_string_runtime;
+analyzers=static_patterns_tool_misuse]; security scan did not complete.
+SkillSpector could not resolve a command or code string that is only known at
+run time (for example a process spawn whose arguments come from variables), in
+the reported lines. Review those lines, prefer fixed argument lists, and if the
+code is valid and safe report a minimal reproducer to SkillSpector; updating
+SkillSpector does not clear this limit today.
+[FAIL] Changes required
+Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+json report: /tmp/demo-assets/after/coalface-tier1/skillevaluator-tier1.json
+Error: Tier 1 checks failed or were incomplete
+EXIT:1
+
+$ sed -n '74,80p' /tmp/repro/CoalFace/skills/coalface/scripts/admission.mjs
+    ...AGENT_DIRS.map((d) => path.join(dir, `.${d}`, 'coal', 'coalface.json')),
+    ...AGENT_DIRS.map((d) => path.join(dir, `.${d}`, '.coalface.json')),
+    path.join(dir, '.coalface.json'),
+  ];
+}
+
+// Walk up from cwd, nearest level first, stopping at home (home's config is the GLOBAL one). { file, dir } or nulls.
+EXIT:0
+
+$ sed -n '143,147p' /tmp/repro/CoalFace/skills/coalface/scripts/admission.mjs
+  }
+  const t = readThresholds();
+  const r = spawnSync(process.execPath, [READER, '--cpu-max', String(t.cpuMaxPct), '--mem-min', String(t.memMinPct), ...argv], {
+    encoding: 'utf8', timeout: READER_TIMEOUT_MS, windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'],
+  });
+EXIT:0
+
+$ python3 -c 'import json; from pathlib import Path; data=json.loads(Path("/tmp/demo-assets/after/coalface-tier1/skillevaluator-tier1.json").read_text()); rec=data["results"][0]["skillspector_completeness"]["records"][0]; print([row for row in rec["ledger_exceptions"] if row.get("parser_diagnostic")])'
+[
+  {
+    "path": "scripts/admission.mjs",
+    "phase": "static",
+    "reason_code": "static_parse_limit",
+    "analyzers": ["static_patterns_tool_misuse"],
+    "omitted_analyzers": 0,
+    "parser_diagnostic": {
+      "cause": "runtime_dependent",
+      "check": "command_string_runtime",
+      "unchecked_scope": "remaining_input",
+      "start_line": 74,
+      "end_line": 170,
+      "full_input_checked": false
+    }
+  },
+  {
+    "path": "scripts/machine-reading.mjs",
+    "phase": "static",
+    "reason_code": "static_parse_limit",
+    "analyzers": ["static_patterns_tool_misuse"],
+    "omitted_analyzers": 0,
+    "parser_diagnostic": {
+      "cause": "runtime_dependent",
+      "check": "command_string_runtime",
+      "unchecked_scope": "remaining_input",
+      "start_line": 104,
+      "end_line": 236,
+      "full_input_checked": false
+    }
+  }
+]
+# Bounded projection. No source text or byte offsets.
+EXIT:0
+
+$ uv run skillevaluator doctor --tier 1
+SkillSpector   pass     2.13.4
+EXIT:0
+
+# --- feature-branch gates ---
+
+$ uv run make lint
+python3 -m ruff check src tests
+All checks passed!
+EXIT:0
+
+$ uv run ruff format --check src/skillevaluator/skillspector_diagnostics.py src/skillevaluator/skillspector_references.py tests/validators/test_skillspector_parser_locations.py tests/validators/test_skillspector_diagnostics.py tests/validators/test_skillspector_reference_diagnostics.py tests/reporting/test_tier3_validate_cases.py tests/validators/test_skillspector_hook_surface.py
+7 files already formatted
+EXIT:0
+
+$ ./fern/node_modules/.bin/fern check
+Found 0 errors and 1 warning in 0.000 seconds.
+# same Fern upgrade warning as baseline
+EXIT:0
+
+$ uv run make build
+Successfully built skillevaluator-1.0.1.tar.gz and skillevaluator-1.0.1-py3-none-any.whl
+EXIT:0
+
+$ uv run python -m pytest tests/validators/test_skillspector_parser_locations.py tests/validators/test_skillspector_diagnostics.py tests/validators/test_skillspector_reference_diagnostics.py tests/validators/test_skillspector_hook_surface.py tests/reporting/test_tier3_validate_cases.py -q --tb=short
+261 passed in 2.21s
+EXIT:0
+
+$ uv run python -m pytest -n auto --tb=line --deselect tests/test_harbor_secure_docker_environment.py::test_windows_transfer_repeated_cancellation_reaps_process_and_removes_partial_output
+4 workers [39715 items]
+==== 50 failed, 39494 passed, 171 skipped, 65 warnings in 452.13s (0:07:32) ====
+# +26 passed vs baseline (new tests). The same 50 failures as untouched upstream/main.
+EXIT:1
+
+$ ffprobe -hide_banner -count_frames -select_streams v:0 -show_entries stream=codec_name,width,height,pix_fmt,r_frame_rate,nb_frames,duration /tmp/demo-assets/out.mp4
+# h264 yuv420p 1920x1080 30 fps 1109 frames duration 36.966667
+EXIT:0
+
+$ ffprobe -hide_banner -count_frames -select_streams v:0 -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames,duration /tmp/demo-assets/preview.gif
+# gif 1280x720 10 fps 370 frames duration 37.000000
+EXIT:0
+
+$ ls -l /tmp/demo-assets/out.mp4 /tmp/demo-assets/preview.gif
+-rw-r--r-- 1 ubuntu ubuntu 818201 Nov 18 18:09 /tmp/demo-assets/out.mp4
+-rw-r--r-- 1 ubuntu ubuntu 829965 Nov 18 18:09 /tmp/demo-assets/preview.gif
+EXIT:0

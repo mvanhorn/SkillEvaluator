@@ -1,0 +1,384 @@
+{
+  "version": "1.0.1",
+  "target_path": "/tmp/repro/CoalFace/skills/coalface",
+  "overall_passed": false,
+  "overall_status": "failed",
+  "incomplete_scans": [
+    "skillspector"
+  ],
+  "total_validators": 1,
+  "total_skipped": 0,
+  "total_advisory_skipped": 0,
+  "total_errors": 3,
+  "total_warnings": 1,
+  "severity_counts": {
+    "critical": 0,
+    "high": 2,
+    "medium": 0,
+    "low": 0
+  },
+  "finding_counts": {
+    "raw_occurrences": 2,
+    "distinct_occurrences": 2,
+    "unique_findings": 1,
+    "duplicates_removed": 0,
+    "occurrences_grouped": 1,
+    "raw_by_severity": {
+      "critical": 0,
+      "high": 2,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    },
+    "unique_by_severity": {
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    }
+  },
+  "finding_groups": [
+    {
+      "finding_id": "SEF-3fdd024b16936eb35a11",
+      "category": "SECURITY",
+      "severity": "high",
+      "check_name": "Self-Modification (RA1)",
+      "message": "Rogue Agent: self-update",
+      "suggestion": "Skill modifies its own code, configuration, or behavior at runtime. Self-modification enables an agent to escalate privileges, disable safety constraints, or install persistent backdoors. Prevent the skill from modifying its own code, SKILL.md, or configuration files. Treat skill files as read-only at runtime.",
+      "metadata": {
+        "skillspector_confidence": 0.9,
+        "artifact_type": "skill",
+        "file_role": "agent_instruction",
+        "applicability": "agent-control-path"
+      },
+      "validators": [
+        "Security Scan"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-b06dcb8d28b396b99f1b",
+          "validator": "Security Scan",
+          "file_path": "SKILL.md",
+          "line_number": 149
+        },
+        {
+          "occurrence_id": "SEO-c47f1342b271d6513341",
+          "validator": "Security Scan",
+          "file_path": "SKILL.md",
+          "line_number": 150
+        }
+      ],
+      "occurrence_count": 2
+    }
+  ],
+  "message_counts": {
+    "informational": 0,
+    "independent_errors": 1,
+    "independent_warnings": 0
+  },
+  "skills": [
+    {
+      "name": "coalface",
+      "passed": false,
+      "issue_count": 2
+    }
+  ],
+  "contributors": [
+    {
+      "author": "Unknown",
+      "items": [
+        {
+          "name": "coalface",
+          "passed": false,
+          "issue_count": 2
+        }
+      ],
+      "total_items": 1,
+      "passed_count": 0,
+      "failed_count": 1,
+      "total_issues": 2
+    }
+  ],
+  "top_issues": [
+    {
+      "message": "Rogue Agent",
+      "severity": "high",
+      "total_count": 2,
+      "skills_affected": [
+        "coalface"
+      ],
+      "category": "SECURITY",
+      "suggestion": "Skill modifies its own code, configuration, or behavior at runtime. Self-modification enables an agent to escalate privileges, disable safety constraints, or install persistent backdoors. Prevent the skill from modifying its own code, SKILL.md, or configuration files. Treat skill files as read-only at runtime."
+    }
+  ],
+  "results": [
+    {
+      "validator": "Security Scan",
+      "description": "Detect security vulnerabilities and PII/secrets",
+      "passed": false,
+      "status": "failed",
+      "skipped": false,
+      "skip_reason": null,
+      "incomplete_scans": [
+        "skillspector"
+      ],
+      "scanners": {
+        "skillspector": "2.13.4"
+      },
+      "summary": {
+        "files_scanned": 0,
+        "checks_performed": 0,
+        "errors": 3,
+        "warnings": 1,
+        "critical_count": 0,
+        "high_count": 2,
+        "medium_count": 0,
+        "low_count": 0
+      },
+      "finding_counts": {
+        "raw_occurrences": 2,
+        "distinct_occurrences": 2,
+        "unique_findings": 1,
+        "duplicates_removed": 0,
+        "occurrences_grouped": 1,
+        "raw_by_severity": {
+          "critical": 0,
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "info": 0
+        },
+        "unique_by_severity": {
+          "critical": 0,
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "info": 0
+        }
+      },
+      "findings": [
+        {
+          "finding_id": "SEF-3fdd024b16936eb35a11",
+          "occurrence_id": "SEO-b06dcb8d28b396b99f1b",
+          "category": "SECURITY",
+          "severity": "high",
+          "check_name": "Self-Modification (RA1)",
+          "message": "Rogue Agent: self-update",
+          "file_path": "SKILL.md",
+          "line_number": 149,
+          "line_content": "VE subagent tool (Claude Code `Agent`/`Task` \u00b7 each platform its own). Any platform with concurrent subagents runs the full contract; width sizes to the local cap via `bandwidth`; an unknown platform ",
+          "suggestion": "Skill modifies its own code, configuration, or behavior at runtime. Self-modification enables an agent to escalate privileges, disable safety constraints, or install persistent backdoors. Prevent the skill from modifying its own code, SKILL.md, or configuration files. Treat skill files as read-only at runtime.",
+          "metadata": {
+            "skillspector_confidence": 0.9,
+            "artifact_type": "skill",
+            "file_role": "agent_instruction",
+            "applicability": "agent-control-path"
+          }
+        },
+        {
+          "finding_id": "SEF-3fdd024b16936eb35a11",
+          "occurrence_id": "SEO-c47f1342b271d6513341",
+          "category": "SECURITY",
+          "severity": "high",
+          "check_name": "Self-Modification (RA1)",
+          "message": "Rogue Agent: Self-update",
+          "file_path": "SKILL.md",
+          "line_number": 150,
+          "line_content": " dirs' `coal/coalface.json`, `.claude` \u2192 `.agents` \u2192 `.gemini`; **(3)** DEPRECATED nested `.<agent>/.coalface.json`, same order; **(4)** DEPRECATED root `.coalface.json`. Keys: `coalfaceMode` \u00b7 `bandw",
+          "suggestion": "Skill modifies its own code, configuration, or behavior at runtime. Self-modification enables an agent to escalate privileges, disable safety constraints, or install persistent backdoors. Prevent the skill from modifying its own code, SKILL.md, or configuration files. Treat skill files as read-only at runtime.",
+          "metadata": {
+            "skillspector_confidence": 0.9,
+            "artifact_type": "skill",
+            "file_role": "agent_instruction",
+            "applicability": "agent-control-path"
+          }
+        }
+      ],
+      "success_details": [],
+      "legacy": {
+        "errors": [
+          "skillspector JSON field 'analysis_completeness' reports incomplete analysis (status 'partial'): SKILL.md:150 [reference_resolution; reference_missing]; scripts/admission.mjs:74-170 [static; static_parse_limit; runtime_dependent command_string_runtime; analyzers=static_patterns_tool_misuse]; scripts/machine-reading.mjs:104-236 [static; static_parse_limit; runtime_dependent command_string_runtime; analyzers=static_patterns_tool_misuse]; security scan did not complete. SkillSpector could not resolve a command or code string that is only known at run time (for example a process spawn whose arguments come from variables), in the reported lines. Review those lines, prefer fixed argument lists, and if the code is valid and safe report a minimal reproducer to SkillSpector; updating SkillSpector does not clear this limit today.",
+          "[SECURITY-HIGH] Rogue Agent: self-update in SKILL.md:149",
+          "[SECURITY-HIGH] Rogue Agent: Self-update in SKILL.md:150"
+        ],
+        "warnings": [
+          "Workflow scope: llm skipped. LLM checks disabled by --no-llm."
+        ],
+        "messages": []
+      },
+      "tier1_required_checks": [
+        "code-integrity",
+        "license",
+        "lint",
+        "pii",
+        "quality",
+        "schema",
+        "security",
+        "unicode",
+        "version"
+      ],
+      "tier1_unscanned_paths": [],
+      "skillspector_version": "2.13.4",
+      "skillspector_completeness": {
+        "records": [
+          {
+            "stage": "skillspector",
+            "reported_status": "partial",
+            "ledger_exceptions": [
+              {
+                "path": "SKILL.md",
+                "phase": "reference_resolution",
+                "reason_code": "reference_missing",
+                "start_line": 150,
+                "end_line": 150
+              },
+              {
+                "path": "scripts/admission.mjs",
+                "phase": "static",
+                "reason_code": "static_parse_limit",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ],
+                "omitted_analyzers": 0,
+                "parser_diagnostic": {
+                  "cause": "runtime_dependent",
+                  "check": "command_string_runtime",
+                  "unchecked_scope": "remaining_input",
+                  "start_line": 74,
+                  "end_line": 170,
+                  "full_input_checked": false
+                }
+              },
+              {
+                "path": "scripts/machine-reading.mjs",
+                "phase": "static",
+                "reason_code": "static_parse_limit",
+                "analyzers": [
+                  "static_patterns_tool_misuse"
+                ],
+                "omitted_analyzers": 0,
+                "parser_diagnostic": {
+                  "cause": "runtime_dependent",
+                  "check": "command_string_runtime",
+                  "unchecked_scope": "remaining_input",
+                  "start_line": 104,
+                  "end_line": 236,
+                  "full_input_checked": false
+                }
+              }
+            ],
+            "limitations": [
+              "Analyzer static_patterns_tool_misuse status: degraded."
+            ],
+            "omitted_exceptions": 0,
+            "omitted_limitations": 0
+          }
+        ],
+        "omitted_records": 0
+      },
+      "gate_failures": [
+        "skillspector JSON field 'analysis_completeness' reports incomplete analysis (status 'partial'): SKILL.md:150 [reference_resolution; reference_missing]; scripts/admission.mjs:74-170 [static; static_parse_limit; runtime_dependent command_string_runtime; analyzers=static_patterns_tool_misuse]; scripts/machine-reading.mjs:104-236 [static; static_parse_limit; runtime_dependent command_string_runtime; analyzers=static_patterns_tool_misuse]; security scan did not complete. SkillSpector could not resolve a command or code string that is only known at run time (for example a process spawn whose arguments come from variables), in the reported lines. Review those lines, prefer fixed argument lists, and if the code is valid and safe report a minimal reproducer to SkillSpector; updating SkillSpector does not clear this limit today."
+      ],
+      "skillspector_applicability": {
+        "artifact_type": "skill",
+        "kept_issues": 2,
+        "suppressed_inapplicable_issues": 0,
+        "suppressed_by_file_role": {},
+        "raw_risk_score": 33,
+        "applicable_risk_score": 33
+      },
+      "gating": {
+        "tier": 1,
+        "blocking": true
+      },
+      "publication_target": {
+        "skill_name": "coalface",
+        "skill_digest": "sha256:d1e1e3a55bb460acd69521a71627d620864d5fd6c22a0e3a5d2cc359d5dfe3d2",
+        "skill_digest_algorithm": "skill-evaluator-source-tree/2"
+      },
+      "publication_evidence": {
+        "schema_version": 1,
+        "producer": "skillevaluator.tier1",
+        "tier": 1,
+        "check_id": "security"
+      },
+      "workflow": {
+        "tier": 1,
+        "stages": {
+          "validation": {
+            "status": "incomplete"
+          },
+          "llm": {
+            "status": "skipped",
+            "reason": "LLM checks disabled by --no-llm."
+          }
+        }
+      }
+    }
+  ],
+  "benchmark_policy": {
+    "tier2_required": true,
+    "tier3_required": true
+  },
+  "publication_status": "incomplete",
+  "publication": {
+    "status": "incomplete",
+    "eligible": false,
+    "reasons": [
+      "One or more validators reported incomplete scanner evidence."
+    ],
+    "tier3": {
+      "status": "not_run",
+      "evidence_complete": false,
+      "execution_status": "not_run",
+      "verdict": "not_run",
+      "reason": "Tier 3 lacks publication-complete execution evidence."
+    }
+  },
+  "policy": {
+    "profile": "default",
+    "audience": "all",
+    "digest": "sha256:64a069b8853f7123049a675d6853ef8d8b424792bb9a2a5157a73ec312f38ed4",
+    "author_email_regex": null,
+    "severity_overrides": {
+      "SCHEMA.author_missing": "low",
+      "SCHEMA.author_without_email": "info",
+      "SCHEMA.author_format": "high",
+      "WORKFLOWS.author_format": "high",
+      "LICENSE.*": "critical"
+    },
+    "metadata_id_requirement": "ignore",
+    "source": "/agent/repos/SkillEvaluator/src/skillevaluator/config/profiles/default.yaml"
+  },
+  "evaluated_source": null,
+  "gating": {
+    "tiers": {
+      "1": {
+        "blocking": true,
+        "validators": [
+          "Security Scan"
+        ],
+        "validator_policies": [
+          {
+            "validator": "Security Scan",
+            "blocking": true
+          }
+        ]
+      }
+    }
+  },
+  "workflow": {
+    "tier": 1,
+    "stages": {
+      "validation": {
+        "status": "incomplete"
+      },
+      "llm": {
+        "status": "skipped",
+        "reason": "LLM checks disabled by --no-llm."
+      }
+    }
+  },
+  "generated_at": "2026-11-18T18:04:45.369080+00:00"
+}
