@@ -1,0 +1,4 @@
+Linux 6.12.113+ x86_64
+python: 3.13.18
+uv: uv 0.13.9 (x86_64-unknown-linux-gnu)
+upstream: affe1acc3d0a24877c5d508d96ac69663a7fd92a

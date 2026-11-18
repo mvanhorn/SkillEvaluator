@@ -1,0 +1,105 @@
+........................................................................ [  2%]
+........................................................................ [  4%]
+........................................................................ [  7%]
+........................................................................ [  9%]
+........................................................................ [ 12%]
+........................................................................ [ 14%]
+........................................................................ [ 17%]
+........................................................................ [ 19%]
+........................................................................ [ 22%]
+........................................................................ [ 24%]
+........................................................................ [ 26%]
+........................................................................ [ 29%]
+........................................................................ [ 31%]
+........................................................................ [ 34%]
+........................................................................ [ 36%]
+........................................................................ [ 39%]
+........................................................................ [ 41%]
+........................................................................ [ 44%]
+........................................................................ [ 46%]
+........................................................................ [ 49%]
+.........sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 51%]
+sssssssssssssss...............................................ssssssss.. [ 53%]
+........................................................................ [ 56%]
+........................................................................ [ 58%]
+........................................................................ [ 61%]
+........................................................................ [ 63%]
+........................................................................ [ 66%]
+.......................................................FF......F.....FF. [ 68%]
+...FF...F............................................................... [ 71%]
+.................................................F......F...........FF.F [ 73%]
+F....................................................................... [ 76%]
+........................................................................ [ 78%]
+........................................................................ [ 80%]
+........................................................................ [ 83%]
+........................................................................ [ 85%]
+........................................................................ [ 88%]
+........................................................................ [ 90%]
+....F................................................................... [ 93%]
+........................................................................ [ 95%]
+........................................................................ [ 98%]
+........................................................                 [100%]
+=================================== FAILURES ===================================
+E   AssertionError: assert ['alpha [bold...]evil[/bold]'] == []
+      
+      Left contains 3 more items, first extra item: 'alpha [bold]evil[/bold]'
+      Use -v to get more diff
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:230: AssertionError: assert ['alpha [bold...]evil[/bold]'] == []
+E   AssertionError: assert ['alpha [link...//x]y[/link]'] == []
+      
+      Left contains 6 more items, first extra item: 'alpha [link=http://x]y[/link]'
+      Use -v to get more diff
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:230: AssertionError: assert ['alpha [link...//x]y[/link]'] == []
+E   assert False
+     +  where False = any(<generator object test_trailing_backslashes_render_literally.<locals>.<genexpr> at 0x7f6578ca9990>)
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:294: assert False
+E   AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_0/[/x]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n'
+     +  where 'json report: \n/tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n' = export_text()
+     +    where export_text = <console width=80 None>.export_text
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:422: AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_0/[/x]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n'
+E   AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_1/[bold]evil[/bold]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n'
+     +  where 'json report: \n/tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n' = export_text()
+     +    where export_text = <console width=80 None>.export_text
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:422: AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_1/[bold]evil[/bold]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-3/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n'
+E   AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend0/[/x]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend0/[/x].../pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend0/[/x]/evals/grader\n.py. Re-run with --force to overwrite.\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:485: AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend0/[/x]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend0/[/x].../pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend0/[/x]/evals/grader\n.py. Re-run with --force to overwrite.\n'
+E   AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend1/[bold]evil[/bold]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend1/[bol...untu/pytest-3/test_tier3_grader_starter_rend1/[bold]evil[/bold]\n/evals/grader.py. Re-run with --force to overwrite.\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:485: AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend1/[bold]evil[/bold]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-3/test_tier3_grader_starter_rend1/[bol...untu/pytest-3/test_tier3_grader_starter_rend1/[bold]evil[/bold]\n/evals/grader.py. Re-run with --force to overwrite.\n'
+E   AssertionError: assert 'combination for your skill: codex / gpt-[/x]:key:' in '  Findings from best performing agent/model combination for your skill: codex / \ngpt-[/x]:key:\n\n╭─────── skill [bo...                               │\n╰──────────────────────────────────────────────────────────────────────────────╯\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:627: AssertionError: assert 'combination for your skill: codex / gpt-[/x]:key:' in '  Findings from best performing agent/model combination for your skill: codex / \ngpt-[/x]:key:\n\n╭─────── skill [bo...                               │\n╰──────────────────────────────────────────────────────────────────────────────╯\n\n'
+E   assert False
+     +  where False = all(<generator object test_each_lift_condition_keeps_label_number_and_complete_bar.<locals>.<genexpr> at 0x7f657ba857e0>)
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:46: assert False
+E   assert False
+     +  where False = all(<generator object test_direct_tier3_preserves_conditions_and_bars_at_narrow_width.<locals>.<genexpr> at 0x7f65d4122ea0>)
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:164: assert False
+E   AssertionError: assert 'Pass-rate difference +25.0 percentage points' in '   Verdict: PASS (Skill Lift = +0.00) Skill Lift compares Overall on the metrics and cases both arms scored, so it ca...-rate  difference +25.0 percentage points.   with skill scored trials unavailable; baseline scored trials unavailable '
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:286: AssertionError: assert 'Pass-rate difference +25.0 percentage points' in '   Verdict: PASS (Skill Lift = +0.00) Skill Lift compares Overall on the metrics and cases both arms scored, so it ca...-rate  difference +25.0 percentage points.   with skill scored trials unavailable; baseline scored trials unavailable '
+E   AssertionError: assert 'Skill Lift (for reference)' in '\n  Verdict: FAIL — 1 of 2 cases failed: 1 goal not met (Skill Lift (for \nreference) = +0.20)\nSkill Lift compares O...──────────┴────────────────────────┘\n\n  with skill scored trials unavailable; baseline scored trials unavailable\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:332: AssertionError: assert 'Skill Lift (for reference)' in '\n  Verdict: FAIL — 1 of 2 cases failed: 1 goal not met (Skill Lift (for \nreference) = +0.20)\nSkill Lift compares O...──────────┴────────────────────────┘\n\n  with skill scored trials unavailable; baseline scored trials unavailable\n\n'
+E   AssertionError: assert '2 of 4 cases failed: 1 goal not met, 1 security issue; lift +0.00' in '                       SkillEvaluator Validation Results                        \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━...                               │\n└────────────┴────────┴────────────────────────────────────────────────────────┘\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:380: AssertionError: assert '2 of 4 cases failed: 1 goal not met, 1 security issue; lift +0.00' in '                       SkillEvaluator Validation Results                        \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━...                               │\n└────────────┴────────┴────────────────────────────────────────────────────────┘\n\n'
+E   AssertionError: assert 'goal not met (goal accuracy 0.00)' in '                    SkillEvaluator Validation Results                    \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━...A\nwith skill scored trials unavailable; baseline scored trials unavailable\nPublication eligibility: Not eligible\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:435: AssertionError: assert 'goal not met (goal accuracy 0.00)' in '                    SkillEvaluator Validation Results                    \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━...A\nwith skill scored trials unavailable; baseline scored trials unavailable\nPublication eligibility: Not eligible\n\n'
+E   AssertionError: assert ['3,300', '50.../2; baseline'] == ['3,300', '50...(1 unscored)']
+      
+      At index 3 diff: 'skill 2/2; baseline' != 'skill 2/2; baseline 2/2 (1 unscored)'
+      Use -v to get more diff
+/agent/repos/SkillEvaluator/tests/reporting/test_tier3_token_usage_reports.py:831: AssertionError: assert ['3,300', '50.../2; baseline'] == ['3,300', '50...(1 unscored)']
+=========================== short test summary info ============================
+FAILED tests/reporting/test_rich_markup_escaping.py::test_cli_report_renders_untrusted_text_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_cli_report_renders_untrusted_text_literally[[link=http://x]y[/link]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_trailing_backslashes_render_literally
+FAILED tests/reporting/test_rich_markup_escaping.py::test_report_path_announcement_renders_literally[[/x]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_report_path_announcement_renders_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_tier3_grader_starter_renders_created_path_literally[[/x]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_tier3_grader_starter_renders_created_path_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_harbor_findings_report_renders_skill_and_model_literally
+FAILED tests/reporting/test_terminal_polish.py::test_each_lift_condition_keeps_label_number_and_complete_bar[60]
+FAILED tests/reporting/test_terminal_polish.py::test_direct_tier3_preserves_conditions_and_bars_at_narrow_width[60]
+FAILED tests/reporting/test_terminal_polish.py::test_full_agent_verdict_keeps_displayed_zero_lift_neutral
+FAILED tests/reporting/test_terminal_polish.py::test_agent_eval_summary_shows_required_counts_and_failed_case_reason
+FAILED tests/reporting/test_terminal_polish.py::test_failed_agent_eval_summary_row_shows_verdict_reason_and_lift
+FAILED tests/reporting/test_terminal_polish.py::test_full_summary_shows_completed_agent_eval_counts_without_findings
+FAILED tests/reporting/test_tier3_token_usage_reports.py::test_validate_terminal_prints_agent_rows_and_notes
+15 failed, 2835 passed, 86 skipped in 147.44s (0:02:27)

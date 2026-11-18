@@ -1,0 +1,1874 @@
+python3 -m build
+[93mWARNING[0m Both NO_COLOR and FORCE_COLOR environment variables are set, disabling color
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools >= 77
+  - wheel
+* Getting build dependencies for sdist...
+running egg_info
+writing src/skillevaluator.egg-info/PKG-INFO
+writing dependency_links to src/skillevaluator.egg-info/dependency_links.txt
+writing entry points to src/skillevaluator.egg-info/entry_points.txt
+writing requirements to src/skillevaluator.egg-info/requires.txt
+writing top-level names to src/skillevaluator.egg-info/top_level.txt
+reading manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+* Building sdist...
+running sdist
+running egg_info
+writing src/skillevaluator.egg-info/PKG-INFO
+writing dependency_links to src/skillevaluator.egg-info/dependency_links.txt
+writing entry points to src/skillevaluator.egg-info/entry_points.txt
+writing requirements to src/skillevaluator.egg-info/requires.txt
+writing top-level names to src/skillevaluator.egg-info/top_level.txt
+reading manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+running check
+creating skillevaluator-1.0.1
+creating skillevaluator-1.0.1/src/skillevaluator
+creating skillevaluator-1.0.1/src/skillevaluator.egg-info
+creating skillevaluator-1.0.1/src/skillevaluator/config
+creating skillevaluator-1.0.1/src/skillevaluator/config/profiles
+creating skillevaluator-1.0.1/src/skillevaluator/deduplication
+creating skillevaluator-1.0.1/src/skillevaluator/deduplication/intra_skill
+creating skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+creating skillevaluator-1.0.1/src/skillevaluator/deduplication/utils
+creating skillevaluator-1.0.1/src/skillevaluator/embedding
+creating skillevaluator-1.0.1/src/skillevaluator/evaluation
+creating skillevaluator-1.0.1/src/skillevaluator/harness
+creating skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+creating skillevaluator-1.0.1/src/skillevaluator/inference
+creating skillevaluator-1.0.1/src/skillevaluator/models
+creating skillevaluator-1.0.1/src/skillevaluator/reporting
+creating skillevaluator-1.0.1/src/skillevaluator/reporting/assets
+creating skillevaluator-1.0.1/src/skillevaluator/reporting/dashboard_ui
+creating skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+creating skillevaluator-1.0.1/src/skillevaluator/tier1
+creating skillevaluator-1.0.1/src/skillevaluator/tier2
+creating skillevaluator-1.0.1/src/skillevaluator/tier3
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/harbor/templates
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/nemo_gym
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/evals
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/references
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/scripts
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/calculator
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/calculator/evals
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/calculator/scripts
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list/evals
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list/references
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list/scripts
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer/evals
+creating skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer/scripts
+creating skillevaluator-1.0.1/src/skillevaluator/utils
+creating skillevaluator-1.0.1/src/skillevaluator/validators
+creating skillevaluator-1.0.1/tests
+copying files to skillevaluator-1.0.1...
+copying LICENSE -> skillevaluator-1.0.1
+copying NOTICE -> skillevaluator-1.0.1
+copying README.md -> skillevaluator-1.0.1
+copying THIRD_PARTY_NOTICES.md -> skillevaluator-1.0.1
+copying pyproject.toml -> skillevaluator-1.0.1
+copying src/skillevaluator/__init__.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/_ci_onboarding_all_tiers.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/_ci_onboarding_git.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/_ci_onboarding_pages.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/_ci_onboarding_workflows.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/ci-release-all-tiers.json -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/ci-release.json -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/ci_onboarding.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/cli.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/cli_core.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/cli_help.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/constants.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/doctor.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/evidence.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/finding_verification_policy.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/logging_config.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/model_catalog.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/model_commands.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_component_risk.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_config_risk.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_context_cost.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_dependencies.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_dependency_audit.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_dependency_records.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_discovery.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_format_schema.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_formats.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_inventory.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_manifest.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_markdown.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_mcp.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_member_paths.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_paths.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_permissions.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_refs.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_skills.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/plugin_states.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/precommit.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/provider_config.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/publication_evidence.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/publication_identity.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/publication_text.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/quality_config.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/skillspector_diagnostics.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/skillspector_provenance.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/skillspector_reference_caveats.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/skillspector_references.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/source_identity.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/spdx.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/tier3_environments.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/tier_group.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator/tier_workflows.py -> skillevaluator-1.0.1/src/skillevaluator
+copying src/skillevaluator.egg-info/PKG-INFO -> skillevaluator-1.0.1/src/skillevaluator.egg-info
+copying src/skillevaluator.egg-info/SOURCES.txt -> skillevaluator-1.0.1/src/skillevaluator.egg-info
+copying src/skillevaluator.egg-info/dependency_links.txt -> skillevaluator-1.0.1/src/skillevaluator.egg-info
+copying src/skillevaluator.egg-info/entry_points.txt -> skillevaluator-1.0.1/src/skillevaluator.egg-info
+copying src/skillevaluator.egg-info/requires.txt -> skillevaluator-1.0.1/src/skillevaluator.egg-info
+copying src/skillevaluator.egg-info/top_level.txt -> skillevaluator-1.0.1/src/skillevaluator.egg-info
+copying src/skillevaluator/config/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/config
+copying src/skillevaluator/config/license_config.yaml -> skillevaluator-1.0.1/src/skillevaluator/config
+copying src/skillevaluator/config/pii_patterns.yaml -> skillevaluator-1.0.1/src/skillevaluator/config
+copying src/skillevaluator/config/quality-default.yaml -> skillevaluator-1.0.1/src/skillevaluator/config
+copying src/skillevaluator/config/semgrep_rules.yaml -> skillevaluator-1.0.1/src/skillevaluator/config
+copying src/skillevaluator/config/unicode_smuggle_patterns.yaml -> skillevaluator-1.0.1/src/skillevaluator/config
+copying src/skillevaluator/config/profiles/default.yaml -> skillevaluator-1.0.1/src/skillevaluator/config/profiles
+copying src/skillevaluator/config/profiles/registry.yaml -> skillevaluator-1.0.1/src/skillevaluator/config/profiles
+copying src/skillevaluator/deduplication/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication
+copying src/skillevaluator/deduplication/intra_skill/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/intra_skill_validator.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/llm_analyzer.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/semantic_clustering.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/plugin/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/catalog.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/catalog_checks.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/commands.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/intra_plugin_validator.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/llm_analyzer.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/profile.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/utils/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/utils
+copying src/skillevaluator/deduplication/utils/chunker.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/utils
+copying src/skillevaluator/deduplication/utils/skill_collector.py -> skillevaluator-1.0.1/src/skillevaluator/deduplication/utils
+copying src/skillevaluator/embedding/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/embedding
+copying src/skillevaluator/embedding/client.py -> skillevaluator-1.0.1/src/skillevaluator/embedding
+copying src/skillevaluator/embedding/extractor.py -> skillevaluator-1.0.1/src/skillevaluator/embedding
+copying src/skillevaluator/embedding/limits.py -> skillevaluator-1.0.1/src/skillevaluator/embedding
+copying src/skillevaluator/embedding/registry.py -> skillevaluator-1.0.1/src/skillevaluator/embedding
+copying src/skillevaluator/evaluation/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/dataset_case_removal.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/dimension_judge.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/insights_judge.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/options.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/results.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/service.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_expectations.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_feedback_chat.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_findings.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_report.py -> skillevaluator-1.0.1/src/skillevaluator/evaluation
+copying src/skillevaluator/harness/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/harness
+copying src/skillevaluator/harness/overlay.py -> skillevaluator-1.0.1/src/skillevaluator/harness
+copying src/skillevaluator/harness/plugin.py -> skillevaluator-1.0.1/src/skillevaluator/harness
+copying src/skillevaluator/harness/report.py -> skillevaluator-1.0.1/src/skillevaluator/harness
+copying src/skillevaluator/harness/profiles/claude-code.yaml -> skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/codex.yaml -> skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/copilot-cli.yaml -> skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/hermes.yaml -> skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/openclaw.yaml -> skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/opencode.yaml -> skillevaluator-1.0.1/src/skillevaluator/harness/profiles
+copying src/skillevaluator/inference/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/inference/client.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/inference/diagnostics.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/inference/finding_verifier.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/inference/json_span.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/inference/retry.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/inference/types.py -> skillevaluator-1.0.1/src/skillevaluator/inference
+copying src/skillevaluator/models/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/field_validators.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/plugin.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/quality.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/result.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/rules.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/skill.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/models/workflows.py -> skillevaluator-1.0.1/src/skillevaluator/models
+copying src/skillevaluator/reporting/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/base.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/benchmark.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/cli.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/console_ui.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/dashboard.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/dashboard_app.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/dashboard_data.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/declarative_coverage.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/diagnostic_view.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/external_metrics.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/finding_summary.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/finding_verification.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/harbor_viewer.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/html.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/insights_view.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/json_reporter.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/junit_reporter.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/markdown.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/naming.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/native_evidence.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_evidence.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_reports.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_runtime.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_runtime_io.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_runtime_render.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_static.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_static_render.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/presentation.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/retained.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/run_status.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/sarif_reporter.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/summary_copy.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/telemetry_view.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/terminal_styles.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier2_views.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier3_coverage.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier3_scope.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier3_token_usage.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/trial_charts.py -> skillevaluator-1.0.1/src/skillevaluator/reporting
+copying src/skillevaluator/reporting/assets/Chart.js-LICENSE.md -> skillevaluator-1.0.1/src/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/README.md -> skillevaluator-1.0.1/src/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/chart.umd.min.js -> skillevaluator-1.0.1/src/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/kurkle-color-LICENSE.md -> skillevaluator-1.0.1/src/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/dashboard_ui/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/reporting/dashboard_ui
+copying src/skillevaluator/reporting/dashboard_ui/skillevaluator_dashboard.py -> skillevaluator-1.0.1/src/skillevaluator/reporting/dashboard_ui
+copying src/skillevaluator/reporting/templates/dataset_diagnostics.html.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/logo.svg.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/native_evidence.html.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/plugin_evidence.html.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/report.html.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/report_ui.css.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/report_ui.js.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/telemetry.html.j2 -> skillevaluator-1.0.1/src/skillevaluator/reporting/templates
+copying src/skillevaluator/tier1/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier1
+copying src/skillevaluator/tier1/commands.py -> skillevaluator-1.0.1/src/skillevaluator/tier1
+copying src/skillevaluator/tier1/plugin_checks.py -> skillevaluator-1.0.1/src/skillevaluator/tier1
+copying src/skillevaluator/tier2/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier2
+copying src/skillevaluator/tier2/commands.py -> skillevaluator-1.0.1/src/skillevaluator/tier2
+copying src/skillevaluator/tier3/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/attempt_verdict.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/baseline_store.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/case_ids.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/case_summary.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/commands.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_coverage.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_migration.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_progress.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_provenance.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_sufficiency.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_utils.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/declarative_coverage.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/decoy_commands.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/decoy_identity.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/decoys.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/evals_config.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/evals_spec.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/evidence_volume.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/external_metrics.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/extras.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/generate_dataset.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/grader_policy.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/grader_validation.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/history.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/interaction_commands.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/interactions.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/loose_parts.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/mcp_proof.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/next_steps.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/output_provenance.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_canary.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_comparisons.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_evidence.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_execution.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_native.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_prepare.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_trace_artifacts.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/result_display.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/results_location.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/runtime_arms.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/token_usage.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/toml_utils.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/trace_import.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/version_comparison.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/workflow.py -> skillevaluator-1.0.1/src/skillevaluator/tier3
+copying src/skillevaluator/tier3/eval_core/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/atif_helpers.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/character_facts.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/checks.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/codex_tool_call_normalizer.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/declarative_checks.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/llm_judge.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/log_converters.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/optional_reference.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/plugin_security.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/plugin_signals.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/runtime_evidence.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/script_invocation.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/secret_redaction.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/shell_lexing.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/grader_reference/suite.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference
+copying src/skillevaluator/tier3/grader_reference/trajectories/arithmetic.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/baseline.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/false-success.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/mixed-behavior.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/negative-value.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/no-answer.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/non-use.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/percentage.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/power.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/recover.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/tuning-add.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/tuning-wrong.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/wrong-answer.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/wrong-format.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/zero.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/harbor/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/activation.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/adapter.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/artifact_retention.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/baseline_timeouts.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/collector.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/gke_environment.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/hermes_agent.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/installed_agents.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/kubeconfig.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/lift_basis.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_agents.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_environment.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_runtime.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_sandbox.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/loose_agents.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/loose_parts_arm.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/metrics.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/native_agents.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/native_staging.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/nvidia_build_bridge.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/progress.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/report.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/report_data.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/resource_usage.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/run_budget.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/runner.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/runtime_preflight.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/secret_redaction.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/secure_copy.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/secure_docker_environment.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/sensitive_stdin.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/stats.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/stream_redaction.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/trajectory_timing.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/templates/custom_grader_runner.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/eval.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/hook_census.sh -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/metric.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/test.sh -> skillevaluator-1.0.1/src/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/nemo_gym/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/backend.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/results.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/runner.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/reference_skills/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills
+copying src/skillevaluator/tier3/reference_skills/api-caller/SKILL.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller
+copying src/skillevaluator/tier3/reference_skills/api-caller/evals/evals.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/evals
+copying src/skillevaluator/tier3/reference_skills/api-caller/references/common_apis.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/references
+copying src/skillevaluator/tier3/reference_skills/api-caller/scripts/call_api.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying src/skillevaluator/tier3/reference_skills/api-caller/scripts/parse_openapi.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying src/skillevaluator/tier3/reference_skills/api-caller/scripts/url_safety.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying src/skillevaluator/tier3/reference_skills/calculator/SKILL.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/calculator
+copying src/skillevaluator/tier3/reference_skills/calculator/evals/evals.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/calculator/evals
+copying src/skillevaluator/tier3/reference_skills/calculator/scripts/calc.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/calculator/scripts
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/SKILL.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/evals.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/rubric.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/task.yaml -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/totals.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures/orders.csv -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/direct.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/vague.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/evals.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files/sales.csv -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts/summarize.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts
+copying src/skillevaluator/tier3/reference_skills/task-list/SKILL.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list
+copying src/skillevaluator/tier3/reference_skills/task-list/evals/evals.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list/evals
+copying src/skillevaluator/tier3/reference_skills/task-list/references/task_patterns.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list/references
+copying src/skillevaluator/tier3/reference_skills/task-list/scripts/tasks.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/task-list/scripts
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/SKILL.md -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/evals/evals.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/evals/evals2.json -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/scripts/analyze_text.py -> skillevaluator-1.0.1/src/skillevaluator/tier3/reference_skills/text-analyzer/scripts
+copying src/skillevaluator/utils/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/helpers.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/json_output.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/path_security.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/process_environment.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/redaction.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/rich_markup.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/scanner_install.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/secret_redaction.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/secure_fs.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/structured_data.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/tier2_paths.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/utils/tool_runner.py -> skillevaluator-1.0.1/src/skillevaluator/utils
+copying src/skillevaluator/validators/__init__.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/base.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/claude_plugin_validate.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/code_risk.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/dependencies.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/endpoint_resolution.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/frontmatter_parser.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/harness.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/hygiene.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/license.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/markdown.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/mcp_static.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/naming_utils.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/pii_ownership.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/pii_waivers.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/plugin_schema.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/policy.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/private_plugin_schema.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/quality_score.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/rubric_eval.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/rules_schema.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/schema.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/script_lint.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/secrets.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/security.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/similarity.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/skillspector_scope.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/unicode_smuggle.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/url_policy.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/version.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying src/skillevaluator/validators/workflows_schema.py -> skillevaluator-1.0.1/src/skillevaluator/validators
+copying tests/test_accuracy_arithmetic.py -> skillevaluator-1.0.1/tests
+copying tests/test_artifact_applicability.py -> skillevaluator-1.0.1/tests
+copying tests/test_base_install.py -> skillevaluator-1.0.1/tests
+copying tests/test_baseline_store.py -> skillevaluator-1.0.1/tests
+copying tests/test_benchmark_rollout_docs.py -> skillevaluator-1.0.1/tests
+copying tests/test_benchmark_source_provenance.py -> skillevaluator-1.0.1/tests
+copying tests/test_catalog_discovery.py -> skillevaluator-1.0.1/tests
+copying tests/test_catalog_results.py -> skillevaluator-1.0.1/tests
+copying tests/test_character_facts.py -> skillevaluator-1.0.1/tests
+copying tests/test_checks_routing.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_change_classifier.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_all_tiers.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_existing.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_git.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_model_routing.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_pages.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_windows.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_onboarding_writes.py -> skillevaluator-1.0.1/tests
+copying tests/test_ci_workflows.py -> skillevaluator-1.0.1/tests
+copying tests/test_cli.py -> skillevaluator-1.0.1/tests
+copying tests/test_cli_banner.py -> skillevaluator-1.0.1/tests
+copying tests/test_cli_html_parser_compat.py -> skillevaluator-1.0.1/tests
+copying tests/test_cli_stdout_encoding.py -> skillevaluator-1.0.1/tests
+copying tests/test_commands.py -> skillevaluator-1.0.1/tests
+copying tests/test_custom_backend_package.py -> skillevaluator-1.0.1/tests
+copying tests/test_custom_execution_backends.py -> skillevaluator-1.0.1/tests
+copying tests/test_dataset_harbor_gate.py -> skillevaluator-1.0.1/tests
+copying tests/test_demo_starter.py -> skillevaluator-1.0.1/tests
+copying tests/test_doctor.py -> skillevaluator-1.0.1/tests
+copying tests/test_evals_config_branding.py -> skillevaluator-1.0.1/tests
+copying tests/test_evaluation_service.py -> skillevaluator-1.0.1/tests
+copying tests/test_gateway_defaults.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_adapter_safety.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_apt_install_lines.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_artifact_retention.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_case_id_safety.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_claude_background_tasks.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_claude_refusal_fallback.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_collector_judge_strategy.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_collector_multistep_trajectory.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_collector_runtime_failures.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_compose_readiness.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_custom_compose_safety.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_dotenv_isolation.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_environment_contract.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_gke_environment.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_gke_mode.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_html_report_failures.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_input_staging.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_local_environment.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_local_mode.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_local_sandbox.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_local_upload.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_metrics_truth.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_negative_control_evidence.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_output_provenance.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_runner_artifacts.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_runner_environment.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_runner_status.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_runtime_preflight.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_runtime_skill_isolation.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_scaffold_transactions.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_secure_copy.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_secure_docker_environment.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_skill_activation.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_stop_on_pass_concurrency.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_task_toml_retry_env.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_timeout_recovery.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_timeout_recovery_docker.py -> skillevaluator-1.0.1/tests
+copying tests/test_harbor_unscored_grading_policy.py -> skillevaluator-1.0.1/tests
+copying tests/test_hermes_agent.py -> skillevaluator-1.0.1/tests
+copying tests/test_issue55_collector_truth.py -> skillevaluator-1.0.1/tests
+copying tests/test_judge_lift_integrity.py -> skillevaluator-1.0.1/tests
+copying tests/test_llm_client_retry.py -> skillevaluator-1.0.1/tests
+copying tests/test_llm_judge.py -> skillevaluator-1.0.1/tests
+copying tests/test_local_mode_contract.py -> skillevaluator-1.0.1/tests
+copying tests/test_metrics_reference_docs.py -> skillevaluator-1.0.1/tests
+copying tests/test_model_catalog.py -> skillevaluator-1.0.1/tests
+copying tests/test_models_command.py -> skillevaluator-1.0.1/tests
+copying tests/test_nemo_gym_backend.py -> skillevaluator-1.0.1/tests
+copying tests/test_nemo_gym_main_integration.py -> skillevaluator-1.0.1/tests
+copying tests/test_nvidia_build_bridge.py -> skillevaluator-1.0.1/tests
+copying tests/test_openclaw_plugin_discovery.py -> skillevaluator-1.0.1/tests
+copying tests/test_openclaw_plugin_smoke.py -> skillevaluator-1.0.1/tests
+copying tests/test_oss_boundary.py -> skillevaluator-1.0.1/tests
+copying tests/test_oss_packaging.py -> skillevaluator-1.0.1/tests
+copying tests/test_oss_source_hygiene.py -> skillevaluator-1.0.1/tests
+copying tests/test_overall_cross_format_consistency.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_context_cost.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_dependency_records.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_discovery.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_format_profiles.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_inventory.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_manifest.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_manifest_opt_in.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_markdown.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_member_paths.py -> skillevaluator-1.0.1/tests
+copying tests/test_plugin_refs.py -> skillevaluator-1.0.1/tests
+copying tests/test_precommit.py -> skillevaluator-1.0.1/tests
+copying tests/test_private_runtime_rereview.py -> skillevaluator-1.0.1/tests
+copying tests/test_private_runtime_review.py -> skillevaluator-1.0.1/tests
+copying tests/test_progress_output.py -> skillevaluator-1.0.1/tests
+copying tests/test_provider_agent_routing.py -> skillevaluator-1.0.1/tests
+copying tests/test_provider_config.py -> skillevaluator-1.0.1/tests
+copying tests/test_public_benchmark_gate.py -> skillevaluator-1.0.1/tests
+copying tests/test_publication_evidence.py -> skillevaluator-1.0.1/tests
+copying tests/test_publication_identity.py -> skillevaluator-1.0.1/tests
+copying tests/test_publication_text.py -> skillevaluator-1.0.1/tests
+copying tests/test_quality_config.py -> skillevaluator-1.0.1/tests
+copying tests/test_quality_policy_gate.py -> skillevaluator-1.0.1/tests
+copying tests/test_redaction_assignments.py -> skillevaluator-1.0.1/tests
+copying tests/test_reference_api_caller.py -> skillevaluator-1.0.1/tests
+copying tests/test_reference_calculator.py -> skillevaluator-1.0.1/tests
+copying tests/test_reference_skill_scripts.py -> skillevaluator-1.0.1/tests
+copying tests/test_reference_text_analyzer.py -> skillevaluator-1.0.1/tests
+copying tests/test_results_location.py -> skillevaluator-1.0.1/tests
+copying tests/test_results_location_legacy_compatibility.py -> skillevaluator-1.0.1/tests
+copying tests/test_retry.py -> skillevaluator-1.0.1/tests
+copying tests/test_retry_exception_chain.py -> skillevaluator-1.0.1/tests
+copying tests/test_retry_provider_transport.py -> skillevaluator-1.0.1/tests
+copying tests/test_safety_boundaries.py -> skillevaluator-1.0.1/tests
+copying tests/test_script_invocation_differential.py -> skillevaluator-1.0.1/tests
+copying tests/test_secure_docker_environment.py -> skillevaluator-1.0.1/tests
+copying tests/test_select_docs_tests.py -> skillevaluator-1.0.1/tests
+copying tests/test_skillevaluator_skill.py -> skillevaluator-1.0.1/tests
+copying tests/test_skillspector_provenance.py -> skillevaluator-1.0.1/tests
+copying tests/test_skip_checks.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier2_command_failures.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier2_report_identity.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_attempt_verdict.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_case_summary.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_compare.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_config_key_parity.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_history.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_max_cases.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_next_steps.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_progress.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_public_runtime.py -> skillevaluator-1.0.1/tests
+copying tests/test_tier3_result_display.py -> skillevaluator-1.0.1/tests
+copying tests/test_trace_import.py -> skillevaluator-1.0.1/tests
+copying tests/test_transport_rules.py -> skillevaluator-1.0.1/tests
+copying tests/test_verifier_error_redaction.py -> skillevaluator-1.0.1/tests
+copying tests/test_version_comparison.py -> skillevaluator-1.0.1/tests
+Writing skillevaluator-1.0.1/setup.cfg
+Creating tar archive
+removing 'skillevaluator-1.0.1' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools >= 77
+  - wheel
+* Getting build dependencies for wheel...
+running egg_info
+writing src/skillevaluator.egg-info/PKG-INFO
+writing dependency_links to src/skillevaluator.egg-info/dependency_links.txt
+writing entry points to src/skillevaluator.egg-info/entry_points.txt
+writing requirements to src/skillevaluator.egg-info/requires.txt
+writing top-level names to src/skillevaluator.egg-info/top_level.txt
+reading manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/skillevaluator
+copying src/skillevaluator/cli_core.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_format_schema.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_refs.py -> build/lib/skillevaluator
+copying src/skillevaluator/_ci_onboarding_workflows.py -> build/lib/skillevaluator
+copying src/skillevaluator/model_commands.py -> build/lib/skillevaluator
+copying src/skillevaluator/__init__.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_formats.py -> build/lib/skillevaluator
+copying src/skillevaluator/provider_config.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_component_risk.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_dependencies.py -> build/lib/skillevaluator
+copying src/skillevaluator/constants.py -> build/lib/skillevaluator
+copying src/skillevaluator/spdx.py -> build/lib/skillevaluator
+copying src/skillevaluator/_ci_onboarding_all_tiers.py -> build/lib/skillevaluator
+copying src/skillevaluator/cli_help.py -> build/lib/skillevaluator
+copying src/skillevaluator/tier_group.py -> build/lib/skillevaluator
+copying src/skillevaluator/source_identity.py -> build/lib/skillevaluator
+copying src/skillevaluator/doctor.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_mcp.py -> build/lib/skillevaluator
+copying src/skillevaluator/quality_config.py -> build/lib/skillevaluator
+copying src/skillevaluator/publication_identity.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_markdown.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_states.py -> build/lib/skillevaluator
+copying src/skillevaluator/skillspector_reference_caveats.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_skills.py -> build/lib/skillevaluator
+copying src/skillevaluator/skillspector_provenance.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_member_paths.py -> build/lib/skillevaluator
+copying src/skillevaluator/publication_evidence.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_paths.py -> build/lib/skillevaluator
+copying src/skillevaluator/skillspector_references.py -> build/lib/skillevaluator
+copying src/skillevaluator/tier_workflows.py -> build/lib/skillevaluator
+copying src/skillevaluator/_ci_onboarding_git.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_config_risk.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_inventory.py -> build/lib/skillevaluator
+copying src/skillevaluator/evidence.py -> build/lib/skillevaluator
+copying src/skillevaluator/model_catalog.py -> build/lib/skillevaluator
+copying src/skillevaluator/finding_verification_policy.py -> build/lib/skillevaluator
+copying src/skillevaluator/ci_onboarding.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_manifest.py -> build/lib/skillevaluator
+copying src/skillevaluator/_ci_onboarding_pages.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_context_cost.py -> build/lib/skillevaluator
+copying src/skillevaluator/tier3_environments.py -> build/lib/skillevaluator
+copying src/skillevaluator/precommit.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_dependency_audit.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_dependency_records.py -> build/lib/skillevaluator
+copying src/skillevaluator/skillspector_diagnostics.py -> build/lib/skillevaluator
+copying src/skillevaluator/publication_text.py -> build/lib/skillevaluator
+copying src/skillevaluator/cli.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_permissions.py -> build/lib/skillevaluator
+copying src/skillevaluator/plugin_discovery.py -> build/lib/skillevaluator
+copying src/skillevaluator/logging_config.py -> build/lib/skillevaluator
+creating build/lib/skillevaluator/models
+copying src/skillevaluator/models/quality.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/field_validators.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/__init__.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/plugin.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/result.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/workflows.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/skill.py -> build/lib/skillevaluator/models
+copying src/skillevaluator/models/rules.py -> build/lib/skillevaluator/models
+creating build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_runtime_io.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/markdown.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/native_evidence.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/finding_verification.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/__init__.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_static.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/finding_summary.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/trial_charts.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/json_reporter.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/harbor_viewer.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_runtime.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/terminal_styles.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/console_ui.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/summary_copy.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/base.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/junit_reporter.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/dashboard_data.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_static_render.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier3_scope.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_runtime_render.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/retained.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier3_token_usage.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_evidence.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/benchmark.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/html.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/run_status.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/dashboard_app.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/presentation.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/declarative_coverage.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier2_views.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/sarif_reporter.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/insights_view.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/naming.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/diagnostic_view.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/telemetry_view.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/external_metrics.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/plugin_reports.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/dashboard.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/tier3_coverage.py -> build/lib/skillevaluator/reporting
+copying src/skillevaluator/reporting/cli.py -> build/lib/skillevaluator/reporting
+creating build/lib/skillevaluator/config
+copying src/skillevaluator/config/__init__.py -> build/lib/skillevaluator/config
+creating build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/insights_judge.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/results.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/dimension_judge.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_report.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/__init__.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/service.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/options.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_findings.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_expectations.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/tier3_feedback_chat.py -> build/lib/skillevaluator/evaluation
+copying src/skillevaluator/evaluation/dataset_case_removal.py -> build/lib/skillevaluator/evaluation
+creating build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/__init__.py -> build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/client.py -> build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/json_span.py -> build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/diagnostics.py -> build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/retry.py -> build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/finding_verifier.py -> build/lib/skillevaluator/inference
+copying src/skillevaluator/inference/types.py -> build/lib/skillevaluator/inference
+creating build/lib/skillevaluator/harness
+copying src/skillevaluator/harness/__init__.py -> build/lib/skillevaluator/harness
+copying src/skillevaluator/harness/plugin.py -> build/lib/skillevaluator/harness
+copying src/skillevaluator/harness/overlay.py -> build/lib/skillevaluator/harness
+copying src/skillevaluator/harness/report.py -> build/lib/skillevaluator/harness
+creating build/lib/skillevaluator/tier2
+copying src/skillevaluator/tier2/__init__.py -> build/lib/skillevaluator/tier2
+copying src/skillevaluator/tier2/commands.py -> build/lib/skillevaluator/tier2
+creating build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/markdown.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/policy.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/__init__.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/secrets.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/security.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/harness.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/claude_plugin_validate.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/plugin_schema.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/hygiene.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/unicode_smuggle.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/base.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/pii_waivers.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/version.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/pii_ownership.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/url_policy.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/rubric_eval.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/workflows_schema.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/skillspector_scope.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/frontmatter_parser.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/quality_score.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/similarity.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/private_plugin_schema.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/rules_schema.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/code_risk.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/naming_utils.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/mcp_static.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/license.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/script_lint.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/dependencies.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/schema.py -> build/lib/skillevaluator/validators
+copying src/skillevaluator/validators/endpoint_resolution.py -> build/lib/skillevaluator/validators
+creating build/lib/skillevaluator/embedding
+copying src/skillevaluator/embedding/__init__.py -> build/lib/skillevaluator/embedding
+copying src/skillevaluator/embedding/registry.py -> build/lib/skillevaluator/embedding
+copying src/skillevaluator/embedding/limits.py -> build/lib/skillevaluator/embedding
+copying src/skillevaluator/embedding/client.py -> build/lib/skillevaluator/embedding
+copying src/skillevaluator/embedding/extractor.py -> build/lib/skillevaluator/embedding
+creating build/lib/skillevaluator/tier1
+copying src/skillevaluator/tier1/__init__.py -> build/lib/skillevaluator/tier1
+copying src/skillevaluator/tier1/plugin_checks.py -> build/lib/skillevaluator/tier1
+copying src/skillevaluator/tier1/commands.py -> build/lib/skillevaluator/tier1
+creating build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/rich_markup.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/__init__.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/path_security.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/process_environment.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/scanner_install.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/secure_fs.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/structured_data.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/redaction.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/secret_redaction.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/json_output.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/helpers.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/tool_runner.py -> build/lib/skillevaluator/utils
+copying src/skillevaluator/utils/tier2_paths.py -> build/lib/skillevaluator/utils
+creating build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/evidence_volume.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/generate_dataset.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_provenance.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/decoy_commands.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/__init__.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_execution.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/extras.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_migration.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/trace_import.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/evals_config.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/grader_validation.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/next_steps.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/evals_spec.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_canary.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/decoy_identity.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_sufficiency.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/baseline_store.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/results_location.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/history.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/interaction_commands.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_prepare.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/result_display.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_evidence.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/toml_utils.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/case_ids.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_coverage.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_utils.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_trace_artifacts.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/dataset_progress.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_comparisons.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/declarative_coverage.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/token_usage.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/runtime_arms.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/output_provenance.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/loose_parts.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/workflow.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/plugin_native.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/mcp_proof.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/commands.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/external_metrics.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/decoys.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/grader_policy.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/attempt_verdict.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/case_summary.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/version_comparison.py -> build/lib/skillevaluator/tier3
+copying src/skillevaluator/tier3/interactions.py -> build/lib/skillevaluator/tier3
+creating build/lib/skillevaluator/deduplication
+copying src/skillevaluator/deduplication/__init__.py -> build/lib/skillevaluator/deduplication
+creating build/lib/skillevaluator/reporting/dashboard_ui
+copying src/skillevaluator/reporting/dashboard_ui/__init__.py -> build/lib/skillevaluator/reporting/dashboard_ui
+copying src/skillevaluator/reporting/dashboard_ui/skillevaluator_dashboard.py -> build/lib/skillevaluator/reporting/dashboard_ui
+creating build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/secure_copy.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/run_budget.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/__init__.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/loose_parts_arm.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/artifact_retention.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/progress.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/nvidia_build_bridge.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/gke_environment.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/baseline_timeouts.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/resource_usage.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_agents.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_environment.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/metrics.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/runner.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_sandbox.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/adapter.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/stats.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/native_agents.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/report_data.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/stream_redaction.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/kubeconfig.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/hermes_agent.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/report.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/secret_redaction.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/collector.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/lift_basis.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/activation.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/sensitive_stdin.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/native_staging.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/local_runtime.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/loose_agents.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/trajectory_timing.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/runtime_preflight.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/installed_agents.py -> build/lib/skillevaluator/tier3/harbor
+copying src/skillevaluator/tier3/harbor/secure_docker_environment.py -> build/lib/skillevaluator/tier3/harbor
+creating build/lib/skillevaluator/tier3/reference_skills
+copying src/skillevaluator/tier3/reference_skills/__init__.py -> build/lib/skillevaluator/tier3/reference_skills
+creating build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/log_converters.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/character_facts.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/__init__.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/plugin_signals.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/script_invocation.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/optional_reference.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/checks.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/llm_judge.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/atif_helpers.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/secret_redaction.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/shell_lexing.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/runtime_evidence.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/declarative_checks.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/plugin_security.py -> build/lib/skillevaluator/tier3/eval_core
+copying src/skillevaluator/tier3/eval_core/codex_tool_call_normalizer.py -> build/lib/skillevaluator/tier3/eval_core
+creating build/lib/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/results.py -> build/lib/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/__init__.py -> build/lib/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/runner.py -> build/lib/skillevaluator/tier3/nemo_gym
+copying src/skillevaluator/tier3/nemo_gym/backend.py -> build/lib/skillevaluator/tier3/nemo_gym
+creating build/lib/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/metric.py -> build/lib/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/eval.py -> build/lib/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/custom_grader_runner.py -> build/lib/skillevaluator/tier3/harbor/templates
+creating build/lib/skillevaluator/tier3/reference_skills/calculator/scripts
+copying src/skillevaluator/tier3/reference_skills/calculator/scripts/calc.py -> build/lib/skillevaluator/tier3/reference_skills/calculator/scripts
+creating build/lib/skillevaluator/tier3/reference_skills/task-list/scripts
+copying src/skillevaluator/tier3/reference_skills/task-list/scripts/tasks.py -> build/lib/skillevaluator/tier3/reference_skills/task-list/scripts
+creating build/lib/skillevaluator/tier3/reference_skills/text-analyzer/scripts
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/scripts/analyze_text.py -> build/lib/skillevaluator/tier3/reference_skills/text-analyzer/scripts
+creating build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/totals.py -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code
+creating build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts/summarize.py -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts
+creating build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying src/skillevaluator/tier3/reference_skills/api-caller/scripts/parse_openapi.py -> build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying src/skillevaluator/tier3/reference_skills/api-caller/scripts/call_api.py -> build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying src/skillevaluator/tier3/reference_skills/api-caller/scripts/url_safety.py -> build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts
+creating build/lib/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/__init__.py -> build/lib/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/llm_analyzer.py -> build/lib/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/intra_skill_validator.py -> build/lib/skillevaluator/deduplication/intra_skill
+copying src/skillevaluator/deduplication/intra_skill/semantic_clustering.py -> build/lib/skillevaluator/deduplication/intra_skill
+creating build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/__init__.py -> build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/catalog.py -> build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/intra_plugin_validator.py -> build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/catalog_checks.py -> build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/profile.py -> build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/llm_analyzer.py -> build/lib/skillevaluator/deduplication/plugin
+copying src/skillevaluator/deduplication/plugin/commands.py -> build/lib/skillevaluator/deduplication/plugin
+creating build/lib/skillevaluator/deduplication/utils
+copying src/skillevaluator/deduplication/utils/__init__.py -> build/lib/skillevaluator/deduplication/utils
+copying src/skillevaluator/deduplication/utils/chunker.py -> build/lib/skillevaluator/deduplication/utils
+copying src/skillevaluator/deduplication/utils/skill_collector.py -> build/lib/skillevaluator/deduplication/utils
+running egg_info
+writing src/skillevaluator.egg-info/PKG-INFO
+writing dependency_links to src/skillevaluator.egg-info/dependency_links.txt
+writing entry points to src/skillevaluator.egg-info/entry_points.txt
+writing requirements to src/skillevaluator.egg-info/requires.txt
+writing top-level names to src/skillevaluator.egg-info/top_level.txt
+reading manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+adding license file 'THIRD_PARTY_NOTICES.md'
+writing manifest file 'src/skillevaluator.egg-info/SOURCES.txt'
+copying src/skillevaluator/ci-release-all-tiers.json -> build/lib/skillevaluator
+copying src/skillevaluator/ci-release.json -> build/lib/skillevaluator
+creating build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/report_ui.css.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/report_ui.js.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/telemetry.html.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/native_evidence.html.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/dataset_diagnostics.html.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/report.html.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/plugin_evidence.html.j2 -> build/lib/skillevaluator/reporting/templates
+copying src/skillevaluator/reporting/templates/logo.svg.j2 -> build/lib/skillevaluator/reporting/templates
+creating build/lib/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/chart.umd.min.js -> build/lib/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/kurkle-color-LICENSE.md -> build/lib/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/README.md -> build/lib/skillevaluator/reporting/assets
+copying src/skillevaluator/reporting/assets/Chart.js-LICENSE.md -> build/lib/skillevaluator/reporting/assets
+copying src/skillevaluator/config/license_config.yaml -> build/lib/skillevaluator/config
+copying src/skillevaluator/config/pii_patterns.yaml -> build/lib/skillevaluator/config
+copying src/skillevaluator/config/quality-default.yaml -> build/lib/skillevaluator/config
+copying src/skillevaluator/config/semgrep_rules.yaml -> build/lib/skillevaluator/config
+copying src/skillevaluator/config/unicode_smuggle_patterns.yaml -> build/lib/skillevaluator/config
+creating build/lib/skillevaluator/config/profiles
+copying src/skillevaluator/config/profiles/default.yaml -> build/lib/skillevaluator/config/profiles
+copying src/skillevaluator/config/profiles/registry.yaml -> build/lib/skillevaluator/config/profiles
+creating build/lib/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/opencode.yaml -> build/lib/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/copilot-cli.yaml -> build/lib/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/openclaw.yaml -> build/lib/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/claude-code.yaml -> build/lib/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/hermes.yaml -> build/lib/skillevaluator/harness/profiles
+copying src/skillevaluator/harness/profiles/codex.yaml -> build/lib/skillevaluator/harness/profiles
+creating build/lib/skillevaluator/tier3/grader_reference
+copying src/skillevaluator/tier3/grader_reference/suite.json -> build/lib/skillevaluator/tier3/grader_reference
+creating build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/zero.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/baseline.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/tuning-add.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/wrong-format.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/negative-value.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/wrong-answer.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/tuning-wrong.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/false-success.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/recover.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/percentage.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/non-use.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/mixed-behavior.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/power.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/arithmetic.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/grader_reference/trajectories/no-answer.json -> build/lib/skillevaluator/tier3/grader_reference/trajectories
+copying src/skillevaluator/tier3/harbor/templates/hook_census.sh -> build/lib/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/harbor/templates/test.sh -> build/lib/skillevaluator/tier3/harbor/templates
+copying src/skillevaluator/tier3/reference_skills/calculator/SKILL.md -> build/lib/skillevaluator/tier3/reference_skills/calculator
+copying src/skillevaluator/tier3/reference_skills/task-list/SKILL.md -> build/lib/skillevaluator/tier3/reference_skills/task-list
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/SKILL.md -> build/lib/skillevaluator/tier3/reference_skills/text-analyzer
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/SKILL.md -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader
+copying src/skillevaluator/tier3/reference_skills/api-caller/SKILL.md -> build/lib/skillevaluator/tier3/reference_skills/api-caller
+creating build/lib/skillevaluator/tier3/reference_skills/calculator/evals
+copying src/skillevaluator/tier3/reference_skills/calculator/evals/evals.json -> build/lib/skillevaluator/tier3/reference_skills/calculator/evals
+creating build/lib/skillevaluator/tier3/reference_skills/task-list/evals
+copying src/skillevaluator/tier3/reference_skills/task-list/evals/evals.json -> build/lib/skillevaluator/tier3/reference_skills/task-list/evals
+creating build/lib/skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/evals/evals.json -> build/lib/skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying src/skillevaluator/tier3/reference_skills/text-analyzer/evals/evals2.json -> build/lib/skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/evals.json -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals
+creating build/lib/skillevaluator/tier3/reference_skills/api-caller/evals
+copying src/skillevaluator/tier3/reference_skills/api-caller/evals/evals.json -> build/lib/skillevaluator/tier3/reference_skills/api-caller/evals
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/task.yaml -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/rubric.md -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+creating build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/vague.md -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/direct.md -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+creating build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures/orders.csv -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures
+creating build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/evals.json -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals
+creating build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files
+copying src/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files/sales.csv -> build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files
+creating build/lib/skillevaluator/tier3/reference_skills/task-list/references
+copying src/skillevaluator/tier3/reference_skills/task-list/references/task_patterns.md -> build/lib/skillevaluator/tier3/reference_skills/task-list/references
+creating build/lib/skillevaluator/tier3/reference_skills/api-caller/references
+copying src/skillevaluator/tier3/reference_skills/api-caller/references/common_apis.md -> build/lib/skillevaluator/tier3/reference_skills/api-caller/references
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/skillevaluator
+copying build/lib/skillevaluator/cli_core.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_format_schema.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/models
+copying build/lib/skillevaluator/models/quality.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/field_validators.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/plugin.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/result.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/workflows.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/skill.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/models/rules.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/models
+copying build/lib/skillevaluator/plugin_refs.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/plugin_runtime_io.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/markdown.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/native_evidence.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/finding_verification.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/plugin_static.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/finding_summary.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/trial_charts.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/json_reporter.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/harbor_viewer.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+creating build/bdist.linux-x86_64/wheel/skillevaluator/reporting/dashboard_ui
+copying build/lib/skillevaluator/reporting/dashboard_ui/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/dashboard_ui
+copying build/lib/skillevaluator/reporting/dashboard_ui/skillevaluator_dashboard.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/dashboard_ui
+copying build/lib/skillevaluator/reporting/plugin_runtime.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/terminal_styles.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/console_ui.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/summary_copy.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/base.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/junit_reporter.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/dashboard_data.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+creating build/bdist.linux-x86_64/wheel/skillevaluator/reporting/assets
+copying build/lib/skillevaluator/reporting/assets/kurkle-color-LICENSE.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/assets
+copying build/lib/skillevaluator/reporting/assets/README.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/assets
+copying build/lib/skillevaluator/reporting/assets/chart.umd.min.js -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/assets
+copying build/lib/skillevaluator/reporting/assets/Chart.js-LICENSE.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/assets
+copying build/lib/skillevaluator/reporting/plugin_static_render.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/tier3_scope.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/plugin_runtime_render.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/retained.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/tier3_token_usage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/plugin_evidence.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/benchmark.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/html.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/run_status.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/dashboard_app.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/presentation.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/declarative_coverage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/tier2_views.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+creating build/bdist.linux-x86_64/wheel/skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/report_ui.css.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/report_ui.js.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/telemetry.html.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/native_evidence.html.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/dataset_diagnostics.html.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/report.html.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/plugin_evidence.html.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/templates/logo.svg.j2 -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting/templates
+copying build/lib/skillevaluator/reporting/sarif_reporter.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/insights_view.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/naming.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/diagnostic_view.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/telemetry_view.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/external_metrics.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/plugin_reports.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/dashboard.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/tier3_coverage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/reporting/cli.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/reporting
+copying build/lib/skillevaluator/_ci_onboarding_workflows.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/model_commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/config
+copying build/lib/skillevaluator/config/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/config
+copying build/lib/skillevaluator/config/semgrep_rules.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config
+copying build/lib/skillevaluator/config/license_config.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config
+copying build/lib/skillevaluator/config/unicode_smuggle_patterns.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config
+creating build/bdist.linux-x86_64/wheel/skillevaluator/config/profiles
+copying build/lib/skillevaluator/config/profiles/default.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config/profiles
+copying build/lib/skillevaluator/config/profiles/registry.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config/profiles
+copying build/lib/skillevaluator/config/pii_patterns.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config
+copying build/lib/skillevaluator/config/quality-default.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/config
+creating build/bdist.linux-x86_64/wheel/skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/insights_judge.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/results.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/dimension_judge.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/tier3_report.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/service.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/options.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/tier3_findings.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/tier3_expectations.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/tier3_feedback_chat.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/evaluation/dataset_case_removal.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/evaluation
+copying build/lib/skillevaluator/plugin_formats.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/provider_config.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_component_risk.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/inference
+copying build/lib/skillevaluator/inference/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/inference/client.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/inference/json_span.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/inference/diagnostics.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/inference/retry.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/inference/finding_verifier.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/inference/types.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/inference
+copying build/lib/skillevaluator/plugin_dependencies.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/constants.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/spdx.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/_ci_onboarding_all_tiers.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/cli_help.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/tier_group.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/source_identity.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/harness
+copying build/lib/skillevaluator/harness/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness
+copying build/lib/skillevaluator/harness/plugin.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness
+copying build/lib/skillevaluator/harness/overlay.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness
+copying build/lib/skillevaluator/harness/report.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness
+creating build/bdist.linux-x86_64/wheel/skillevaluator/harness/profiles
+copying build/lib/skillevaluator/harness/profiles/opencode.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness/profiles
+copying build/lib/skillevaluator/harness/profiles/copilot-cli.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness/profiles
+copying build/lib/skillevaluator/harness/profiles/openclaw.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness/profiles
+copying build/lib/skillevaluator/harness/profiles/claude-code.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness/profiles
+copying build/lib/skillevaluator/harness/profiles/hermes.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness/profiles
+copying build/lib/skillevaluator/harness/profiles/codex.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/harness/profiles
+copying build/lib/skillevaluator/doctor.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_mcp.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/ci-release.json -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier2
+copying build/lib/skillevaluator/tier2/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier2
+copying build/lib/skillevaluator/tier2/commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier2
+copying build/lib/skillevaluator/quality_config.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/publication_identity.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_markdown.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/validators
+copying build/lib/skillevaluator/validators/markdown.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/policy.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/secrets.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/security.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/harness.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/claude_plugin_validate.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/plugin_schema.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/hygiene.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/unicode_smuggle.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/base.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/pii_waivers.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/version.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/pii_ownership.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/url_policy.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/rubric_eval.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/workflows_schema.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/skillspector_scope.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/frontmatter_parser.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/quality_score.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/similarity.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/private_plugin_schema.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/rules_schema.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/code_risk.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/naming_utils.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/mcp_static.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/license.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/script_lint.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/dependencies.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/schema.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/validators/endpoint_resolution.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/validators
+copying build/lib/skillevaluator/plugin_states.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/skillspector_reference_caveats.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_skills.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/skillspector_provenance.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_member_paths.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/publication_evidence.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_paths.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/skillspector_references.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/embedding
+copying build/lib/skillevaluator/embedding/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/embedding
+copying build/lib/skillevaluator/embedding/registry.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/embedding
+copying build/lib/skillevaluator/embedding/limits.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/embedding
+copying build/lib/skillevaluator/embedding/client.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/embedding
+copying build/lib/skillevaluator/embedding/extractor.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/embedding
+copying build/lib/skillevaluator/tier_workflows.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/ci-release-all-tiers.json -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/_ci_onboarding_git.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_config_risk.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_inventory.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/evidence.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/model_catalog.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier1
+copying build/lib/skillevaluator/tier1/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier1
+copying build/lib/skillevaluator/tier1/plugin_checks.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier1
+copying build/lib/skillevaluator/tier1/commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier1
+copying build/lib/skillevaluator/finding_verification_policy.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/ci_onboarding.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_manifest.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/utils
+copying build/lib/skillevaluator/utils/rich_markup.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/path_security.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/process_environment.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/scanner_install.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/secure_fs.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/structured_data.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/redaction.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/secret_redaction.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/json_output.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/helpers.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/tool_runner.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/utils/tier2_paths.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/utils
+copying build/lib/skillevaluator/_ci_onboarding_pages.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/evidence_volume.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/generate_dataset.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/dataset_provenance.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/grader_reference
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/zero.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/baseline.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/tuning-add.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/wrong-format.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/negative-value.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/wrong-answer.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/tuning-wrong.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/false-success.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/recover.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/percentage.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/non-use.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/mixed-behavior.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/power.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/arithmetic.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/trajectories/no-answer.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference/trajectories
+copying build/lib/skillevaluator/tier3/grader_reference/suite.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/grader_reference
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/secure_copy.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/run_budget.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/loose_parts_arm.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/artifact_retention.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/progress.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/nvidia_build_bridge.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/gke_environment.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/baseline_timeouts.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/resource_usage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/local_agents.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/local_environment.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/metrics.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/runner.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/local_sandbox.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/adapter.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/stats.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/native_agents.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/report_data.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/stream_redaction.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/kubeconfig.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/hermes_agent.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/report.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/secret_redaction.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/collector.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/lift_basis.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/harbor/templates
+copying build/lib/skillevaluator/tier3/harbor/templates/metric.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor/templates
+copying build/lib/skillevaluator/tier3/harbor/templates/eval.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor/templates
+copying build/lib/skillevaluator/tier3/harbor/templates/hook_census.sh -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor/templates
+copying build/lib/skillevaluator/tier3/harbor/templates/test.sh -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor/templates
+copying build/lib/skillevaluator/tier3/harbor/templates/custom_grader_runner.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor/templates
+copying build/lib/skillevaluator/tier3/harbor/activation.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/sensitive_stdin.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/native_staging.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/local_runtime.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/loose_agents.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/trajectory_timing.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/runtime_preflight.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/installed_agents.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/harbor/secure_docker_environment.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/harbor
+copying build/lib/skillevaluator/tier3/decoy_commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_execution.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/extras.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/dataset_migration.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/trace_import.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/evals_config.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/grader_validation.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills
+copying build/lib/skillevaluator/tier3/reference_skills/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/calculator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/calculator/evals
+copying build/lib/skillevaluator/tier3/reference_skills/calculator/evals/evals.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/calculator/evals
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/calculator/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/calculator/scripts/calc.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/calculator/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/calculator/SKILL.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/calculator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/task-list
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/task-list/evals
+copying build/lib/skillevaluator/tier3/reference_skills/task-list/evals/evals.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/task-list/evals
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/task-list/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/task-list/scripts/tasks.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/task-list/scripts
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/task-list/references
+copying build/lib/skillevaluator/tier3/reference_skills/task-list/references/task_patterns.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/task-list/references
+copying build/lib/skillevaluator/tier3/reference_skills/task-list/SKILL.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/task-list
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/text-analyzer
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying build/lib/skillevaluator/tier3/reference_skills/text-analyzer/evals/evals.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/text-analyzer/evals
+copying build/lib/skillevaluator/tier3/reference_skills/text-analyzer/evals/evals2.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/text-analyzer/evals
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/text-analyzer/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/text-analyzer/scripts/analyze_text.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/text-analyzer/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/text-analyzer/SKILL.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/text-analyzer
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/evals.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/task.yaml -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/vague.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/direct.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures/orders.csv -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/totals.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/rubric.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/evals.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files/sales.csv -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts/summarize.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/create-custom-grader/SKILL.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/create-custom-grader
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/api-caller
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/api-caller/evals
+copying build/lib/skillevaluator/tier3/reference_skills/api-caller/evals/evals.json -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/api-caller/evals
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/api-caller/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts/parse_openapi.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/api-caller/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts/call_api.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/api-caller/scripts
+copying build/lib/skillevaluator/tier3/reference_skills/api-caller/scripts/url_safety.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/api-caller/scripts
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/reference_skills/api-caller/references
+copying build/lib/skillevaluator/tier3/reference_skills/api-caller/references/common_apis.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/api-caller/references
+copying build/lib/skillevaluator/tier3/reference_skills/api-caller/SKILL.md -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/reference_skills/api-caller
+copying build/lib/skillevaluator/tier3/next_steps.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/evals_spec.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_canary.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/decoy_identity.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/dataset_sufficiency.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/baseline_store.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/log_converters.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/character_facts.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/plugin_signals.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/script_invocation.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/optional_reference.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/checks.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/llm_judge.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/atif_helpers.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/secret_redaction.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/shell_lexing.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/runtime_evidence.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/declarative_checks.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/plugin_security.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/eval_core/codex_tool_call_normalizer.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/eval_core
+copying build/lib/skillevaluator/tier3/results_location.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/history.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/interaction_commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_prepare.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/result_display.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_evidence.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/toml_utils.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/case_ids.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/dataset_coverage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/dataset_utils.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_trace_artifacts.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/dataset_progress.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_comparisons.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/declarative_coverage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/token_usage.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/runtime_arms.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/output_provenance.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/loose_parts.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/workflow.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/plugin_native.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/mcp_proof.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/external_metrics.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+creating build/bdist.linux-x86_64/wheel/skillevaluator/tier3/nemo_gym
+copying build/lib/skillevaluator/tier3/nemo_gym/results.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/nemo_gym
+copying build/lib/skillevaluator/tier3/nemo_gym/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/nemo_gym
+copying build/lib/skillevaluator/tier3/nemo_gym/runner.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/nemo_gym
+copying build/lib/skillevaluator/tier3/nemo_gym/backend.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3/nemo_gym
+copying build/lib/skillevaluator/tier3/decoys.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/grader_policy.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/attempt_verdict.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/case_summary.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/version_comparison.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/tier3/interactions.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/tier3
+copying build/lib/skillevaluator/plugin_context_cost.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/tier3_environments.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/precommit.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_dependency_audit.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_dependency_records.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+creating build/bdist.linux-x86_64/wheel/skillevaluator/deduplication
+copying build/lib/skillevaluator/deduplication/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication
+creating build/bdist.linux-x86_64/wheel/skillevaluator/deduplication/intra_skill
+copying build/lib/skillevaluator/deduplication/intra_skill/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/intra_skill
+copying build/lib/skillevaluator/deduplication/intra_skill/llm_analyzer.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/intra_skill
+copying build/lib/skillevaluator/deduplication/intra_skill/intra_skill_validator.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/intra_skill
+copying build/lib/skillevaluator/deduplication/intra_skill/semantic_clustering.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/intra_skill
+creating build/bdist.linux-x86_64/wheel/skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/catalog.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/intra_plugin_validator.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/catalog_checks.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/profile.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/llm_analyzer.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+copying build/lib/skillevaluator/deduplication/plugin/commands.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/plugin
+creating build/bdist.linux-x86_64/wheel/skillevaluator/deduplication/utils
+copying build/lib/skillevaluator/deduplication/utils/__init__.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/utils
+copying build/lib/skillevaluator/deduplication/utils/chunker.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/utils
+copying build/lib/skillevaluator/deduplication/utils/skill_collector.py -> build/bdist.linux-x86_64/wheel/./skillevaluator/deduplication/utils
+copying build/lib/skillevaluator/skillspector_diagnostics.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/publication_text.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/cli.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_permissions.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/plugin_discovery.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+copying build/lib/skillevaluator/logging_config.py -> build/bdist.linux-x86_64/wheel/./skillevaluator
+running install_egg_info
+Copying src/skillevaluator.egg-info to build/bdist.linux-x86_64/wheel/./skillevaluator-1.0.1-py3.13.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/skillevaluator-1.0.1.dist-info/WHEEL
+creating '/agent/repos/SkillEvaluator/dist/.tmp-g9gwpk46/skillevaluator-1.0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'skillevaluator/__init__.py'
+adding 'skillevaluator/_ci_onboarding_all_tiers.py'
+adding 'skillevaluator/_ci_onboarding_git.py'
+adding 'skillevaluator/_ci_onboarding_pages.py'
+adding 'skillevaluator/_ci_onboarding_workflows.py'
+adding 'skillevaluator/ci-release-all-tiers.json'
+adding 'skillevaluator/ci-release.json'
+adding 'skillevaluator/ci_onboarding.py'
+adding 'skillevaluator/cli.py'
+adding 'skillevaluator/cli_core.py'
+adding 'skillevaluator/cli_help.py'
+adding 'skillevaluator/constants.py'
+adding 'skillevaluator/doctor.py'
+adding 'skillevaluator/evidence.py'
+adding 'skillevaluator/finding_verification_policy.py'
+adding 'skillevaluator/logging_config.py'
+adding 'skillevaluator/model_catalog.py'
+adding 'skillevaluator/model_commands.py'
+adding 'skillevaluator/plugin_component_risk.py'
+adding 'skillevaluator/plugin_config_risk.py'
+adding 'skillevaluator/plugin_context_cost.py'
+adding 'skillevaluator/plugin_dependencies.py'
+adding 'skillevaluator/plugin_dependency_audit.py'
+adding 'skillevaluator/plugin_dependency_records.py'
+adding 'skillevaluator/plugin_discovery.py'
+adding 'skillevaluator/plugin_format_schema.py'
+adding 'skillevaluator/plugin_formats.py'
+adding 'skillevaluator/plugin_inventory.py'
+adding 'skillevaluator/plugin_manifest.py'
+adding 'skillevaluator/plugin_markdown.py'
+adding 'skillevaluator/plugin_mcp.py'
+adding 'skillevaluator/plugin_member_paths.py'
+adding 'skillevaluator/plugin_paths.py'
+adding 'skillevaluator/plugin_permissions.py'
+adding 'skillevaluator/plugin_refs.py'
+adding 'skillevaluator/plugin_skills.py'
+adding 'skillevaluator/plugin_states.py'
+adding 'skillevaluator/precommit.py'
+adding 'skillevaluator/provider_config.py'
+adding 'skillevaluator/publication_evidence.py'
+adding 'skillevaluator/publication_identity.py'
+adding 'skillevaluator/publication_text.py'
+adding 'skillevaluator/quality_config.py'
+adding 'skillevaluator/skillspector_diagnostics.py'
+adding 'skillevaluator/skillspector_provenance.py'
+adding 'skillevaluator/skillspector_reference_caveats.py'
+adding 'skillevaluator/skillspector_references.py'
+adding 'skillevaluator/source_identity.py'
+adding 'skillevaluator/spdx.py'
+adding 'skillevaluator/tier3_environments.py'
+adding 'skillevaluator/tier_group.py'
+adding 'skillevaluator/tier_workflows.py'
+adding 'skillevaluator/config/__init__.py'
+adding 'skillevaluator/config/license_config.yaml'
+adding 'skillevaluator/config/pii_patterns.yaml'
+adding 'skillevaluator/config/quality-default.yaml'
+adding 'skillevaluator/config/semgrep_rules.yaml'
+adding 'skillevaluator/config/unicode_smuggle_patterns.yaml'
+adding 'skillevaluator/config/profiles/default.yaml'
+adding 'skillevaluator/config/profiles/registry.yaml'
+adding 'skillevaluator/deduplication/__init__.py'
+adding 'skillevaluator/deduplication/intra_skill/__init__.py'
+adding 'skillevaluator/deduplication/intra_skill/intra_skill_validator.py'
+adding 'skillevaluator/deduplication/intra_skill/llm_analyzer.py'
+adding 'skillevaluator/deduplication/intra_skill/semantic_clustering.py'
+adding 'skillevaluator/deduplication/plugin/__init__.py'
+adding 'skillevaluator/deduplication/plugin/catalog.py'
+adding 'skillevaluator/deduplication/plugin/catalog_checks.py'
+adding 'skillevaluator/deduplication/plugin/commands.py'
+adding 'skillevaluator/deduplication/plugin/intra_plugin_validator.py'
+adding 'skillevaluator/deduplication/plugin/llm_analyzer.py'
+adding 'skillevaluator/deduplication/plugin/profile.py'
+adding 'skillevaluator/deduplication/utils/__init__.py'
+adding 'skillevaluator/deduplication/utils/chunker.py'
+adding 'skillevaluator/deduplication/utils/skill_collector.py'
+adding 'skillevaluator/embedding/__init__.py'
+adding 'skillevaluator/embedding/client.py'
+adding 'skillevaluator/embedding/extractor.py'
+adding 'skillevaluator/embedding/limits.py'
+adding 'skillevaluator/embedding/registry.py'
+adding 'skillevaluator/evaluation/__init__.py'
+adding 'skillevaluator/evaluation/dataset_case_removal.py'
+adding 'skillevaluator/evaluation/dimension_judge.py'
+adding 'skillevaluator/evaluation/insights_judge.py'
+adding 'skillevaluator/evaluation/options.py'
+adding 'skillevaluator/evaluation/results.py'
+adding 'skillevaluator/evaluation/service.py'
+adding 'skillevaluator/evaluation/tier3_expectations.py'
+adding 'skillevaluator/evaluation/tier3_feedback_chat.py'
+adding 'skillevaluator/evaluation/tier3_findings.py'
+adding 'skillevaluator/evaluation/tier3_report.py'
+adding 'skillevaluator/harness/__init__.py'
+adding 'skillevaluator/harness/overlay.py'
+adding 'skillevaluator/harness/plugin.py'
+adding 'skillevaluator/harness/report.py'
+adding 'skillevaluator/harness/profiles/claude-code.yaml'
+adding 'skillevaluator/harness/profiles/codex.yaml'
+adding 'skillevaluator/harness/profiles/copilot-cli.yaml'
+adding 'skillevaluator/harness/profiles/hermes.yaml'
+adding 'skillevaluator/harness/profiles/openclaw.yaml'
+adding 'skillevaluator/harness/profiles/opencode.yaml'
+adding 'skillevaluator/inference/__init__.py'
+adding 'skillevaluator/inference/client.py'
+adding 'skillevaluator/inference/diagnostics.py'
+adding 'skillevaluator/inference/finding_verifier.py'
+adding 'skillevaluator/inference/json_span.py'
+adding 'skillevaluator/inference/retry.py'
+adding 'skillevaluator/inference/types.py'
+adding 'skillevaluator/models/__init__.py'
+adding 'skillevaluator/models/field_validators.py'
+adding 'skillevaluator/models/plugin.py'
+adding 'skillevaluator/models/quality.py'
+adding 'skillevaluator/models/result.py'
+adding 'skillevaluator/models/rules.py'
+adding 'skillevaluator/models/skill.py'
+adding 'skillevaluator/models/workflows.py'
+adding 'skillevaluator/reporting/__init__.py'
+adding 'skillevaluator/reporting/base.py'
+adding 'skillevaluator/reporting/benchmark.py'
+adding 'skillevaluator/reporting/cli.py'
+adding 'skillevaluator/reporting/console_ui.py'
+adding 'skillevaluator/reporting/dashboard.py'
+adding 'skillevaluator/reporting/dashboard_app.py'
+adding 'skillevaluator/reporting/dashboard_data.py'
+adding 'skillevaluator/reporting/declarative_coverage.py'
+adding 'skillevaluator/reporting/diagnostic_view.py'
+adding 'skillevaluator/reporting/external_metrics.py'
+adding 'skillevaluator/reporting/finding_summary.py'
+adding 'skillevaluator/reporting/finding_verification.py'
+adding 'skillevaluator/reporting/harbor_viewer.py'
+adding 'skillevaluator/reporting/html.py'
+adding 'skillevaluator/reporting/insights_view.py'
+adding 'skillevaluator/reporting/json_reporter.py'
+adding 'skillevaluator/reporting/junit_reporter.py'
+adding 'skillevaluator/reporting/markdown.py'
+adding 'skillevaluator/reporting/naming.py'
+adding 'skillevaluator/reporting/native_evidence.py'
+adding 'skillevaluator/reporting/plugin_evidence.py'
+adding 'skillevaluator/reporting/plugin_reports.py'
+adding 'skillevaluator/reporting/plugin_runtime.py'
+adding 'skillevaluator/reporting/plugin_runtime_io.py'
+adding 'skillevaluator/reporting/plugin_runtime_render.py'
+adding 'skillevaluator/reporting/plugin_static.py'
+adding 'skillevaluator/reporting/plugin_static_render.py'
+adding 'skillevaluator/reporting/presentation.py'
+adding 'skillevaluator/reporting/retained.py'
+adding 'skillevaluator/reporting/run_status.py'
+adding 'skillevaluator/reporting/sarif_reporter.py'
+adding 'skillevaluator/reporting/summary_copy.py'
+adding 'skillevaluator/reporting/telemetry_view.py'
+adding 'skillevaluator/reporting/terminal_styles.py'
+adding 'skillevaluator/reporting/tier2_views.py'
+adding 'skillevaluator/reporting/tier3_coverage.py'
+adding 'skillevaluator/reporting/tier3_scope.py'
+adding 'skillevaluator/reporting/tier3_token_usage.py'
+adding 'skillevaluator/reporting/trial_charts.py'
+adding 'skillevaluator/reporting/assets/Chart.js-LICENSE.md'
+adding 'skillevaluator/reporting/assets/README.md'
+adding 'skillevaluator/reporting/assets/chart.umd.min.js'
+adding 'skillevaluator/reporting/assets/kurkle-color-LICENSE.md'
+adding 'skillevaluator/reporting/dashboard_ui/__init__.py'
+adding 'skillevaluator/reporting/dashboard_ui/skillevaluator_dashboard.py'
+adding 'skillevaluator/reporting/templates/dataset_diagnostics.html.j2'
+adding 'skillevaluator/reporting/templates/logo.svg.j2'
+adding 'skillevaluator/reporting/templates/native_evidence.html.j2'
+adding 'skillevaluator/reporting/templates/plugin_evidence.html.j2'
+adding 'skillevaluator/reporting/templates/report.html.j2'
+adding 'skillevaluator/reporting/templates/report_ui.css.j2'
+adding 'skillevaluator/reporting/templates/report_ui.js.j2'
+adding 'skillevaluator/reporting/templates/telemetry.html.j2'
+adding 'skillevaluator/tier1/__init__.py'
+adding 'skillevaluator/tier1/commands.py'
+adding 'skillevaluator/tier1/plugin_checks.py'
+adding 'skillevaluator/tier2/__init__.py'
+adding 'skillevaluator/tier2/commands.py'
+adding 'skillevaluator/tier3/__init__.py'
+adding 'skillevaluator/tier3/attempt_verdict.py'
+adding 'skillevaluator/tier3/baseline_store.py'
+adding 'skillevaluator/tier3/case_ids.py'
+adding 'skillevaluator/tier3/case_summary.py'
+adding 'skillevaluator/tier3/commands.py'
+adding 'skillevaluator/tier3/dataset_coverage.py'
+adding 'skillevaluator/tier3/dataset_migration.py'
+adding 'skillevaluator/tier3/dataset_progress.py'
+adding 'skillevaluator/tier3/dataset_provenance.py'
+adding 'skillevaluator/tier3/dataset_sufficiency.py'
+adding 'skillevaluator/tier3/dataset_utils.py'
+adding 'skillevaluator/tier3/declarative_coverage.py'
+adding 'skillevaluator/tier3/decoy_commands.py'
+adding 'skillevaluator/tier3/decoy_identity.py'
+adding 'skillevaluator/tier3/decoys.py'
+adding 'skillevaluator/tier3/evals_config.py'
+adding 'skillevaluator/tier3/evals_spec.py'
+adding 'skillevaluator/tier3/evidence_volume.py'
+adding 'skillevaluator/tier3/external_metrics.py'
+adding 'skillevaluator/tier3/extras.py'
+adding 'skillevaluator/tier3/generate_dataset.py'
+adding 'skillevaluator/tier3/grader_policy.py'
+adding 'skillevaluator/tier3/grader_validation.py'
+adding 'skillevaluator/tier3/history.py'
+adding 'skillevaluator/tier3/interaction_commands.py'
+adding 'skillevaluator/tier3/interactions.py'
+adding 'skillevaluator/tier3/loose_parts.py'
+adding 'skillevaluator/tier3/mcp_proof.py'
+adding 'skillevaluator/tier3/next_steps.py'
+adding 'skillevaluator/tier3/output_provenance.py'
+adding 'skillevaluator/tier3/plugin_canary.py'
+adding 'skillevaluator/tier3/plugin_comparisons.py'
+adding 'skillevaluator/tier3/plugin_evidence.py'
+adding 'skillevaluator/tier3/plugin_execution.py'
+adding 'skillevaluator/tier3/plugin_native.py'
+adding 'skillevaluator/tier3/plugin_prepare.py'
+adding 'skillevaluator/tier3/plugin_trace_artifacts.py'
+adding 'skillevaluator/tier3/result_display.py'
+adding 'skillevaluator/tier3/results_location.py'
+adding 'skillevaluator/tier3/runtime_arms.py'
+adding 'skillevaluator/tier3/token_usage.py'
+adding 'skillevaluator/tier3/toml_utils.py'
+adding 'skillevaluator/tier3/trace_import.py'
+adding 'skillevaluator/tier3/version_comparison.py'
+adding 'skillevaluator/tier3/workflow.py'
+adding 'skillevaluator/tier3/eval_core/__init__.py'
+adding 'skillevaluator/tier3/eval_core/atif_helpers.py'
+adding 'skillevaluator/tier3/eval_core/character_facts.py'
+adding 'skillevaluator/tier3/eval_core/checks.py'
+adding 'skillevaluator/tier3/eval_core/codex_tool_call_normalizer.py'
+adding 'skillevaluator/tier3/eval_core/declarative_checks.py'
+adding 'skillevaluator/tier3/eval_core/llm_judge.py'
+adding 'skillevaluator/tier3/eval_core/log_converters.py'
+adding 'skillevaluator/tier3/eval_core/optional_reference.py'
+adding 'skillevaluator/tier3/eval_core/plugin_security.py'
+adding 'skillevaluator/tier3/eval_core/plugin_signals.py'
+adding 'skillevaluator/tier3/eval_core/runtime_evidence.py'
+adding 'skillevaluator/tier3/eval_core/script_invocation.py'
+adding 'skillevaluator/tier3/eval_core/secret_redaction.py'
+adding 'skillevaluator/tier3/eval_core/shell_lexing.py'
+adding 'skillevaluator/tier3/grader_reference/suite.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/arithmetic.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/baseline.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/false-success.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/mixed-behavior.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/negative-value.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/no-answer.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/non-use.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/percentage.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/power.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/recover.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/tuning-add.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/tuning-wrong.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/wrong-answer.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/wrong-format.json'
+adding 'skillevaluator/tier3/grader_reference/trajectories/zero.json'
+adding 'skillevaluator/tier3/harbor/__init__.py'
+adding 'skillevaluator/tier3/harbor/activation.py'
+adding 'skillevaluator/tier3/harbor/adapter.py'
+adding 'skillevaluator/tier3/harbor/artifact_retention.py'
+adding 'skillevaluator/tier3/harbor/baseline_timeouts.py'
+adding 'skillevaluator/tier3/harbor/collector.py'
+adding 'skillevaluator/tier3/harbor/gke_environment.py'
+adding 'skillevaluator/tier3/harbor/hermes_agent.py'
+adding 'skillevaluator/tier3/harbor/installed_agents.py'
+adding 'skillevaluator/tier3/harbor/kubeconfig.py'
+adding 'skillevaluator/tier3/harbor/lift_basis.py'
+adding 'skillevaluator/tier3/harbor/local_agents.py'
+adding 'skillevaluator/tier3/harbor/local_environment.py'
+adding 'skillevaluator/tier3/harbor/local_runtime.py'
+adding 'skillevaluator/tier3/harbor/local_sandbox.py'
+adding 'skillevaluator/tier3/harbor/loose_agents.py'
+adding 'skillevaluator/tier3/harbor/loose_parts_arm.py'
+adding 'skillevaluator/tier3/harbor/metrics.py'
+adding 'skillevaluator/tier3/harbor/native_agents.py'
+adding 'skillevaluator/tier3/harbor/native_staging.py'
+adding 'skillevaluator/tier3/harbor/nvidia_build_bridge.py'
+adding 'skillevaluator/tier3/harbor/progress.py'
+adding 'skillevaluator/tier3/harbor/report.py'
+adding 'skillevaluator/tier3/harbor/report_data.py'
+adding 'skillevaluator/tier3/harbor/resource_usage.py'
+adding 'skillevaluator/tier3/harbor/run_budget.py'
+adding 'skillevaluator/tier3/harbor/runner.py'
+adding 'skillevaluator/tier3/harbor/runtime_preflight.py'
+adding 'skillevaluator/tier3/harbor/secret_redaction.py'
+adding 'skillevaluator/tier3/harbor/secure_copy.py'
+adding 'skillevaluator/tier3/harbor/secure_docker_environment.py'
+adding 'skillevaluator/tier3/harbor/sensitive_stdin.py'
+adding 'skillevaluator/tier3/harbor/stats.py'
+adding 'skillevaluator/tier3/harbor/stream_redaction.py'
+adding 'skillevaluator/tier3/harbor/trajectory_timing.py'
+adding 'skillevaluator/tier3/harbor/templates/custom_grader_runner.py'
+adding 'skillevaluator/tier3/harbor/templates/eval.py'
+adding 'skillevaluator/tier3/harbor/templates/hook_census.sh'
+adding 'skillevaluator/tier3/harbor/templates/metric.py'
+adding 'skillevaluator/tier3/harbor/templates/test.sh'
+adding 'skillevaluator/tier3/nemo_gym/__init__.py'
+adding 'skillevaluator/tier3/nemo_gym/backend.py'
+adding 'skillevaluator/tier3/nemo_gym/results.py'
+adding 'skillevaluator/tier3/nemo_gym/runner.py'
+adding 'skillevaluator/tier3/reference_skills/__init__.py'
+adding 'skillevaluator/tier3/reference_skills/api-caller/SKILL.md'
+adding 'skillevaluator/tier3/reference_skills/api-caller/evals/evals.json'
+adding 'skillevaluator/tier3/reference_skills/api-caller/references/common_apis.md'
+adding 'skillevaluator/tier3/reference_skills/api-caller/scripts/call_api.py'
+adding 'skillevaluator/tier3/reference_skills/api-caller/scripts/parse_openapi.py'
+adding 'skillevaluator/tier3/reference_skills/api-caller/scripts/url_safety.py'
+adding 'skillevaluator/tier3/reference_skills/calculator/SKILL.md'
+adding 'skillevaluator/tier3/reference_skills/calculator/evals/evals.json'
+adding 'skillevaluator/tier3/reference_skills/calculator/scripts/calc.py'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/SKILL.md'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/evals.json'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/rubric.md'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/task.yaml'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/totals.py'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/code/fixtures/orders.csv'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/direct.md'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-001/benchmark/prompts/vague.md'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/evals.json'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/evals/files/sales.csv'
+adding 'skillevaluator/tier3/reference_skills/create-custom-grader/evals/files/create-custom-grader-002/csv-summary/scripts/summarize.py'
+adding 'skillevaluator/tier3/reference_skills/task-list/SKILL.md'
+adding 'skillevaluator/tier3/reference_skills/task-list/evals/evals.json'
+adding 'skillevaluator/tier3/reference_skills/task-list/references/task_patterns.md'
+adding 'skillevaluator/tier3/reference_skills/task-list/scripts/tasks.py'
+adding 'skillevaluator/tier3/reference_skills/text-analyzer/SKILL.md'
+adding 'skillevaluator/tier3/reference_skills/text-analyzer/evals/evals.json'
+adding 'skillevaluator/tier3/reference_skills/text-analyzer/evals/evals2.json'
+adding 'skillevaluator/tier3/reference_skills/text-analyzer/scripts/analyze_text.py'
+adding 'skillevaluator/utils/__init__.py'
+adding 'skillevaluator/utils/helpers.py'
+adding 'skillevaluator/utils/json_output.py'
+adding 'skillevaluator/utils/path_security.py'
+adding 'skillevaluator/utils/process_environment.py'
+adding 'skillevaluator/utils/redaction.py'
+adding 'skillevaluator/utils/rich_markup.py'
+adding 'skillevaluator/utils/scanner_install.py'
+adding 'skillevaluator/utils/secret_redaction.py'
+adding 'skillevaluator/utils/secure_fs.py'
+adding 'skillevaluator/utils/structured_data.py'
+adding 'skillevaluator/utils/tier2_paths.py'
+adding 'skillevaluator/utils/tool_runner.py'
+adding 'skillevaluator/validators/__init__.py'
+adding 'skillevaluator/validators/base.py'
+adding 'skillevaluator/validators/claude_plugin_validate.py'
+adding 'skillevaluator/validators/code_risk.py'
+adding 'skillevaluator/validators/dependencies.py'
+adding 'skillevaluator/validators/endpoint_resolution.py'
+adding 'skillevaluator/validators/frontmatter_parser.py'
+adding 'skillevaluator/validators/harness.py'
+adding 'skillevaluator/validators/hygiene.py'
+adding 'skillevaluator/validators/license.py'
+adding 'skillevaluator/validators/markdown.py'
+adding 'skillevaluator/validators/mcp_static.py'
+adding 'skillevaluator/validators/naming_utils.py'
+adding 'skillevaluator/validators/pii_ownership.py'
+adding 'skillevaluator/validators/pii_waivers.py'
+adding 'skillevaluator/validators/plugin_schema.py'
+adding 'skillevaluator/validators/policy.py'
+adding 'skillevaluator/validators/private_plugin_schema.py'
+adding 'skillevaluator/validators/quality_score.py'
+adding 'skillevaluator/validators/rubric_eval.py'
+adding 'skillevaluator/validators/rules_schema.py'
+adding 'skillevaluator/validators/schema.py'
+adding 'skillevaluator/validators/script_lint.py'
+adding 'skillevaluator/validators/secrets.py'
+adding 'skillevaluator/validators/security.py'
+adding 'skillevaluator/validators/similarity.py'
+adding 'skillevaluator/validators/skillspector_scope.py'
+adding 'skillevaluator/validators/unicode_smuggle.py'
+adding 'skillevaluator/validators/url_policy.py'
+adding 'skillevaluator/validators/version.py'
+adding 'skillevaluator/validators/workflows_schema.py'
+adding 'skillevaluator-1.0.1.dist-info/licenses/LICENSE'
+adding 'skillevaluator-1.0.1.dist-info/licenses/NOTICE'
+adding 'skillevaluator-1.0.1.dist-info/licenses/THIRD_PARTY_NOTICES.md'
+adding 'skillevaluator-1.0.1.dist-info/METADATA'
+adding 'skillevaluator-1.0.1.dist-info/WHEEL'
+adding 'skillevaluator-1.0.1.dist-info/entry_points.txt'
+adding 'skillevaluator-1.0.1.dist-info/top_level.txt'
+adding 'skillevaluator-1.0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built skillevaluator-1.0.1.tar.gz and skillevaluator-1.0.1-py3-none-any.whl

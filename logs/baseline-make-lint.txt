@@ -1,0 +1,4 @@
+===== BASELINE LINT =====
+python3 -m ruff check src tests
+[1;32mAll checks passed![0m
+lint_exit=0
