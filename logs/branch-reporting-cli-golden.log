@@ -1,0 +1,215 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0
+rootdir: /agent/repos/SkillEvaluator
+configfile: pyproject.toml
+plugins: cov-7.1.0, anyio-4.16.0, xdist-3.8.0
+collected 3304 items
+
+tests/reporting/test_activation_benchmark_html_regressions.py .........  [  0%]
+tests/reporting/test_activation_validation.py .......................... [  1%]
+...................                                                      [  1%]
+tests/reporting/test_advisory_skip_verdict.py .......................... [  2%]
+........................................................................ [  4%]
+........................................................................ [  6%]
+........................................................................ [  8%]
+........................................................................ [ 11%]
+........................................................................ [ 13%]
+.................................................                        [ 14%]
+tests/reporting/test_applicability_saved_runs.py ....................... [ 15%]
+...                                                                      [ 15%]
+tests/reporting/test_budget_denied_html_context.py ......                [ 15%]
+tests/reporting/test_budget_partial_reporting.py .............           [ 16%]
+tests/reporting/test_case_findings_report.py .....                       [ 16%]
+tests/reporting/test_chart_dependency.py ..........                      [ 16%]
+tests/reporting/test_dashboard_activation_regressions.py ............... [ 17%]
+.....                                                                    [ 17%]
+tests/reporting/test_dashboard_app.py .................................. [ 18%]
+........                                                                 [ 18%]
+tests/reporting/test_dashboard_cli.py .............                      [ 18%]
+tests/reporting/test_dashboard_contract.py ....                          [ 19%]
+tests/reporting/test_dashboard_data.py ................................. [ 20%]
+........................................................................ [ 22%]
+.............                                                            [ 22%]
+tests/reporting/test_dashboard_entry.py .                                [ 22%]
+tests/reporting/test_dataset_generation_provenance.py .................  [ 23%]
+tests/reporting/test_dataset_sufficiency_rendering.py ..............     [ 23%]
+tests/reporting/test_declarative_coverage.py ........................... [ 24%]
+..                                                                       [ 24%]
+tests/reporting/test_diagnostic_trial_comparisons.py ......              [ 24%]
+tests/reporting/test_diagnostic_view.py .....                            [ 24%]
+tests/reporting/test_dimension_explanations.py ....................      [ 25%]
+tests/reporting/test_evidence_views.py ..............................    [ 26%]
+tests/reporting/test_evidence_volume_rendering.py .............          [ 26%]
+tests/reporting/test_execution_backend_reporting.py .................... [ 27%]
+.......                                                                  [ 27%]
+tests/reporting/test_failed_arm_trials.py .....................          [ 28%]
+tests/reporting/test_final_render_context.py ........................... [ 28%]
+.................................................                        [ 30%]
+tests/reporting/test_finding_verification.py ........................... [ 31%]
+...................                                                      [ 31%]
+tests/reporting/test_github_reporter.py ...................              [ 32%]
+tests/reporting/test_incomplete_scans.py ..................              [ 32%]
+tests/reporting/test_insights_view.py .................................. [ 33%]
+                                                                         [ 33%]
+tests/reporting/test_junit_reporter.py ..............................    [ 34%]
+tests/reporting/test_mixed_execution_errors.py .......                   [ 35%]
+tests/reporting/test_native_comparison_assertions.py ..                  [ 35%]
+tests/reporting/test_native_evidence.py ...............................  [ 36%]
+tests/reporting/test_native_feature_restoration.py ..................... [ 36%]
+........                                                                 [ 36%]
+tests/reporting/test_native_harbor_fallback.py ................          [ 37%]
+tests/reporting/test_native_overview_comparison.py ..................... [ 38%]
+......................                                                   [ 38%]
+tests/reporting/test_native_report_parity.py ...........                 [ 39%]
+tests/reporting/test_plugin_evidence_report.py ......................... [ 39%]
+.....                                                                    [ 39%]
+tests/reporting/test_plugin_reports_runtime_composition.py ..........    [ 40%]
+tests/reporting/test_private_runtime_projection.py ..................... [ 40%]
+....                                                                     [ 41%]
+tests/reporting/test_private_runtime_render.py ........                  [ 41%]
+tests/reporting/test_private_runtime_replay.py ......................... [ 42%]
+......                                                                   [ 42%]
+tests/reporting/test_private_static_reports.py ......................... [ 42%]
+........                                                                 [ 43%]
+tests/reporting/test_quality_config_reporting.py .............           [ 43%]
+tests/reporting/test_quality_gate_reports.py ..........                  [ 43%]
+tests/reporting/test_recorded_harbor_uploads.py ....................     [ 44%]
+tests/reporting/test_report_browser.py sssssssssssssssssssssssssssssssss [ 45%]
+sssssssssssssssssssssssssssssssssssssssssssss                            [ 46%]
+tests/reporting/test_report_clarity.py ..................                [ 47%]
+tests/reporting/test_report_data_bounds.py ...........................   [ 48%]
+tests/reporting/test_report_efficiency.py ..                             [ 48%]
+tests/reporting/test_report_efficiency_browser.py ssssssss               [ 48%]
+tests/reporting/test_report_logo.py .....                                [ 48%]
+tests/reporting/test_report_markup_assertions.py .........               [ 48%]
+tests/reporting/test_report_navigation.py ...............                [ 49%]
+tests/reporting/test_report_readability.py ..........                    [ 49%]
+tests/reporting/test_report_redesign.py ................................ [ 50%]
+.........................                                                [ 51%]
+tests/reporting/test_report_version_placement.py .......                 [ 51%]
+tests/reporting/test_reporters.py ...................................... [ 52%]
+........................................................................ [ 54%]
+........................................................................ [ 57%]
+...........................                                              [ 57%]
+tests/reporting/test_resource_comparison.py .......                      [ 58%]
+tests/reporting/test_retained_html.py .................................. [ 59%]
+.............                                                            [ 59%]
+tests/reporting/test_retained_publication_scope.py ..................... [ 60%]
+...............                                                          [ 60%]
+tests/reporting/test_retained_tiers.py ...............                   [ 61%]
+tests/reporting/test_rich_markup_escaping.py .FF......F.....FF....FF...F [ 61%]
+......                                                                   [ 62%]
+tests/reporting/test_secure_report_output.py ........                    [ 62%]
+tests/reporting/test_shared_run_status.py ..............                 [ 62%]
+tests/reporting/test_skill_activation_reporting.py ..................... [ 63%]
+...                                                                      [ 63%]
+tests/reporting/test_skillspector_reference_summary.py ................. [ 64%]
+.......                                                                  [ 64%]
+tests/reporting/test_telemetry_view.py ..........................        [ 65%]
+tests/reporting/test_terminal_polish.py ..........F......F...........FF. [ 66%]
+FF............................................                           [ 67%]
+tests/reporting/test_tier3_baseline_trial_views.py ..................... [ 68%]
+............                                                             [ 68%]
+tests/reporting/test_tier3_completed_agent_docs.py ...............       [ 68%]
+tests/reporting/test_tier3_expectations.py ..........................    [ 69%]
+tests/reporting/test_tier3_failure_reasons.py .......................... [ 70%]
+..............................                                           [ 71%]
+tests/reporting/test_tier3_incomplete_arms.py .......................... [ 72%]
+......................                                                   [ 72%]
+tests/reporting/test_tier3_scoped_reports.py ........................    [ 73%]
+tests/reporting/test_tier3_skipped_baseline.py .........                 [ 73%]
+tests/reporting/test_tier3_source_validation_reporting.py .............. [ 74%]
+........................................................................ [ 76%]
+........................................................................ [ 78%]
+....................................................                     [ 80%]
+tests/reporting/test_tier3_token_usage_reports.py ...................... [ 80%]
+....................F........................                            [ 82%]
+tests/reporting/test_tier3_unavailable_lift_labels.py ...                [ 82%]
+tests/reporting/test_tier3_validate_cases.py ........................... [ 83%]
+.......                                                                  [ 83%]
+tests/reporting/test_unified_tier3_report.py ........................... [ 84%]
+........................................................................ [ 86%]
+...........................................................              [ 88%]
+tests/reporting/test_verdict_evidence.py ........................        [ 88%]
+tests/test_cli.py ...................................................... [ 90%]
+........................................................................ [ 92%]
+....                                                                     [ 92%]
+tests/golden/test_benchmark_card.py .................................... [ 93%]
+........................................................................ [ 96%]
+........................................................................ [ 98%]
+..............                                                           [ 98%]
+tests/golden/test_cli_surface.py ...                                     [ 98%]
+tests/golden/test_policy_behavior.py ................................... [ 99%]
+..                                                                       [ 99%]
+tests/golden/test_tier3_schema.py .....                                  [100%]
+
+=================================== FAILURES ===================================
+E   AssertionError: assert ['alpha [bold...]evil[/bold]'] == []
+      
+      Left contains 3 more items, first extra item: 'alpha [bold]evil[/bold]'
+      Use -v to get more diff
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:230: AssertionError: assert ['alpha [bold...]evil[/bold]'] == []
+E   AssertionError: assert ['alpha [link...//x]y[/link]'] == []
+      
+      Left contains 6 more items, first extra item: 'alpha [link=http://x]y[/link]'
+      Use -v to get more diff
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:230: AssertionError: assert ['alpha [link...//x]y[/link]'] == []
+E   assert False
+     +  where False = any(<generator object test_trailing_backslashes_render_literally.<locals>.<genexpr> at 0x7fab2dd9aa70>)
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:294: assert False
+E   AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_0/[/x]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n'
+     +  where 'json report: \n/tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n' = export_text()
+     +    where export_text = <console width=80 None>.export_text
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:422: AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_0/[/x]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n'
+E   AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_1/[bold]evil[/bold]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n'
+     +  where 'json report: \n/tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n' = export_text()
+     +    where export_text = <console width=80 None>.export_text
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:422: AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_1/[bold]evil[/bold]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-6/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n'
+E   AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend0/[/x]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend0/[/x].../pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend0/[/x]/evals/grader\n.py. Re-run with --force to overwrite.\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:485: AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend0/[/x]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend0/[/x].../pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend0/[/x]/evals/grader\n.py. Re-run with --force to overwrite.\n'
+E   AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend1/[bold]evil[/bold]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend1/[bol...untu/pytest-6/test_tier3_grader_starter_rend1/[bold]evil[/bold]\n/evals/grader.py. Re-run with --force to overwrite.\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:485: AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend1/[bold]evil[/bold]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-6/test_tier3_grader_starter_rend1/[bol...untu/pytest-6/test_tier3_grader_starter_rend1/[bold]evil[/bold]\n/evals/grader.py. Re-run with --force to overwrite.\n'
+E   AssertionError: assert 'combination for your skill: codex / gpt-[/x]:key:' in '  Findings from best performing agent/model combination for your skill: codex / \ngpt-[/x]:key:\n\n╭─────── skill [bo...                               │\n╰──────────────────────────────────────────────────────────────────────────────╯\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_rich_markup_escaping.py:627: AssertionError: assert 'combination for your skill: codex / gpt-[/x]:key:' in '  Findings from best performing agent/model combination for your skill: codex / \ngpt-[/x]:key:\n\n╭─────── skill [bo...                               │\n╰──────────────────────────────────────────────────────────────────────────────╯\n\n'
+E   assert False
+     +  where False = all(<generator object test_each_lift_condition_keeps_label_number_and_complete_bar.<locals>.<genexpr> at 0x7fab2ddb3d80>)
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:46: assert False
+E   assert False
+     +  where False = all(<generator object test_direct_tier3_preserves_conditions_and_bars_at_narrow_width.<locals>.<genexpr> at 0x7fab2dfbd9a0>)
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:164: assert False
+E   AssertionError: assert 'Pass-rate difference +25.0 percentage points' in '   Verdict: PASS (Skill Lift = +0.00) Skill Lift compares Overall on the metrics and cases both arms scored, so it ca...-rate  difference +25.0 percentage points.   with skill scored trials unavailable; baseline scored trials unavailable '
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:286: AssertionError: assert 'Pass-rate difference +25.0 percentage points' in '   Verdict: PASS (Skill Lift = +0.00) Skill Lift compares Overall on the metrics and cases both arms scored, so it ca...-rate  difference +25.0 percentage points.   with skill scored trials unavailable; baseline scored trials unavailable '
+E   AssertionError: assert 'Skill Lift (for reference)' in '\n  Verdict: FAIL — 1 of 2 cases failed: 1 goal not met (Skill Lift (for \nreference) = +0.20)\nSkill Lift compares O...──────────┴────────────────────────┘\n\n  with skill scored trials unavailable; baseline scored trials unavailable\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:332: AssertionError: assert 'Skill Lift (for reference)' in '\n  Verdict: FAIL — 1 of 2 cases failed: 1 goal not met (Skill Lift (for \nreference) = +0.20)\nSkill Lift compares O...──────────┴────────────────────────┘\n\n  with skill scored trials unavailable; baseline scored trials unavailable\n\n'
+E   AssertionError: assert '2 of 4 cases failed: 1 goal not met, 1 security issue; lift +0.00' in '                       SkillEvaluator Validation Results                        \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━...                               │\n└────────────┴────────┴────────────────────────────────────────────────────────┘\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:380: AssertionError: assert '2 of 4 cases failed: 1 goal not met, 1 security issue; lift +0.00' in '                       SkillEvaluator Validation Results                        \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━...                               │\n└────────────┴────────┴────────────────────────────────────────────────────────┘\n\n'
+E   AssertionError: assert 'goal not met (goal accuracy 0.00)' in '                    SkillEvaluator Validation Results                    \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━...A\nwith skill scored trials unavailable; baseline scored trials unavailable\nPublication eligibility: Not eligible\n\n'
+/agent/repos/SkillEvaluator/tests/reporting/test_terminal_polish.py:435: AssertionError: assert 'goal not met (goal accuracy 0.00)' in '                    SkillEvaluator Validation Results                    \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━...A\nwith skill scored trials unavailable; baseline scored trials unavailable\nPublication eligibility: Not eligible\n\n'
+E   AssertionError: assert ['3,300', '50.../2; baseline'] == ['3,300', '50...(1 unscored)']
+      
+      At index 3 diff: 'skill 2/2; baseline' != 'skill 2/2; baseline 2/2 (1 unscored)'
+      Use -v to get more diff
+/agent/repos/SkillEvaluator/tests/reporting/test_tier3_token_usage_reports.py:831: AssertionError: assert ['3,300', '50.../2; baseline'] == ['3,300', '50...(1 unscored)']
+=============================== warnings summary ===============================
+tests/golden/test_policy_behavior.py: 26 warnings
+  /home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=9298) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/reporting/test_rich_markup_escaping.py::test_cli_report_renders_untrusted_text_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_cli_report_renders_untrusted_text_literally[[link=http://x]y[/link]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_trailing_backslashes_render_literally
+FAILED tests/reporting/test_rich_markup_escaping.py::test_report_path_announcement_renders_literally[[/x]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_report_path_announcement_renders_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_tier3_grader_starter_renders_created_path_literally[[/x]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_tier3_grader_starter_renders_created_path_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_harbor_findings_report_renders_skill_and_model_literally
+FAILED tests/reporting/test_terminal_polish.py::test_each_lift_condition_keeps_label_number_and_complete_bar[60]
+FAILED tests/reporting/test_terminal_polish.py::test_direct_tier3_preserves_conditions_and_bars_at_narrow_width[60]
+FAILED tests/reporting/test_terminal_polish.py::test_full_agent_verdict_keeps_displayed_zero_lift_neutral
+FAILED tests/reporting/test_terminal_polish.py::test_agent_eval_summary_shows_required_counts_and_failed_case_reason
+FAILED tests/reporting/test_terminal_polish.py::test_failed_agent_eval_summary_row_shows_verdict_reason_and_lift
+FAILED tests/reporting/test_terminal_polish.py::test_full_summary_shows_completed_agent_eval_counts_without_findings
+FAILED tests/reporting/test_tier3_token_usage_reports.py::test_validate_terminal_prints_agent_rows_and_notes
+===== 15 failed, 3203 passed, 86 skipped, 26 warnings in 136.88s (0:02:16) =====

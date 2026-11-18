@@ -1,0 +1,2208 @@
+python3 -m pytest
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0
+rootdir: /agent/repos/SkillEvaluator
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, anyio-4.16.0, xdist-3.8.0
+collected 39733 items / 20 deselected / 39713 selected
+
+tests/ci/test_all_tier_preflight.py ............                         [  0%]
+tests/ci/test_all_tier_workflows.py .................................... [  0%]
+......                                                                   [  0%]
+tests/ci/test_benchmark_publish.py ..................................... [  0%]
+.......................                                                  [  0%]
+tests/ci/test_benchmark_report_links.py ........                         [  0%]
+tests/ci/test_benchmark_reports.py ...............................       [  0%]
+tests/ci/test_ci_worker_diagnostics.py ................                  [  0%]
+tests/ci/test_comment_report.py ................................         [  0%]
+tests/ci/test_comment_summary.py ..............................          [  0%]
+tests/ci/test_compact_completeness.py ..                                 [  0%]
+tests/ci/test_evaluate_workflow.py ...........................           [  0%]
+tests/ci/test_feedback.py .............................................. [  0%]
+........................................................................ [  0%]
+..................................................................       [  1%]
+tests/ci/test_gateway_benchmark_workflows.py ..........................  [  1%]
+tests/ci/test_github_admission_workflow.py ............................. [  1%]
+..........................                                               [  1%]
+tests/ci/test_github_api.py ............................................ [  1%]
+...                                                                      [  1%]
+tests/ci/test_gitlab_admission_transport.py ........                     [  1%]
+tests/ci/test_gitlab_default_head_admission.py ......................... [  1%]
+...........                                                              [  1%]
+tests/ci/test_gitlab_enriched_admission.py .......................       [  1%]
+tests/ci/test_gitlab_feedback_relation.py .................              [  1%]
+tests/ci/test_gitlab_feedback_request.py ............................... [  1%]
+....                                                                     [  1%]
+tests/ci/test_gitlab_template.py ..........                              [  1%]
+tests/ci/test_image_build.py ........                                    [  1%]
+tests/ci/test_model_config.py ...............................            [  1%]
+tests/ci/test_native_reports.py .........................                [  1%]
+tests/ci/test_prepare_comments.py ....................                   [  1%]
+tests/ci/test_prepare_security_baselines.py .....                        [  1%]
+tests/ci/test_publish_reports.py ....................................... [  2%]
+........................................................................ [  2%]
+........................................................................ [  2%]
+....................................                                     [  2%]
+tests/ci/test_publisher_workflow.py .................................... [  2%]
+.................                                                        [  2%]
+tests/ci/test_release_image.py ...............                           [  2%]
+tests/ci/test_render_templates.py ............                           [  2%]
+tests/ci/test_report_views.py .......................................... [  2%]
+................................                                         [  2%]
+tests/ci/test_repository_skill_ci.py ....                                [  2%]
+tests/ci/test_run_tier1.py ............................................. [  3%]
+........................................................................ [  3%]
+.....................................FFF..........                       [  3%]
+tests/ci/test_run_tier1_image.py .................................       [  3%]
+tests/ci/test_run_tiers.py ............................................. [  3%]
+............................................                             [  3%]
+tests/ci/test_secret_redaction.py ...................................... [  3%]
+...............                                                          [  3%]
+tests/ci/test_select_changed_skills.py ................................. [  3%]
+......................                                                   [  3%]
+tests/ci/test_smoke_image.py ........................................... [  4%]
+...ss..............                                                      [  4%]
+tests/ci/test_summary_metrics.py ...................                     [  4%]
+tests/ci/test_tier3_execution_complete.py .........................      [  4%]
+tests/ci/test_tier_manifest.py ......................................... [  4%]
+.........                                                                [  4%]
+tests/ci/test_verify_provenance.py .............................         [  4%]
+tests/cli/test_content_type_detection.py ............................... [  4%]
+.............                                                            [  4%]
+tests/cli/test_nemo_gym_autopilot_preflight.py ...                       [  4%]
+tests/cli/test_private_foundations_public_compatibility.py .........     [  4%]
+tests/cli/test_tier_workflows.py ....................................... [  4%]
+...                                                                      [  4%]
+tests/cli/test_validate_defaults.py .......................              [  4%]
+tests/cli/test_validate_manifest_file.py ..................              [  4%]
+tests/cli/test_validate_plugin.py ...                                    [  4%]
+tests/deduplication/intra_skill/test_intra_llm_analyzer.py ............. [  4%]
+............................................................             [  4%]
+tests/deduplication/intra_skill/test_intra_skill_validator.py .......... [  4%]
+........................................................................ [  5%]
+.........................                                                [  5%]
+tests/deduplication/intra_skill/test_semantic_clustering.py ............ [  5%]
+.........                                                                [  5%]
+tests/deduplication/plugin/test_openclaw_profile.py .................... [  5%]
+..............                                                           [  5%]
+tests/deduplication/plugin/test_private_dedup.py ....................... [  5%]
+......................                                                   [  5%]
+tests/deduplication/utils/test_chunk_bounds.py ..............            [  5%]
+tests/deduplication/utils/test_chunker.py .............................. [  5%]
+...............                                                          [  5%]
+tests/deduplication/utils/test_chunker_fences.py ...................     [  5%]
+tests/deduplication/utils/test_skill_collector.py ...................... [  5%]
+....................................s....................                [  5%]
+tests/embedding/test_catalog.py ........................................ [  5%]
+.......s....s.................................                           [  6%]
+tests/embedding/test_client.py ......................................... [  6%]
+............                                                             [  6%]
+tests/embedding/test_collection_coverage.py ............................ [  6%]
+                                                                         [  6%]
+tests/embedding/test_extractor.py ...................................... [  6%]
+.............................................................            [  6%]
+tests/embedding/test_pairwise_preflight.py ................              [  6%]
+tests/embedding/test_registry.py ....................................... [  6%]
+..............                                                           [  6%]
+tests/embedding/test_similarity_limits.py .............................. [  6%]
+...............                                                          [  6%]
+tests/evaluation/test_judges.py ........................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+................                                                         [  7%]
+tests/evaluation/test_tier3_benchmark_contract.py ...................... [  7%]
+.........................                                                [  7%]
+tests/evaluation/test_tier3_feedback_chat.py ........................... [  7%]
+........................................................................ [  7%]
+........................................................................ [  8%]
+...............................F.....                                    [  8%]
+tests/golden/test_benchmark_card.py .................................... [  8%]
+........................................................................ [  8%]
+........................................................................ [  8%]
+..............                                                           [  8%]
+tests/golden/test_cli_surface.py ...                                     [  8%]
+tests/golden/test_policy_behavior.py ................................... [  8%]
+..                                                                       [  8%]
+tests/golden/test_tier3_schema.py .....                                  [  8%]
+tests/harness/test_overlay.py .......................................... [  8%]
+..............F......................................................... [  9%]
+.....                                                                    [  9%]
+tests/harness/test_plugin_compat.py ....................                 [  9%]
+tests/inference/test_diagnostics.py .............................        [  9%]
+tests/inference/test_finding_verifier.py .....                           [  9%]
+tests/inference/test_json_span.py ...............                        [  9%]
+tests/inference/test_llm_client.py ..................................... [  9%]
+........................................................................ [  9%]
+........................................................................ [  9%]
+......................................                                   [  9%]
+tests/models/test_field_validators.py ........                           [  9%]
+tests/models/test_plugin.py ................                             [  9%]
+tests/models/test_result.py .............................                [  9%]
+tests/reporting/test_activation_benchmark_html_regressions.py .........  [  9%]
+tests/reporting/test_activation_validation.py .......................... [  9%]
+...................                                                      [ 10%]
+tests/reporting/test_advisory_skip_verdict.py .......................... [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 11%]
+.................................................                        [ 11%]
+tests/reporting/test_applicability_saved_runs.py ....................... [ 11%]
+...                                                                      [ 11%]
+tests/reporting/test_budget_denied_html_context.py ......                [ 11%]
+tests/reporting/test_budget_partial_reporting.py .............           [ 11%]
+tests/reporting/test_case_findings_report.py .....                       [ 11%]
+tests/reporting/test_chart_dependency.py ..........                      [ 11%]
+tests/reporting/test_dashboard_activation_regressions.py ............... [ 11%]
+.....                                                                    [ 11%]
+tests/reporting/test_dashboard_app.py .................................. [ 11%]
+........                                                                 [ 11%]
+tests/reporting/test_dashboard_cli.py .............                      [ 11%]
+tests/reporting/test_dashboard_contract.py ....                          [ 11%]
+tests/reporting/test_dashboard_data.py ................................. [ 11%]
+........................................................................ [ 11%]
+.............                                                            [ 11%]
+tests/reporting/test_dashboard_entry.py .                                [ 11%]
+tests/reporting/test_dataset_generation_provenance.py .................  [ 11%]
+tests/reporting/test_dataset_sufficiency_rendering.py ..............     [ 11%]
+tests/reporting/test_declarative_coverage.py ........................... [ 11%]
+..                                                                       [ 11%]
+tests/reporting/test_diagnostic_trial_comparisons.py ......              [ 11%]
+tests/reporting/test_diagnostic_view.py .....                            [ 11%]
+tests/reporting/test_dimension_explanations.py ....................      [ 12%]
+tests/reporting/test_evidence_views.py ..............................    [ 12%]
+tests/reporting/test_evidence_volume_rendering.py .............          [ 12%]
+tests/reporting/test_execution_backend_reporting.py .................... [ 12%]
+.......                                                                  [ 12%]
+tests/reporting/test_failed_arm_trials.py .....................          [ 12%]
+tests/reporting/test_final_render_context.py ........................... [ 12%]
+.................................................                        [ 12%]
+tests/reporting/test_finding_verification.py ........................... [ 12%]
+...................                                                      [ 12%]
+tests/reporting/test_github_reporter.py ...................              [ 12%]
+tests/reporting/test_incomplete_scans.py ..................              [ 12%]
+tests/reporting/test_insights_view.py .................................. [ 12%]
+                                                                         [ 12%]
+tests/reporting/test_junit_reporter.py ..............................    [ 12%]
+tests/reporting/test_mixed_execution_errors.py .......                   [ 12%]
+tests/reporting/test_native_comparison_assertions.py ..                  [ 12%]
+tests/reporting/test_native_evidence.py ...............................  [ 12%]
+tests/reporting/test_native_feature_restoration.py ..................... [ 12%]
+........                                                                 [ 12%]
+tests/reporting/test_native_harbor_fallback.py ................          [ 13%]
+tests/reporting/test_native_overview_comparison.py ..................... [ 13%]
+......................                                                   [ 13%]
+tests/reporting/test_native_report_parity.py ...........                 [ 13%]
+tests/reporting/test_plugin_evidence_report.py ......................... [ 13%]
+.....                                                                    [ 13%]
+tests/reporting/test_plugin_reports_runtime_composition.py ..........    [ 13%]
+tests/reporting/test_private_runtime_projection.py ..................... [ 13%]
+....                                                                     [ 13%]
+tests/reporting/test_private_runtime_render.py ........                  [ 13%]
+tests/reporting/test_private_runtime_replay.py ......................... [ 13%]
+......                                                                   [ 13%]
+tests/reporting/test_private_static_reports.py ......................... [ 13%]
+........                                                                 [ 13%]
+tests/reporting/test_quality_config_reporting.py .............           [ 13%]
+tests/reporting/test_quality_gate_reports.py ..........                  [ 13%]
+tests/reporting/test_recorded_harbor_uploads.py ....................     [ 13%]
+tests/reporting/test_report_browser.py sssssssssssssssssssssssssssssssss [ 13%]
+sssssssssssssssssssssssssssssssssssssssssssss                            [ 13%]
+tests/reporting/test_report_clarity.py ..................                [ 13%]
+tests/reporting/test_report_data_bounds.py ...........................   [ 13%]
+tests/reporting/test_report_efficiency.py ..                             [ 13%]
+tests/reporting/test_report_efficiency_browser.py ssssssss               [ 13%]
+tests/reporting/test_report_logo.py .....                                [ 13%]
+tests/reporting/test_report_markup_assertions.py .........               [ 13%]
+tests/reporting/test_report_navigation.py ...............                [ 14%]
+tests/reporting/test_report_readability.py ..........                    [ 14%]
+tests/reporting/test_report_redesign.py ................................ [ 14%]
+.........................                                                [ 14%]
+tests/reporting/test_report_version_placement.py .......                 [ 14%]
+tests/reporting/test_reporters.py ...................................... [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+...........................                                              [ 14%]
+tests/reporting/test_resource_comparison.py .......                      [ 14%]
+tests/reporting/test_retained_html.py .................................. [ 14%]
+.............                                                            [ 14%]
+tests/reporting/test_retained_publication_scope.py ..................... [ 14%]
+...............                                                          [ 14%]
+tests/reporting/test_retained_tiers.py ...............                   [ 14%]
+tests/reporting/test_rich_markup_escaping.py .FF......F.....FF....FF...F [ 15%]
+......                                                                   [ 15%]
+tests/reporting/test_secure_report_output.py ........                    [ 15%]
+tests/reporting/test_shared_run_status.py ..............                 [ 15%]
+tests/reporting/test_skill_activation_reporting.py ..................... [ 15%]
+...                                                                      [ 15%]
+tests/reporting/test_skillspector_reference_summary.py ................. [ 15%]
+.......                                                                  [ 15%]
+tests/reporting/test_telemetry_view.py ..........................        [ 15%]
+tests/reporting/test_terminal_polish.py ..........F......F...........FF. [ 15%]
+FF............................................                           [ 15%]
+tests/reporting/test_tier3_baseline_trial_views.py ..................... [ 15%]
+............                                                             [ 15%]
+tests/reporting/test_tier3_completed_agent_docs.py ...............       [ 15%]
+tests/reporting/test_tier3_expectations.py ..........................    [ 15%]
+tests/reporting/test_tier3_failure_reasons.py .......................... [ 15%]
+..............................                                           [ 15%]
+tests/reporting/test_tier3_incomplete_arms.py .......................... [ 15%]
+......................                                                   [ 15%]
+tests/reporting/test_tier3_scoped_reports.py ........................    [ 16%]
+tests/reporting/test_tier3_skipped_baseline.py .........                 [ 16%]
+tests/reporting/test_tier3_source_validation_reporting.py .............. [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+....................................................                     [ 16%]
+tests/reporting/test_tier3_token_usage_reports.py ...................... [ 16%]
+....................F........................                            [ 16%]
+tests/reporting/test_tier3_unavailable_lift_labels.py ...                [ 16%]
+tests/reporting/test_tier3_validate_cases.py ........................... [ 16%]
+.......                                                                  [ 16%]
+tests/reporting/test_unified_tier3_report.py ........................... [ 16%]
+........................................................................ [ 17%]
+...........................................................              [ 17%]
+tests/reporting/test_verdict_evidence.py ........................        [ 17%]
+tests/test_accuracy_arithmetic.py .......................                [ 17%]
+tests/test_artifact_applicability.py ...............................     [ 17%]
+tests/test_base_install.py .                                             [ 17%]
+tests/test_baseline_store.py ..................................          [ 17%]
+tests/test_benchmark_rollout_docs.py ....                                [ 17%]
+tests/test_benchmark_source_provenance.py .............................. [ 17%]
+........................................................................ [ 17%]
+........................................................................ [ 17%]
+..............................                                           [ 18%]
+tests/test_catalog_discovery.py ........................................ [ 18%]
+                                                                         [ 18%]
+tests/test_catalog_results.py ...........                                [ 18%]
+tests/test_character_facts.py .......................................... [ 18%]
+.................                                                        [ 18%]
+tests/test_checks_routing.py ....................                        [ 18%]
+tests/test_ci_change_classifier.py ..................................... [ 18%]
+......................................................                   [ 18%]
+tests/test_ci_onboarding.py ............................................ [ 18%]
+................                                                         [ 18%]
+tests/test_ci_onboarding_all_tiers.py .................................. [ 18%]
+............................................................             [ 18%]
+tests/test_ci_onboarding_existing.py .............                       [ 19%]
+tests/test_ci_onboarding_git.py .......................                  [ 19%]
+tests/test_ci_onboarding_model_routing.py .............................  [ 19%]
+tests/test_ci_onboarding_pages.py ...................................... [ 19%]
+......................................................                   [ 19%]
+tests/test_ci_onboarding_windows.py ss                                   [ 19%]
+tests/test_ci_onboarding_writes.py .........                             [ 19%]
+tests/test_ci_workflows.py ............................................. [ 19%]
+........                                                                 [ 19%]
+tests/test_cli.py ...................................................... [ 19%]
+........................................................................ [ 19%]
+....                                                                     [ 19%]
+tests/test_cli_banner.py .......................                         [ 19%]
+tests/test_cli_html_parser_compat.py .                                   [ 19%]
+tests/test_cli_stdout_encoding.py ................................       [ 20%]
+tests/test_commands.py .........................................s....... [ 20%]
+........................................................................ [ 20%]
+.............................................                            [ 20%]
+tests/test_custom_backend_package.py ...                                 [ 20%]
+tests/test_custom_execution_backends.py ................................ [ 20%]
+...........................                                              [ 20%]
+tests/test_dataset_harbor_gate.py .                                      [ 20%]
+tests/test_demo_starter.py ................                              [ 20%]
+tests/test_doctor.py ...................................                 [ 20%]
+tests/test_evals_config_branding.py .......                              [ 20%]
+tests/test_evaluation_service.py ....................................... [ 20%]
+.........................................................                [ 20%]
+tests/test_gateway_defaults.py ................                          [ 21%]
+tests/test_harbor_adapter_safety.py .................................... [ 21%]
+............                                                             [ 21%]
+tests/test_harbor_apt_install_lines.py ...............                   [ 21%]
+tests/test_harbor_artifact_retention.py .....                            [ 21%]
+tests/test_harbor_case_id_safety.py .................................... [ 21%]
+....s........                                                            [ 21%]
+tests/test_harbor_claude_background_tasks.py .....                       [ 21%]
+tests/test_harbor_claude_refusal_fallback.py ........................... [ 21%]
+..........                                                               [ 21%]
+tests/test_harbor_collector_judge_strategy.py ......                     [ 21%]
+tests/test_harbor_collector_multistep_trajectory.py .................... [ 21%]
+........................................................                 [ 21%]
+tests/test_harbor_collector_runtime_failures.py ........................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 22%]
+...............................                                          [ 22%]
+tests/test_harbor_compose_readiness.py ......                            [ 22%]
+tests/test_harbor_custom_compose_safety.py ............................. [ 22%]
+........................................................................ [ 22%]
+..........................                                               [ 22%]
+tests/test_harbor_dotenv_isolation.py ......                             [ 22%]
+tests/test_harbor_environment_contract.py .............................. [ 22%]
+.........................................s..................             [ 22%]
+tests/test_harbor_gke_environment.py ................................... [ 22%]
+...........................................                              [ 22%]
+tests/test_harbor_gke_mode.py .......................................... [ 23%]
+........................................................................ [ 23%]
+....................                                                     [ 23%]
+tests/test_harbor_html_report_failures.py .............                  [ 23%]
+tests/test_harbor_input_staging.py ..................................... [ 23%]
+...............                                                          [ 23%]
+tests/test_harbor_local_environment.py ................................. [ 23%]
+.....................                                                    [ 23%]
+tests/test_harbor_local_mode.py ........................................ [ 23%]
+........................................................................ [ 23%]
+.......................s................................................ [ 23%]
+........................................................................ [ 24%]
+.............................................                            [ 24%]
+tests/test_harbor_local_sandbox.py .............................sss..... [ 24%]
+......................................................ssssssssssssssssss [ 24%]
+sssssssssssss..s                                                         [ 24%]
+tests/test_harbor_local_upload.py .....................s                 [ 24%]
+tests/test_harbor_metrics_truth.py ..................................... [ 24%]
+..............................................................           [ 24%]
+tests/test_harbor_negative_control_evidence.py ......................... [ 24%]
+........................................................................ [ 25%]
+.........                                                                [ 25%]
+tests/test_harbor_output_provenance.py ..s.....................          [ 25%]
+tests/test_harbor_runner_artifacts.py ..............                     [ 25%]
+tests/test_harbor_runner_environment.py ................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 26%]
+............................................................             [ 26%]
+tests/test_harbor_runner_status.py ..........................ss......... [ 26%]
+........................................................................ [ 26%]
+.........................................................                [ 26%]
+tests/test_harbor_runtime_preflight.py ................................. [ 26%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+.............................                                            [ 27%]
+tests/test_harbor_runtime_skill_isolation.py ........................... [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+.............s.......................................................... [ 27%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+.......ss..........................................................      [ 28%]
+tests/test_harbor_scaffold_transactions.py ............................. [ 28%]
+..........                                                               [ 28%]
+tests/test_harbor_secure_copy.py ....................................... [ 28%]
+.............ss...................                                       [ 28%]
+tests/test_harbor_secure_docker_environment.py ......................... [ 28%]
+........................................................................ [ 29%]
+....................................FFF.F....F..........FFFFF........FFF [ 29%]
+F........F.............................................................F [ 29%]
+FFFFFF..............................FF...................FFF.........    [ 29%]
+tests/test_harbor_skill_activation.py ....................               [ 29%]
+tests/test_harbor_stop_on_pass_concurrency.py .....                      [ 29%]
+tests/test_harbor_task_toml_retry_env.py ....................            [ 29%]
+tests/test_harbor_timeout_recovery.py ...............................    [ 29%]
+tests/test_harbor_unscored_grading_policy.py .................           [ 29%]
+tests/test_hermes_agent.py ............................................. [ 29%]
+                                                                         [ 29%]
+tests/test_issue55_collector_truth.py .................................. [ 29%]
+........................................................................ [ 30%]
+..................................................................ssss.. [ 30%]
+..........                                                               [ 30%]
+tests/test_judge_lift_integrity.py ..................................... [ 30%]
+..........                                                               [ 30%]
+tests/test_llm_client_retry.py ........                                  [ 30%]
+tests/test_llm_judge.py ................................................ [ 30%]
+..........................................                               [ 30%]
+tests/test_local_mode_contract.py .............                          [ 30%]
+tests/test_metrics_reference_docs.py ......................              [ 30%]
+tests/test_model_catalog.py ............................................ [ 30%]
+........................................................                 [ 31%]
+tests/test_models_command.py .........                                   [ 31%]
+tests/test_nemo_gym_backend.py ......................................... [ 31%]
+...........................F............................................ [ 31%]
+..F..................................................................... [ 31%]
+.......F..F................F....                                         [ 31%]
+tests/test_nemo_gym_main_integration.py ................................ [ 31%]
+.....................                                                    [ 31%]
+tests/test_nvidia_build_bridge.py .............................F........ [ 31%]
+........................................................................ [ 32%]
+...............................................                          [ 32%]
+tests/test_openclaw_plugin_discovery.py ................................ [ 32%]
+.......................................                                  [ 32%]
+tests/test_openclaw_plugin_smoke.py .......                              [ 32%]
+tests/test_oss_boundary.py ............................................. [ 32%]
+........................................................................ [ 32%]
+.......................                                                  [ 32%]
+tests/test_oss_packaging.py ............................................ [ 32%]
+......                                                                   [ 32%]
+tests/test_oss_source_hygiene.py ...                                     [ 32%]
+tests/test_overall_cross_format_consistency.py .....                     [ 32%]
+tests/test_plugin_context_cost.py ............                           [ 32%]
+tests/test_plugin_dependency_records.py ......                           [ 32%]
+tests/test_plugin_discovery.py ......................................... [ 33%]
+.............                                                            [ 33%]
+tests/test_plugin_format_profiles.py ..............                      [ 33%]
+tests/test_plugin_inventory.py ...................                       [ 33%]
+tests/test_plugin_manifest.py ..............                             [ 33%]
+tests/test_plugin_manifest_opt_in.py ................                    [ 33%]
+tests/test_plugin_markdown.py .............                              [ 33%]
+tests/test_plugin_member_paths.py ........                               [ 33%]
+tests/test_plugin_refs.py ......                                         [ 33%]
+tests/test_precommit.py .......s................................         [ 33%]
+tests/test_private_runtime_rereview.py ....................              [ 33%]
+tests/test_private_runtime_review.py .....................               [ 33%]
+tests/test_progress_output.py .....                                      [ 33%]
+tests/test_provider_agent_routing.py ................................... [ 33%]
+...                                                                      [ 33%]
+tests/test_provider_config.py .......................................... [ 33%]
+........................................................................ [ 33%]
+......................                                                   [ 33%]
+tests/test_public_benchmark_gate.py .................................... [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 35%]
+.......................................................                  [ 35%]
+tests/test_publication_evidence.py ................................      [ 35%]
+tests/test_publication_identity.py .............ss...................... [ 35%]
+ss.............                                                          [ 35%]
+tests/test_publication_text.py .................                         [ 35%]
+tests/test_quality_config.py ........................................... [ 35%]
+........................................................................ [ 35%]
+..                                                                       [ 35%]
+tests/test_quality_policy_gate.py .............                          [ 35%]
+tests/test_redaction_assignments.py .................................... [ 35%]
+............................                                             [ 35%]
+tests/test_reference_api_caller.py ................                      [ 36%]
+tests/test_reference_calculator.py ..........                            [ 36%]
+tests/test_reference_skill_scripts.py ..................                 [ 36%]
+tests/test_reference_text_analyzer.py ...                                [ 36%]
+tests/test_results_location.py ......................................... [ 36%]
+......                                                                   [ 36%]
+tests/test_results_location_legacy_compatibility.py .................... [ 36%]
+..........................................................               [ 36%]
+tests/test_retry.py .................................................... [ 36%]
+............                                                             [ 36%]
+tests/test_retry_exception_chain.py ........                             [ 36%]
+tests/test_retry_provider_transport.py ............................      [ 36%]
+tests/test_safety_boundaries.py ........................................ [ 36%]
+..........                                                               [ 36%]
+tests/test_script_invocation_differential.py ...                         [ 36%]
+tests/test_secure_docker_environment.py ..................               [ 36%]
+tests/test_select_docs_tests.py .....................                    [ 36%]
+tests/test_skillevaluator_skill.py ..................................... [ 37%]
+......................                                                   [ 37%]
+tests/test_skillspector_provenance.py .................................. [ 37%]
+...............                                                          [ 37%]
+tests/test_skip_checks.py ...........                                    [ 37%]
+tests/test_tier2_command_failures.py .............................       [ 37%]
+tests/test_tier2_report_identity.py ..                                   [ 37%]
+tests/test_tier3_attempt_verdict.py .........................            [ 37%]
+tests/test_tier3_case_summary.py ....................................... [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 38%]
+..................................                                       [ 38%]
+tests/test_tier3_compare.py ....................................         [ 38%]
+tests/test_tier3_config_key_parity.py .................                  [ 38%]
+tests/test_tier3_history.py .............................F..             [ 38%]
+tests/test_tier3_max_cases.py ..............                             [ 38%]
+tests/test_tier3_next_steps.py .................                         [ 38%]
+tests/test_tier3_progress.py ......................F..F................. [ 38%]
+........................................................................ [ 38%]
+........................................................................ [ 39%]
+...............................                                          [ 39%]
+tests/test_tier3_public_runtime.py ..................................... [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+..............                                                           [ 39%]
+tests/test_tier3_result_display.py ..................................... [ 40%]
+.F................................................................       [ 40%]
+tests/test_trace_import.py ............................................. [ 40%]
+......                                                                   [ 40%]
+tests/test_transport_rules.py ................                           [ 40%]
+tests/test_verifier_error_redaction.py .............................     [ 40%]
+tests/test_version_comparison.py ..............................          [ 40%]
+tests/tier3/test_agent_output_cleanup_scope.py ......................... [ 40%]
+.................................................                        [ 40%]
+tests/tier3/test_apply_patch_security.py ............................... [ 40%]
+........................................................................ [ 40%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 42%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+.............                                                            [ 43%]
+tests/tier3/test_atif_message_content.py ..........                      [ 43%]
+tests/tier3/test_baseline_dimension_applicability.py ...                 [ 43%]
+tests/tier3/test_baseline_timeouts.py .................................. [ 43%]
+....................................................................     [ 43%]
+tests/tier3/test_behavior_evidence.py .................................. [ 43%]
+.....................................                                    [ 44%]
+tests/tier3/test_budget_admitted_ordinals.py ........................... [ 44%]
+.........                                                                [ 44%]
+tests/tier3/test_budget_denied_arms.py ...........                       [ 44%]
+tests/tier3/test_budget_denied_exit.py ...........                       [ 44%]
+tests/tier3/test_budget_reservation.py .............................     [ 44%]
+tests/tier3/test_cache_cleanup_scoring.py .............................. [ 44%]
+................................                                         [ 44%]
+tests/tier3/test_checks_path_extraction.py ............................. [ 44%]
+..........................                                               [ 44%]
+tests/tier3/test_checks_secret_patterns.py ............................. [ 44%]
+........................................................................ [ 44%]
+........................................................................ [ 44%]
+....                                                                     [ 44%]
+tests/tier3/test_claude_gateway_model_handoff.py ....................... [ 45%]
+...............................................                          [ 45%]
+tests/tier3/test_codex_tool_call_normalization.py ...................... [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 45%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 47%]
+....................................................................     [ 47%]
+tests/tier3/test_dataset_auto_grounding.py ............................. [ 47%]
+........................................................................ [ 47%]
+............                                                             [ 47%]
+tests/tier3/test_dataset_baseline_fairness.py .......................... [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 47%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+...............                                                          [ 48%]
+tests/tier3/test_dataset_coverage.py .............                       [ 48%]
+tests/tier3/test_dataset_generation_progress.py ..............           [ 48%]
+tests/tier3/test_dataset_grounding.py ......................             [ 48%]
+tests/tier3/test_dataset_migration.py .................................. [ 48%]
+................                                                         [ 48%]
+tests/tier3/test_dataset_primary_script.py ............................. [ 48%]
+.....                                                                    [ 48%]
+tests/tier3/test_dataset_sufficiency.py .......                          [ 48%]
+tests/tier3/test_dataset_utils.py ........                               [ 48%]
+tests/tier3/test_declarative_checks.py ........................          [ 48%]
+tests/tier3/test_decoy_commands.py .......................ss.....        [ 48%]
+tests/tier3/test_decoy_identity.py ...................                   [ 49%]
+tests/tier3/test_decoy_workspace.py .........................            [ 49%]
+tests/tier3/test_decoys.py .................sss......................... [ 49%]
+...........................                                              [ 49%]
+tests/tier3/test_destructive_command_paths.py .......................... [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 49%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 56%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+............................................................             [ 58%]
+tests/tier3/test_error_recovery.py ..................................... [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 58%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+..........                                                               [ 61%]
+tests/tier3/test_evals_config.py ....................................... [ 61%]
+...............................................................          [ 61%]
+tests/tier3/test_evidence_compiler.py .................................. [ 61%]
+......                                                                   [ 61%]
+tests/tier3/test_external_metrics.py ................................... [ 61%]
+........................................................                 [ 61%]
+tests/tier3/test_f90_mcp_arguments.py .......                            [ 61%]
+tests/tier3/test_f90_mcp_execution.py .......................            [ 61%]
+tests/tier3/test_f90_mcp_failure_text.py ............................... [ 61%]
+................                                                         [ 61%]
+tests/tier3/test_f90_mcp_proof_status.py ..........                      [ 61%]
+tests/tier3/test_f90_signals_conflict.py .....................           [ 61%]
+tests/tier3/test_f90_signals_handoff.py ................................ [ 61%]
+....                                                                     [ 61%]
+tests/tier3/test_f90_signals_handoff_prompt.py ....                      [ 62%]
+tests/tier3/test_failed_skill_reads.py ................................. [ 62%]
+........................................................................ [ 62%]
+...............                                                          [ 62%]
+tests/tier3/test_findings_severity.py ............                       [ 62%]
+tests/tier3/test_gateway_codex.py ...................................... [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 62%]
+........................................................................ [ 63%]
+....................                                                     [ 63%]
+tests/tier3/test_gateway_opencode.py ...                                 [ 63%]
+tests/tier3/test_generate_dataset_results.py ........................... [ 63%]
+..........                                                               [ 63%]
+tests/tier3/test_generated_script_line_endings.py ........               [ 63%]
+tests/tier3/test_github_token_redaction.py ......................        [ 63%]
+tests/tier3/test_grader_pilot.py .........                               [ 63%]
+tests/tier3/test_grader_policy.py ...................................... [ 63%]
+..........................                                               [ 63%]
+tests/tier3/test_grader_validation.py .................................. [ 63%]
+........................................................................ [ 63%]
+............                                                             [ 63%]
+tests/tier3/test_harbor_local_agents.py ................................ [ 63%]
+...........                                                              [ 63%]
+tests/tier3/test_harbor_report_links.py ...                              [ 63%]
+tests/tier3/test_harbor_result_entry_id.py .                             [ 63%]
+tests/tier3/test_harbor_security_attribution.py ...........              [ 64%]
+tests/tier3/test_harbor_template_secret_patterns.py .................... [ 64%]
+........................................................................ [ 64%]
+..............................................                           [ 64%]
+tests/tier3/test_installed_agent_bootstrap.py .......................... [ 64%]
+..........................................                               [ 64%]
+tests/tier3/test_installed_agent_install_retry.py .....................  [ 64%]
+tests/tier3/test_interactions.py ....................................... [ 64%]
+...................................................                      [ 64%]
+tests/tier3/test_issue192_security_false_positives.py .................. [ 64%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+.                                                                        [ 65%]
+tests/tier3/test_judge_contracts.py .................................... [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+........................................................................ [ 65%]
+.............................................                            [ 65%]
+tests/tier3/test_judge_failure_artifacts.py ............................ [ 66%]
+........................................................................ [ 66%]
+.............................                                            [ 66%]
+tests/tier3/test_judge_http_response_contract.py ....                    [ 66%]
+tests/tier3/test_judge_parse_robustness.py ............................. [ 66%]
+........................................................................ [ 66%]
+...................................                                      [ 66%]
+tests/tier3/test_judge_policies.py ..................................... [ 66%]
+................................................................         [ 66%]
+tests/tier3/test_judge_result_semantics.py ............................. [ 66%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+........................................................................ [ 67%]
+..........................................................               [ 67%]
+tests/tier3/test_judge_uses_evidence.py ......                           [ 67%]
+tests/tier3/test_license_notice_network_bypasses.py .................... [ 67%]
+.................................                                        [ 67%]
+tests/tier3/test_local_runtime_install.py .........                      [ 67%]
+tests/tier3/test_log_converters.py ............................          [ 67%]
+tests/tier3/test_log_jwt_redaction.py .....................              [ 67%]
+tests/tier3/test_mcp_proof.py .......................................... [ 68%]
+.............                                                            [ 68%]
+tests/tier3/test_mcp_proof_sdk_compat.py ...........ss.......            [ 68%]
+tests/tier3/test_metric_applicability_display.py ....                    [ 68%]
+tests/tier3/test_metric_applicability_producer.py ...................... [ 68%]
+...................                                                      [ 68%]
+tests/tier3/test_native_launch_insertion.py ................             [ 68%]
+tests/tier3/test_native_mcp_policy.py .............................      [ 68%]
+tests/tier3/test_native_review_fixes.py ...................              [ 68%]
+tests/tier3/test_negative_control_invocation_evidence.py ............... [ 68%]
+........................................................................ [ 68%]
+..                                                                       [ 68%]
+tests/tier3/test_network_client_mentions.py ............................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 69%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+.................................................                        [ 70%]
+tests/tier3/test_openclaw_prepare.py ................................... [ 70%]
+.......................                                                  [ 70%]
+tests/tier3/test_opencode_exit_status.py ............................... [ 70%]
+..                                                                       [ 70%]
+tests/tier3/test_opencode_snapshot_config.py ........                    [ 70%]
+tests/tier3/test_optional_reference.py ......................            [ 70%]
+tests/tier3/test_plain_language_findings.py ................             [ 70%]
+tests/tier3/test_plugin_dataset.py .........                             [ 70%]
+tests/tier3/test_plugin_evidence.py .....................                [ 70%]
+tests/tier3/test_plugin_evidence_review.py ...........................   [ 70%]
+tests/tier3/test_plugin_execution.py ..................                  [ 71%]
+tests/tier3/test_plugin_load_decisions.py ....                           [ 71%]
+tests/tier3/test_plugin_prepare.py ......                                [ 71%]
+tests/tier3/test_plugin_prepare_review.py .........................ss... [ 71%]
+..........                                                               [ 71%]
+tests/tier3/test_plugin_runtime_identity.py .........................ss. [ 71%]
+                                                                         [ 71%]
+tests/tier3/test_plugin_signals.py ..................................... [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+........................................................................ [ 71%]
+................                                                         [ 71%]
+tests/tier3/test_price_file_validation.py ................               [ 71%]
+tests/tier3/test_price_provenance.py ..........                          [ 71%]
+tests/tier3/test_private_case_coverage_review.py .......                 [ 71%]
+tests/tier3/test_private_comparison_artifacts.py ........                [ 71%]
+tests/tier3/test_private_comparison_contracts.py ....................... [ 72%]
+..............                                                           [ 72%]
+tests/tier3/test_private_comparison_engine.py .............              [ 72%]
+tests/tier3/test_private_comparison_engine_acceptance.py ......          [ 72%]
+tests/tier3/test_private_comparison_staging.py ......................... [ 72%]
+..                                                                       [ 72%]
+tests/tier3/test_private_evidence_review2.py ...........                 [ 72%]
+tests/tier3/test_private_ladder_stats.py .............................   [ 72%]
+tests/tier3/test_private_lift_small_n.py ....                            [ 72%]
+tests/tier3/test_private_loose_dependency_review.py ........             [ 72%]
+tests/tier3/test_private_loose_dependency_scaffold_review.py ...         [ 72%]
+tests/tier3/test_private_loose_source.py ............................... [ 72%]
+....................                                                     [ 72%]
+tests/tier3/test_private_plugin_canary.py ...............                [ 72%]
+tests/tier3/test_private_plugin_security.py ............................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+....................................................                     [ 73%]
+tests/tier3/test_private_recovered_timeout_review2.py ...                [ 73%]
+tests/tier3/test_private_runtime_evidence.py ...............             [ 73%]
+tests/tier3/test_private_runtime_regressions.py ......................   [ 73%]
+tests/tier3/test_private_runtime_report_acceptance.py ......             [ 73%]
+tests/tier3/test_private_setup_classification.py ....................... [ 73%]
+..........................                                               [ 73%]
+tests/tier3/test_private_usage_recovery_review2.py ...........           [ 73%]
+tests/tier3/test_ragas_judge_evidence.py ...........................     [ 73%]
+tests/tier3/test_reference_custom_grader_fixtures.py ....                [ 73%]
+tests/tier3/test_report_renders_refs.py ......                           [ 73%]
+tests/tier3/test_resource_usage.py ..................................... [ 73%]
+...                                                                      [ 73%]
+tests/tier3/test_review507_merged_regressions.py ......                  [ 73%]
+tests/tier3/test_root_search_efficiency.py ............................. [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+...........                                                              [ 74%]
+tests/tier3/test_run_budget.py ................F........................ [ 74%]
+..............................                                           [ 74%]
+tests/tier3/test_runtime_eval_directories.py ..................          [ 74%]
+tests/tier3/test_script_invocation_evidence.py ......................... [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 74%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 78%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+...................................................                      [ 79%]
+tests/tier3/test_secret_redaction_patterns.py ......                     [ 79%]
+tests/tier3/test_security_finding_evidence.py .......................... [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 80%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+...................                                                      [ 82%]
+tests/tier3/test_security_home_paths.py ................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 83%]
+........................................................................ [ 84%]
+.............................................                            [ 84%]
+tests/tier3/test_security_workdir_provenance.py ........                 [ 84%]
+tests/tier3/test_shared_atif_staging.py ..s                              [ 84%]
+tests/tier3/test_shared_check_adapters.py .......................        [ 84%]
+tests/tier3/test_shell_lexing.py ........                                [ 84%]
+tests/tier3/test_skill_activation_scoring.py ........................... [ 84%]
+.......................                                                  [ 84%]
+tests/tier3/test_skill_metric_applicability.py ......................... [ 84%]
+..........                                                               [ 84%]
+tests/tier3/test_skip_with_skill.py ....................                 [ 84%]
+tests/tier3/test_suggestion_grounding.py ............................... [ 84%]
+...........................                                              [ 84%]
+tests/tier3/test_tier3_source.py .....                                   [ 84%]
+tests/tier3/test_token_usage.py ........................................ [ 84%]
+......................                                                   [ 84%]
+tests/tier3/test_tool_productivity.py .................................. [ 84%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+........................................................................ [ 85%]
+..........................................                               [ 85%]
+tests/tier3/test_trajectory_timing.py .................................. [ 85%]
+............................                                             [ 85%]
+tests/tier3/test_usage_metric_shapes.py ..........                       [ 85%]
+tests/tier3/test_verified_facts.py ....                                  [ 85%]
+tests/tier3/test_verifier_python39_syntax.py ..                          [ 85%]
+tests/tier3/test_view_results_feedback.py ................               [ 85%]
+tests/tier3/test_workflow.py ........................................... [ 85%]
+.................                                                        [ 85%]
+tests/utils/test_helpers.py .....................                        [ 86%]
+tests/utils/test_rich_markup.py ........................................ [ 86%]
+.................................                                        [ 86%]
+tests/utils/test_scanner_install.py ..................                   [ 86%]
+tests/utils/test_secure_fs.py .......................                    [ 86%]
+tests/utils/test_secure_fs_bounded.py ........                           [ 86%]
+tests/utils/test_secure_fs_platform.py ...........ss..................s  [ 86%]
+tests/utils/test_secure_fs_selected_reads.py ..s                         [ 86%]
+tests/utils/test_structured_data.py .................................... [ 86%]
+..............................................                           [ 86%]
+tests/utils/test_tier2_paths.py ..............                           [ 86%]
+tests/utils/test_tool_runner.py ........................................ [ 86%]
+.............................                                            [ 86%]
+tests/validators/test_artifact_dir_exclusion.py ........................ [ 86%]
+.......................                                                  [ 86%]
+tests/validators/test_base.py ......................................     [ 87%]
+tests/validators/test_code_risk_structured.py ....                       [ 87%]
+tests/validators/test_dependency_advisory_findings.py .................. [ 87%]
+........................................................................ [ 87%]
+.                                                                        [ 87%]
+tests/validators/test_folder_validation.py ................              [ 87%]
+tests/validators/test_frontmatter_parser.py ..........                   [ 87%]
+tests/validators/test_hygiene.py ....................................... [ 87%]
+.........                                                                [ 87%]
+tests/validators/test_hygiene_link_boundaries.py ....................... [ 87%]
+........................................................................ [ 87%]
+.........................                                                [ 87%]
+tests/validators/test_license.py ....................................... [ 87%]
+.........................................................                [ 88%]
+tests/validators/test_markdown.py ...................................... [ 88%]
+......................................................                   [ 88%]
+tests/validators/test_mcp_static.py .................................... [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+..............................................                           [ 89%]
+tests/validators/test_naming_utils.py ........                           [ 89%]
+tests/validators/test_openclaw_mcp.py .................................. [ 89%]
+..............                                                           [ 89%]
+tests/validators/test_pii_grouping.py ..........                         [ 89%]
+tests/validators/test_pii_ownership.py ................................. [ 89%]
+.....                                                                    [ 89%]
+tests/validators/test_pii_waivers.py ................................... [ 89%]
+...............................                                          [ 89%]
+tests/validators/test_plugin_component_risk.py ......................... [ 89%]
+........................................................................ [ 89%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+...                                                                      [ 90%]
+tests/validators/test_plugin_config_risk.py ............                 [ 90%]
+tests/validators/test_plugin_dependencies.py ........................... [ 90%]
+......................                                                   [ 90%]
+tests/validators/test_plugin_hook_risk_bounds.py ....................... [ 90%]
+......................                                                   [ 90%]
+tests/validators/test_plugin_mcp.py .......................              [ 90%]
+tests/validators/test_plugin_permissions.py .......................      [ 90%]
+tests/validators/test_plugin_schema.py ....................              [ 90%]
+tests/validators/test_plugin_static_risk_review_fixes.py ............... [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+.......................................                                  [ 91%]
+tests/validators/test_policy.py .......................                  [ 91%]
+tests/validators/test_private_claude_parity.py ......                    [ 91%]
+tests/validators/test_private_dependency_audit.py ...................... [ 91%]
+.............................                                            [ 91%]
+tests/validators/test_private_endpoint_resolution.py ................... [ 91%]
+.......                                                                  [ 91%]
+tests/validators/test_private_format_boundaries.py ..................    [ 91%]
+tests/validators/test_private_plugin_composition.py .................... [ 91%]
+.......                                                                  [ 91%]
+tests/validators/test_private_plugin_schema.py ...............           [ 91%]
+tests/validators/test_quality_score.py ................................. [ 91%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+........................................................................ [ 92%]
+............                                                             [ 92%]
+tests/validators/test_rubric_eval.py ................................... [ 92%]
+...........ss...ss...................................................... [ 93%]
+.................................................                        [ 93%]
+tests/validators/test_rules_schema.py .................................. [ 93%]
+.                                                                        [ 93%]
+tests/validators/test_scan_incomplete.py .................               [ 93%]
+tests/validators/test_scanner_path_resolution.py ....................... [ 93%]
+..................                                                       [ 93%]
+tests/validators/test_schema.py ........................................ [ 93%]
+........................................................................ [ 93%]
+...............................                                          [ 93%]
+tests/validators/test_script_lint.py .............................       [ 93%]
+tests/validators/test_secrets_structured.py ..                           [ 93%]
+tests/validators/test_security.py ...................................... [ 93%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................................ [ 94%]
+........................................................s............... [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 95%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 96%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........                                                                 [ 97%]
+tests/validators/test_security_authored_evals.py ..................      [ 97%]
+tests/validators/test_security_reference_caveats.py .................... [ 97%]
+...........................                                              [ 97%]
+tests/validators/test_security_validators.py ........................... [ 97%]
+...............................................                          [ 97%]
+tests/validators/test_similarity.py .................................... [ 98%]
+.                                                                        [ 98%]
+tests/validators/test_skillspector_diagnostics.py .............          [ 98%]
+tests/validators/test_skillspector_hook_surface.py ..................... [ 98%]
+........................................................................ [ 98%]
+..................                                                       [ 98%]
+tests/validators/test_skillspector_reference_diagnostics.py ............ [ 98%]
+.................................................................        [ 98%]
+tests/validators/test_skillspector_scope.py ............................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 98%]
+........................................................................ [ 99%]
+..................................                                       [ 99%]
+tests/validators/test_static_requirements_audit.py ..................    [ 99%]
+tests/validators/test_target_dependencies.py ........................... [ 99%]
+..                                                                       [ 99%]
+tests/validators/test_unicode_smuggle.py .......................         [ 99%]
+tests/validators/test_url_policy.py .................................... [ 99%]
+........................................................................ [ 99%]
+..............................................................           [ 99%]
+tests/validators/test_version.py ...........................             [ 99%]
+tests/validators/test_workflows_schema.py .............................. [ 99%]
+.......                                                                  [100%]
+
+=================================== FAILURES ===================================
+________________ test_ctrl_c_ends_running_scans_and_their_tools ________________
+tests/ci/test_run_tier1.py:1702: in test_ctrl_c_ends_running_scans_and_their_tools
+    assert process.wait(WAIT) == -signal.SIGINT
+           ^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py:1281: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py:2078: in _wait
+    raise TimeoutExpired(self.args, timeout)
+E   subprocess.TimeoutExpired: Command '['/agent/repos/SkillEvaluator/.venv/bin/python3', '/agent/repos/SkillEvaluator/ci/run_tier1.py', '--workspace', '/tmp/pytest-of-ubuntu/pytest-9/test_ctrl_c_ends_running_scans0/workspace', '--reports', '/tmp/pytest-of-ubuntu/pytest-9/test_ctrl_c_ends_running_scans0/reports']' timed out after 60 seconds
+_____________ test_second_ctrl_c_does_not_leave_the_runner_waiting _____________
+tests/ci/test_run_tier1.py:1722: in test_second_ctrl_c_does_not_leave_the_runner_waiting
+    assert process.wait(WAIT) == -signal.SIGINT
+           ^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py:1281: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py:2078: in _wait
+    raise TimeoutExpired(self.args, timeout)
+E   subprocess.TimeoutExpired: Command '['/agent/repos/SkillEvaluator/.venv/bin/python3', '/agent/repos/SkillEvaluator/ci/run_tier1.py', '--workspace', '/tmp/pytest-of-ubuntu/pytest-9/test_second_ctrl_c_does_not_le0/workspace', '--reports', '/tmp/pytest-of-ubuntu/pytest-9/test_second_ctrl_c_does_not_le0/reports']' timed out after 60 seconds
+___________ test_ctrl_c_handled_on_a_scan_thread_still_ends_the_run ____________
+tests/ci/test_run_tier1.py:1758: in test_ctrl_c_handled_on_a_scan_thread_still_ends_the_run
+    with pytest.raises(KeyboardInterrupt):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE KeyboardInterrupt
+----------------------------- Captured stdout call -----------------------------
+SkillEvaluator: evaluating skill 1 of 1: "skills/a"
+Skill result: "skills/a" — ERROR
+  Reason: "Evaluator execution failed or its JSON report was missing, unreadable, or invalid."
+SkillEvaluator finished: 0 of 1 skills passed.
+____________________ test_feedback_cli_escapes_panel_paths _____________________
+tests/evaluation/test_tier3_feedback_chat.py:1545: in test_feedback_cli_escapes_panel_paths
+    assert str(Path("x[") / "y]" / RUN_ID) in result.output
+E   assert 'x[/y]/20261027_120000' in "\n╭───────────────────────────── Post-run feedback ──────────────────────────────╮\n│ sk[old]ll · 20261027_120000    ...nEach question sends this run's evidence to the configured LLM provider. Type \nexit or press Ctrl-D to quit.\n\nYou: "
+E    +  where 'x[/y]/20261027_120000' = str(((PosixPath('x[') / 'y]') / '20261027_120000'))
+E    +    where PosixPath('x[') = Path('x[')
+E    +  and   "\n╭───────────────────────────── Post-run feedback ──────────────────────────────╮\n│ sk[old]ll · 20261027_120000    ...nEach question sends this run's evidence to the configured LLM provider. Type \nexit or press Ctrl-D to quit.\n\nYou: " = <Result okay>.output
+_____________________ test_fix_reaches_findings_and_panels _____________________
+tests/harness/test_overlay.py:740: in test_fix_reaches_findings_and_panels
+    assert "→ Cut the description by at least 200 UTF-16 units." in out
+E   AssertionError: assert '→ Cut the description by at least 200 UTF-16 units.' in '╭─ Harness compatibility · demo-skill ─────────────────────────────────────────╮\n│  ✓\xa0claude-code   ✓\xa0codex   ...                               │\n╰──────────────────────────────────────────────────────── ✗ 1 of 6 not loaded ─╯\n\n'
+_____ test_cli_report_renders_untrusted_text_literally[[bold]evil[/bold]] ______
+tests/reporting/test_rich_markup_escaping.py:230: in test_cli_report_renders_untrusted_text_literally
+    assert [snippet for snippet in expected if snippet not in text] == []
+E   AssertionError: assert ['alpha [bold...]evil[/bold]'] == []
+E     
+E     Left contains 3 more items, first extra item: 'alpha [bold]evil[/bold]'
+E     Use -v to get more diff
+__ test_cli_report_renders_untrusted_text_literally[[link=http://x]y[/link]] ___
+tests/reporting/test_rich_markup_escaping.py:230: in test_cli_report_renders_untrusted_text_literally
+    assert [snippet for snippet in expected if snippet not in text] == []
+E   AssertionError: assert ['alpha [link...//x]y[/link]'] == []
+E     
+E     Left contains 6 more items, first extra item: 'alpha [link=http://x]y[/link]'
+E     Use -v to get more diff
+__________________ test_trailing_backslashes_render_literally __________________
+tests/reporting/test_rich_markup_escaping.py:294: in test_trailing_backslashes_render_literally
+    assert any(line.endswith(f" {explanation[:80]}") for line in lines)
+E   assert False
+E    +  where False = any(<generator object test_trailing_backslashes_render_literally.<locals>.<genexpr> at 0x7f9d30da2f20>)
+____________ test_report_path_announcement_renders_literally[[/x]] _____________
+tests/reporting/test_rich_markup_escaping.py:422: in test_report_path_announcement_renders_literally
+    assert f"json report: {output_dir / 'skillevaluator-output.json'}" in console.export_text()
+E   AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-9/test_report_path_announcement_0/[/x]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-9/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n'
+E    +  where 'json report: \n/tmp/pytest-of-ubuntu/pytest-9/test_report_path_announcement_0/[/x]/skillevaluat\nor-output.json\n' = export_text()
+E    +    where export_text = <console width=80 None>.export_text
+______ test_report_path_announcement_renders_literally[[bold]evil[/bold]] ______
+tests/reporting/test_rich_markup_escaping.py:422: in test_report_path_announcement_renders_literally
+    assert f"json report: {output_dir / 'skillevaluator-output.json'}" in console.export_text()
+E   AssertionError: assert 'json report: /tmp/pytest-of-ubuntu/pytest-9/test_report_path_announcement_1/[bold]evil[/bold]/skillevaluator-output.json' in 'json report: \n/tmp/pytest-of-ubuntu/pytest-9/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n'
+E    +  where 'json report: \n/tmp/pytest-of-ubuntu/pytest-9/test_report_path_announcement_1/[bold]evil[/bold]\n/skillevaluator-output.json\n' = export_text()
+E    +    where export_text = <console width=80 None>.export_text
+________ test_tier3_grader_starter_renders_created_path_literally[[/x]] ________
+tests/reporting/test_rich_markup_escaping.py:485: in test_tier3_grader_starter_renders_created_path_literally
+    assert f"custom grader starter at {grader_path}" in text
+E   AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-9/test_tier3_grader_starter_rend0/[/x]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-9/test_tier3_grader_starter_rend0/[/x].../pytest-of-ubuntu/pytest-9/test_tier3_grader_starter_rend0/[/x]/evals/grader\n.py. Re-run with --force to overwrite.\n'
+_ test_tier3_grader_starter_renders_created_path_literally[[bold]evil[/bold]] __
+tests/reporting/test_rich_markup_escaping.py:485: in test_tier3_grader_starter_renders_created_path_literally
+    assert f"custom grader starter at {grader_path}" in text
+E   AssertionError: assert 'custom grader starter at /tmp/pytest-of-ubuntu/pytest-9/test_tier3_grader_starter_rend1/[bold]evil[/bold]/evals/grader.py' in 'Created SkillEvaluator custom grader starter at \n/tmp/pytest-of-ubuntu/pytest-9/test_tier3_grader_starter_rend1/[bol...untu/pytest-9/test_tier3_grader_starter_rend1/[bold]evil[/bold]\n/evals/grader.py. Re-run with --force to overwrite.\n'
+________ test_harbor_findings_report_renders_skill_and_model_literally _________
+tests/reporting/test_rich_markup_escaping.py:627: in test_harbor_findings_report_renders_skill_and_model_literally
+    assert "combination for your skill: codex / gpt-[/x]:key:" in output
+E   AssertionError: assert 'combination for your skill: codex / gpt-[/x]:key:' in '  Findings from best performing agent/model combination for your skill: codex / \ngpt-[/x]:key:\n\n╭─────── skill [bo...                               │\n╰──────────────────────────────────────────────────────────────────────────────╯\n\n'
+_______ test_each_lift_condition_keeps_label_number_and_complete_bar[60] _______
+tests/reporting/test_terminal_polish.py:46: in test_each_lift_condition_keeps_label_number_and_complete_bar
+    assert all(Text(line).cell_len <= width for line in lines)
+E   assert False
+E    +  where False = all(<generator object test_each_lift_condition_keeps_label_number_and_complete_bar.<locals>.<genexpr> at 0x7f9d73e7bae0>)
+_____ test_direct_tier3_preserves_conditions_and_bars_at_narrow_width[60] ______
+tests/reporting/test_terminal_polish.py:164: in test_direct_tier3_preserves_conditions_and_bars_at_narrow_width
+    assert all(Text(line).cell_len <= width for line in lines)
+E   assert False
+E    +  where False = all(<generator object test_direct_tier3_preserves_conditions_and_bars_at_narrow_width.<locals>.<genexpr> at 0x7f9d781b7220>)
+__________ test_full_agent_verdict_keeps_displayed_zero_lift_neutral ___________
+tests/reporting/test_terminal_polish.py:286: in test_full_agent_verdict_keeps_displayed_zero_lift_neutral
+    assert "Pass-rate difference +25.0 percentage points" in rendered_output
+E   AssertionError: assert 'Pass-rate difference +25.0 percentage points' in '   Verdict: PASS (Skill Lift = +0.00) Skill Lift compares Overall on the metrics and cases both arms scored, so it ca...-rate  difference +25.0 percentage points.   with skill scored trials unavailable; baseline scored trials unavailable '
+_____ test_agent_eval_summary_shows_required_counts_and_failed_case_reason _____
+tests/reporting/test_terminal_polish.py:332: in test_agent_eval_summary_shows_required_counts_and_failed_case_reason
+    assert "Skill Lift (for reference)" in rendered
+E   AssertionError: assert 'Skill Lift (for reference)' in '\n  Verdict: FAIL — 1 of 2 cases failed: 1 goal not met (Skill Lift (for \nreference) = +0.20)\nSkill Lift compares O...──────────┴────────────────────────┘\n\n  with skill scored trials unavailable; baseline scored trials unavailable\n\n'
+_______ test_failed_agent_eval_summary_row_shows_verdict_reason_and_lift _______
+tests/reporting/test_terminal_polish.py:380: in test_failed_agent_eval_summary_row_shows_verdict_reason_and_lift
+    assert "2 of 4 cases failed: 1 goal not met, 1 security issue; lift +0.00" in rendered
+E   AssertionError: assert '2 of 4 cases failed: 1 goal not met, 1 security issue; lift +0.00' in '                       SkillEvaluator Validation Results                        \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━...                               │\n└────────────┴────────┴────────────────────────────────────────────────────────┘\n\n'
+_____ test_full_summary_shows_completed_agent_eval_counts_without_findings _____
+tests/reporting/test_terminal_polish.py:435: in test_full_summary_shows_completed_agent_eval_counts_without_findings
+    assert "goal not met (goal accuracy 0.00)" in rendered
+E   AssertionError: assert 'goal not met (goal accuracy 0.00)' in '                    SkillEvaluator Validation Results                    \n┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━...A\nwith skill scored trials unavailable; baseline scored trials unavailable\nPublication eligibility: Not eligible\n\n'
+______________ test_validate_terminal_prints_agent_rows_and_notes ______________
+tests/reporting/test_tier3_token_usage_reports.py:831: in test_validate_terminal_prints_agent_rows_and_notes
+    assert rows["claude-code"] == ["3,300", "50,072", "N/A", "skill 2/2; baseline 2/2 (1 unscored)"]
+E   AssertionError: assert ['3,300', '50.../2; baseline'] == ['3,300', '50...(1 unscored)']
+E     
+E     At index 3 diff: 'skill 2/2; baseline' != 'skill 2/2; baseline 2/2 (1 unscored)'
+E     Use -v to get more diff
+____ test_service_stop_and_sidecar_downloads_scrub_main_compose_environment ____
+tests/test_harbor_secure_docker_environment.py:3467: in test_service_stop_and_sidecar_downloads_scrub_main_compose_environment
+    asyncio.run(exercise())
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:3455: in exercise
+    await environment.stop_service(MAIN_SERVICE_NAME)
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2388: in stop_service
+    await self._stop_raw_service_containers(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1733: in _stop_raw_service_containers
+    initial_identities = await self._raw_service_container_ids(service)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1609: in _raw_service_container_ids
+    identities = await self._raw_filtered_service_container_ids(service)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1580: in _raw_filtered_service_container_ids
+    result = await self._run_trusted_docker_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1454: in _run_trusted_docker_command
+    raise RuntimeError("trusted Docker client executable was not found")
+E   RuntimeError: trusted Docker client executable was not found
+_ test_service_stop_uses_label_scoped_raw_docker_when_compose_model_requires_secret[main] _
+tests/test_harbor_secure_docker_environment.py:3609: in test_service_stop_uses_label_scoped_raw_docker_when_compose_model_requires_secret
+    asyncio.run(environment.stop_service(target_service))
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2388: in stop_service
+    await self._stop_raw_service_containers(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1733: in _stop_raw_service_containers
+    initial_identities = await self._raw_service_container_ids(service)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1609: in _raw_service_container_ids
+    identities = await self._raw_filtered_service_container_ids(service)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1580: in _raw_filtered_service_container_ids
+    result = await self._run_trusted_docker_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1454: in _run_trusted_docker_command
+    raise RuntimeError("trusted Docker client executable was not found")
+E   RuntimeError: trusted Docker client executable was not found
+_ test_service_stop_uses_label_scoped_raw_docker_when_compose_model_requires_secret[helper] _
+tests/test_harbor_secure_docker_environment.py:3609: in test_service_stop_uses_label_scoped_raw_docker_when_compose_model_requires_secret
+    asyncio.run(environment.stop_service(target_service))
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2388: in stop_service
+    await self._stop_raw_service_containers(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1733: in _stop_raw_service_containers
+    initial_identities = await self._raw_service_container_ids(service)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1609: in _raw_service_container_ids
+    identities = await self._raw_filtered_service_container_ids(service)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1580: in _raw_filtered_service_container_ids
+    result = await self._run_trusted_docker_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1454: in _run_trusted_docker_command
+    raise RuntimeError("trusted Docker client executable was not found")
+E   RuntimeError: trusted Docker client executable was not found
+____ test_service_stop_accepts_service_declared_by_trusted_compose_include _____
+tests/test_harbor_secure_docker_environment.py:3670: in test_service_stop_accepts_service_declared_by_trusted_compose_include
+    asyncio.run(environment.stop_service("included-helper"))
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2388: in stop_service
+    await self._stop_raw_service_containers(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1733: in _stop_raw_service_containers
+    initial_identities = await self._raw_service_container_ids(service)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1609: in _raw_service_container_ids
+    identities = await self._raw_filtered_service_container_ids(service)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1580: in _raw_filtered_service_container_ids
+    result = await self._run_trusted_docker_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:1454: in _run_trusted_docker_command
+    raise RuntimeError("trusted Docker client executable was not found")
+E   RuntimeError: trusted Docker client executable was not found
+__ test_windows_main_downloads_use_scrubbed_docker_env_and_validated_archives __
+tests/test_harbor_secure_docker_environment.py:4012: in test_windows_main_downloads_use_scrubbed_docker_env_and_validated_archives
+    asyncio.run(exercise())
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:4002: in exercise
+    await environment.service_download_file(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2411: in service_download_file
+    await self._secure_windows_download_dir(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2855: in _secure_windows_download_dir
+    await self._run_trusted_transfer_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2545: in _run_trusted_transfer_command
+    raise RuntimeError(f"required host transfer executable {command[0]!r} was not found")
+E   RuntimeError: required host transfer executable 'docker' was not found
+___ test_windows_transfer_removes_output_if_diagnostic_spool_creation_fails ____
+tests/test_harbor_secure_docker_environment.py:4149: in test_windows_transfer_removes_output_if_diagnostic_spool_creation_fails
+    asyncio.run(
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2545: in _run_trusted_transfer_command
+    raise RuntimeError(f"required host transfer executable {command[0]!r} was not found")
+E   RuntimeError: required host transfer executable 'docker' was not found
+___ test_windows_transfer_enforces_combined_temporary_disk_budget[11-0-True] ___
+tests/test_harbor_secure_docker_environment.py:4217: in test_windows_transfer_enforces_combined_temporary_disk_budget
+    with pytest.raises(RuntimeError, match="exceeded its temporary disk budget"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'exceeded its temporary disk budget'
+E     Actual message: "required host transfer executable 'docker' was not found"
+___ test_windows_transfer_enforces_combined_temporary_disk_budget[0-11-True] ___
+tests/test_harbor_secure_docker_environment.py:4217: in test_windows_transfer_enforces_combined_temporary_disk_budget
+    with pytest.raises(RuntimeError, match="exceeded its temporary disk budget"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'exceeded its temporary disk budget'
+E     Actual message: "required host transfer executable 'docker' was not found"
+___ test_windows_transfer_enforces_combined_temporary_disk_budget[6-5-True] ____
+tests/test_harbor_secure_docker_environment.py:4217: in test_windows_transfer_enforces_combined_temporary_disk_budget
+    with pytest.raises(RuntimeError, match="exceeded its temporary disk budget"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'exceeded its temporary disk budget'
+E     Actual message: "required host transfer executable 'docker' was not found"
+___ test_windows_transfer_enforces_combined_temporary_disk_budget[6-4-False] ___
+tests/test_harbor_secure_docker_environment.py:4221: in test_windows_transfer_enforces_combined_temporary_disk_budget
+    asyncio.run(transfer())
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:4209: in transfer
+    await environment._run_trusted_transfer_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2545: in _run_trusted_transfer_command
+    raise RuntimeError(f"required host transfer executable {command[0]!r} was not found")
+E   RuntimeError: required host transfer executable 'docker' was not found
+____ test_windows_transfer_timeout_reaps_process_and_removes_partial_output ____
+tests/test_harbor_secure_docker_environment.py:4539: in test_windows_transfer_timeout_reaps_process_and_removes_partial_output
+    with pytest.raises(RuntimeError, match="secure Windows container transfer command timed out while idle"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'secure Windows container transfer command timed out while idle'
+E     Actual message: "required host transfer executable 'docker' was not found"
+______ test_windows_transfer_idle_timeout_resets_while_output_progresses _______
+tests/test_harbor_secure_docker_environment.py:4608: in test_windows_transfer_idle_timeout_resets_while_output_progresses
+    asyncio.run(exercise())
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:4598: in exercise
+    await environment._run_trusted_transfer_command(
+src/skillevaluator/tier3/harbor/secure_docker_environment.py:2545: in _run_trusted_transfer_command
+    raise RuntimeError(f"required host transfer executable {command[0]!r} was not found")
+E   RuntimeError: required host transfer executable 'docker' was not found
+_____ test_windows_transfer_growing_output_exceeding_budget_reaps_process ______
+tests/test_harbor_secure_docker_environment.py:4669: in test_windows_transfer_growing_output_exceeding_budget_reaps_process
+    with pytest.raises(RuntimeError, match="exceeded its temporary disk budget"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'exceeded its temporary disk budget'
+E     Actual message: "required host transfer executable 'docker' was not found"
+__ test_windows_transfer_total_timeout_reaps_continuously_progressing_process __
+tests/test_harbor_secure_docker_environment.py:4734: in test_windows_transfer_total_timeout_reaps_continuously_progressing_process
+    with pytest.raises(RuntimeError, match="exceeded its total time limit"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'exceeded its total time limit'
+E     Actual message: "required host transfer executable 'docker' was not found"
+____ test_windows_transfer_rejects_process_completion_after_total_deadline _____
+tests/test_harbor_secure_docker_environment.py:4817: in test_windows_transfer_rejects_process_completion_after_total_deadline
+    with pytest.raises(RuntimeError, match="exceeded its total time limit"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'exceeded its total time limit'
+E     Actual message: "required host transfer executable 'docker' was not found"
+_______ test_windows_transfer_error_redacts_exact_short_sensitive_value ________
+tests/test_harbor_secure_docker_environment.py:5617: in test_windows_transfer_error_redacts_exact_short_sensitive_value
+    assert secret not in str(caught.value)
+E   AssertionError: assert 'x' not in 'required ho...as not found'
+E     
+E     'x' is contained here:
+E       required host transfer executable 'docker' was not found
+E     ?                         +
+______ test_windows_transfer_truncated_error_cannot_expose_secret_suffix _______
+tests/test_harbor_secure_docker_environment.py:5666: in test_windows_transfer_truncated_error_cannot_expose_secret_suffix
+    assert "diagnostics omitted" in rendered
+E   assert 'diagnostics omitted' in "required host transfer executable 'docker' was not found"
+_ test_windows_transfer_truncated_error_with_repeated_secret_cannot_expose_earlier_suffix _
+tests/test_harbor_secure_docker_environment.py:5712: in test_windows_transfer_truncated_error_with_repeated_secret_cannot_expose_earlier_suffix
+    assert "diagnostics omitted" in rendered
+E   assert 'diagnostics omitted' in "required host transfer executable 'docker' was not found"
+_ test_windows_transfer_error_redacts_sensitive_docker_client_environment[DOCKER_AUTH_CONFIG-SYNTHETIC_DOCKER_AUTH_SECRET] _
+tests/test_harbor_secure_docker_environment.py:5767: in test_windows_transfer_error_redacts_sensitive_docker_client_environment
+    assert _collision_safe_redaction_marker({secret}, include_short=True) in str(caught.value)
+E   assert '␟[REDACTED]␟' in "required host transfer executable 'docker' was not found"
+E    +  where '␟[REDACTED]␟' = _collision_safe_redaction_marker({'SYNTHETIC_DOCKER_AUTH_SECRET'}, include_short=True)
+E    +  and   "required host transfer executable 'docker' was not found" = str(RuntimeError("required host transfer executable 'docker' was not found"))
+E    +    where RuntimeError("required host transfer executable 'docker' was not found") = <ExceptionInfo RuntimeError("required host transfer executable 'docker' was not found") tblen=5>.value
+_ test_windows_transfer_error_redacts_sensitive_docker_client_environment[DOCKER_HOST-tcp://synthetic-user:synthetic-pass@example.invalid:2376] _
+tests/test_harbor_secure_docker_environment.py:5767: in test_windows_transfer_error_redacts_sensitive_docker_client_environment
+    assert _collision_safe_redaction_marker({secret}, include_short=True) in str(caught.value)
+E   assert '␟[REDACTED]␟' in "required host transfer executable 'docker' was not found"
+E    +  where '␟[REDACTED]␟' = _collision_safe_redaction_marker({'tcp://synthetic-user:synthetic-pass@example.invalid:2376'}, include_short=True)
+E    +  and   "required host transfer executable 'docker' was not found" = str(RuntimeError("required host transfer executable 'docker' was not found"))
+E    +    where RuntimeError("required host transfer executable 'docker' was not found") = <ExceptionInfo RuntimeError("required host transfer executable 'docker' was not found") tblen=5>.value
+_ test_windows_transfer_error_redacts_sensitive_docker_client_environment[DOCKER_HOST-tcp://synthetic-user:synthetic-pass@[malformed] _
+tests/test_harbor_secure_docker_environment.py:5767: in test_windows_transfer_error_redacts_sensitive_docker_client_environment
+    assert _collision_safe_redaction_marker({secret}, include_short=True) in str(caught.value)
+E   assert '␟[REDACTED]␟' in "required host transfer executable 'docker' was not found"
+E    +  where '␟[REDACTED]␟' = _collision_safe_redaction_marker({'tcp://synthetic-user:synthetic-pass@[malformed'}, include_short=True)
+E    +  and   "required host transfer executable 'docker' was not found" = str(RuntimeError("required host transfer executable 'docker' was not found"))
+E    +    where RuntimeError("required host transfer executable 'docker' was not found") = <ExceptionInfo RuntimeError("required host transfer executable 'docker' was not found") tblen=5>.value
+_ test_windows_transfer_error_redacts_sensitive_docker_client_environment[HTTPS_PROXY-synthetic-user:synthetic-pass@example.invalid:8080] _
+tests/test_harbor_secure_docker_environment.py:5767: in test_windows_transfer_error_redacts_sensitive_docker_client_environment
+    assert _collision_safe_redaction_marker({secret}, include_short=True) in str(caught.value)
+E   assert '␟[REDACTED]␟' in "required host transfer executable 'docker' was not found"
+E    +  where '␟[REDACTED]␟' = _collision_safe_redaction_marker({'synthetic-user:synthetic-pass@example.invalid:8080'}, include_short=True)
+E    +  and   "required host transfer executable 'docker' was not found" = str(RuntimeError("required host transfer executable 'docker' was not found"))
+E    +    where RuntimeError("required host transfer executable 'docker' was not found") = <ExceptionInfo RuntimeError("required host transfer executable 'docker' was not found") tblen=5>.value
+_ test_secure_handoff_scope_covers_containment_and_resets_after_interrupt[timeout] _
+tests/test_harbor_secure_docker_environment.py:6953: in test_secure_handoff_scope_covers_containment_and_resets_after_interrupt
+    assert len(subprocess_calls) == 6
+E   AssertionError: assert 5 == 6
+E    +  where 5 = len([(('docker', 'compose', '--project-name', 'secure-compose-public-exec-test', '--project-directory', '/tmp/pytest-of-ub...usr/local/rustup', 'LC_ALL': 'en_US.UTF-8', 'CURSOR_CONVERSATION_ID': 'bc-013533bf-8489-50df-8687-23ea84080a83', ...})])
+_ test_secure_handoff_scope_covers_containment_and_resets_after_interrupt[cancel] _
+tests/test_harbor_secure_docker_environment.py:6953: in test_secure_handoff_scope_covers_containment_and_resets_after_interrupt
+    assert len(subprocess_calls) == 6
+E   AssertionError: assert 5 == 6
+E    +  where 5 = len([(('docker', 'compose', '--project-name', 'secure-compose-public-exec-test', '--project-directory', '/tmp/pytest-of-ub...usr/local/rustup', 'LC_ALL': 'en_US.UTF-8', 'CURSOR_CONVERSATION_ID': 'bc-013533bf-8489-50df-8687-23ea84080a83', ...})])
+_ test_raw_docker_creation_cancellation_resolves_process_race_and_reaps_client _
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py:514: in wait_for
+    return await fut
+           ^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/locks.py:213: in wait
+    await fut
+E   asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+tests/test_harbor_secure_docker_environment.py:7633: in test_raw_docker_creation_cancellation_resolves_process_race_and_reaps_client
+    assert asyncio.run(exercise()) == [signal.SIGTERM, signal.SIGKILL]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:7623: in exercise
+    await asyncio.wait_for(creation_started.wait(), timeout=1)
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py:513: in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py:117: in __aexit__
+    raise TimeoutError from exc_val
+E   TimeoutError
+_ test_raw_docker_creation_timeout_is_total_deadline_bounded_with_late_reaper __
+tests/test_harbor_secure_docker_environment.py:7701: in test_raw_docker_creation_timeout_is_total_deadline_bounded_with_late_reaper
+    elapsed, signals = asyncio.run(exercise())
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:7688: in exercise
+    pytest.raises(RuntimeError, match="trusted Docker client creation timed out") as caught,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'trusted Docker client creation timed out'
+E     Actual message: 'trusted Docker client executable was not found'
+____________ test_raw_docker_command_timeout_kills_and_reaps_client ____________
+tests/test_harbor_secure_docker_environment.py:7749: in test_raw_docker_command_timeout_kills_and_reaps_client
+    assert asyncio.run(exercise()) == [signal.SIGTERM, signal.SIGKILL]
+           ^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:196: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py:119: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py:726: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_harbor_secure_docker_environment.py:7744: in exercise
+    with pytest.raises(RuntimeError, match="trusted Docker client command timed out"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'trusted Docker client command timed out'
+E     Actual message: 'trusted Docker client executable was not found'
+__________ test_gym_cli_probe_failure_contains_descendants[interrupt] __________
+tests/test_nemo_gym_backend.py:924: in test_gym_cli_probe_failure_contains_descendants
+    with pytest.raises(KeyboardInterrupt):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE KeyboardInterrupt
+________ test_successful_gym_teardown_completes_cleanup_progress[True] _________
+tests/test_nemo_gym_backend.py:1582: in test_successful_gym_teardown_completes_cleanup_progress
+    with pytest.raises(KeyboardInterrupt):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE KeyboardInterrupt
+__________ test_stop_failure_during_an_interrupt_keeps_the_interrupt ___________
+src/skillevaluator/tier3/nemo_gym/runner.py:709: in _run_gym
+    return process.wait(timeout=timeout_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py:1281: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/subprocess.py:2078: in _wait
+    raise TimeoutExpired(self.args, timeout)
+E   subprocess.TimeoutExpired: Command '['/agent/repos/SkillEvaluator/.venv/bin/python3', '-c', 'import time; time.sleep(60)']' timed out after 30 seconds
+
+During handling of the above exception, another exception occurred:
+tests/test_nemo_gym_backend.py:2464: in failing_terminate
+    raise PermissionError(1, "Operation not permitted")
+E   PermissionError: [Errno 1] Operation not permitted
+
+The above exception was the direct cause of the following exception:
+tests/test_nemo_gym_backend.py:2502: in test_stop_failure_during_an_interrupt_keeps_the_interrupt
+    _run_gym(
+src/skillevaluator/tier3/nemo_gym/runner.py:711: in _run_gym
+    _stop()
+src/skillevaluator/tier3/nemo_gym/runner.py:697: in _stop
+    _confirm_stopped(exc)
+src/skillevaluator/tier3/nemo_gym/runner.py:666: in _confirm_stopped
+    raise GymCleanupError(
+E   skillevaluator.tier3.nemo_gym.runner.GymCleanupError: NeMo Gym (process group 46535) could not be confirmed stopped: [Errno 1] Operation not permitted. Its servers or sandboxes may still be running; stop them before another run.
+__ test_unconfirmed_gym_stop_launches_nothing_more_and_keeps_finished_arms[1] __
+tests/test_nemo_gym_backend.py:2627: in test_unconfirmed_gym_stop_launches_nothing_more_and_keeps_finished_arms
+    assert "may still be running" in console.export_text()
+E   AssertionError: assert 'may still be running' in 'Time: 6.8s\n╭─────────────────────── Tier 3 Evaluation: INCOMPLETE ────────────────────────╮\n│ Evaluation did not co...66_98d154cc4f02                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\n'
+E    +  where 'Time: 6.8s\n╭─────────────────────── Tier 3 Evaluation: INCOMPLETE ────────────────────────╮\n│ Evaluation did not co...66_98d154cc4f02                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\n' = export_text()
+E    +    where export_text = <console width=80 None>.export_text
+----------------------------- Captured stdout call -----------------------------
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'baseline_description'                                                 
+WARNING  Template variable warning: 'dict object' has no attribute 'best_agent' 
+WARNING  Template variable warning: 'dict object' has no attribute 'best_agent' 
+WARNING  Template variable warning: 'dict object' has no attribute 'not_run'    
+WARNING  Template variable warning: 'dict object' has no attribute 'best_agent' 
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_volume'                                                      
+WARNING  Template variable warning: 'dict object' has no attribute 'best_agent' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'best_agent' 
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'rate_interval'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'rate_interval'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'case_details_truncated'                                               
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'case_details_truncated'                                               
+WARNING  Template variable warning: 'dict object' has no attribute 'tokens'     
+WARNING  Template variable warning: 'dict object' has no attribute 'tokens'     
+WARNING  Template variable warning: 'dict object' has no attribute 'warnings'   
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute 'best_agent' 
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'expected_script'                                                      
+WARNING  Template variable warning: 'dict object' has no attribute 'category'   
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'expected_script'                                                      
+WARNING  Template variable warning: 'dict object' has no attribute 'category'   
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute 'problem'    
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'problem_in_diagnostics'                                               
+WARNING  Template variable warning: 'dict object' has no attribute 'agent'      
+WARNING  Template variable warning: 'dict object' has no attribute 'case_id'    
+WARNING  Template variable warning: 'dict object' has no attribute 'case'       
+WARNING  Template variable warning: 'dict object' has no attribute 'condition'  
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'problem_in_diagnostics'                                               
+WARNING  Template variable warning: 'dict object' has no attribute 'agent'      
+WARNING  Template variable warning: 'dict object' has no attribute 'case_id'    
+WARNING  Template variable warning: 'dict object' has no attribute 'case'       
+WARNING  Template variable warning: 'dict object' has no attribute 'condition'  
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+Time: 6.8s
+╭─────────────────────── Tier 3 Evaluation: INCOMPLETE ────────────────────────╮
+│ Evaluation did not complete; skill lift was not measured.                    │
+│ Scored attempts: 0/2                                                         │
+│                                                                              │
+│ codex with-skill (0/1 scored) / calc-001__gym001: NeMoGymEpisodeFailure:     │
+│ NeMo Gym returned no rollout                                                 │
+│                                                                              │
+│ codex without-skill (0/1 scored) / calc-001__gym001: NeMoGymEpisodeFailure:  │
+│ NeMo Gym returned no rollout                                                 │
+│                                                                              │
+│ codex with-skill: gym eval run timed out after 1s                            │
+│                                                                              │
+│ codex with-skill: NeMo Gym (process group 46574) could not be confirmed      │
+│ stopped: [Errno 1] Operation not permitted. Its servers or sandboxes may     │
+│ still be running; stop them before another run.                              │
+│                                                                              │
+│ codex with-skill: NeMo Gym returned 0/1 rollouts for case calc-001           │
+│                                                                              │
+│ codex without-skill: gym eval run was not started: an earlier NeMo Gym run   │
+│ could not be confirmed stopped                                               │
+│                                                                              │
+│ codex without-skill: NeMo Gym returned 0/1 rollouts for case calc-001        │
+│                                                                              │
+│ Warning: NeMo Gym (process group 46574) could not be confirmed stopped:      │
+│ [Errno 1] Operation not permitted. Its servers or sandboxes may still be     │
+│ running; stop them before another run.                                       │
+│                                                                              │
+│ Next steps                                                                   │
+│   • Inspect result.json and the trial artifacts for the full execution       │
+│ diagnostics.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+Limited evidence: Based on 1 case × 1 attempt = 0 of 1 attempt scored (1 
+execution failure, 0 judge failures); by arm: with skill: 1 case, 0 of 1 attempt
+scored (1 execution failure, 0 judge failures); without skill: 1 case, 0 of 1 
+attempt scored (1 execution failure, 0 judge failures)
+╭─────────────────────────── Feedback & Suggestions ───────────────────────────╮
+│                                                                              │
+│ Feedback                                                                     │
+│   ⚠ Skill effect: per-case result: inconclusive (codex: condition execution  │
+│ is incomplete).                                                              │
+│                                                                              │
+│ Suggestions                                                                  │
+│   1. calc-001 · codex: 1 attempt(s) never produced a score:                  │
+│ NeMoGymEpisodeFailure: NeMo Gym returned no rollout. Fix: Not a skill        │
+│ problem: re-run this case; if it repeats, check the agent/gateway logs.      │
+│ Evidence: codex/with-skill/trials/calc-001__gym001/failure.json              │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────── Artifacts ──────────────────────────────────╮
+│ 📊 HTML report report.html ·                                                 │
+│                /tmp/pytest-of-ubuntu/pytest-9/test_unconfirmed_gym_stop_laun │
+│                0/results/20261118_183329_25966_98d154cc4f02/report.html      │
+│ 📁 Output      /tmp/pytest-of-ubuntu/pytest-9/test_unconfirmed_gym_stop_laun │
+│                0/results/20261118_183329_25966_98d154cc4f02                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+------------------------------ Captured log call -------------------------------
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'baseline_description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'best_agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'best_agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'not_run'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'best_agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_volume'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'best_agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'best_agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'rate_interval'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'rate_interval'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case_details_truncated'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case_details_truncated'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'tokens'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'tokens'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'warnings'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'best_agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'expected_script'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'category'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'expected_script'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'category'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'problem'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'problem_in_diagnostics'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case_id'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'condition'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'problem_in_diagnostics'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case_id'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'condition'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+________ test_detached_inspection_failure_preserves_cancellation[True] _________
+tests/test_nemo_gym_backend.py:2923: in test_detached_inspection_failure_preserves_cancellation
+    runner._run_gym(
+src/skillevaluator/tier3/nemo_gym/runner.py:729: in _run_gym
+    _stop_detached_gym_processes(run_token, process.pid, force=force_detached_cleanup)
+tests/test_nemo_gym_backend.py:2911: in fail_cleanup
+    raise runner.GymCleanupError("Cannot inspect detached processes")
+E   skillevaluator.tier3.nemo_gym.runner.GymCleanupError: Cannot inspect detached processes
+_ test_dynamic_bridge_ignores_prebound_old_port_and_checker_authenticates_health _
+tests/test_nvidia_build_bridge.py:1111: in test_dynamic_bridge_ignores_prebound_old_port_and_checker_authenticates_health
+    attacker = ThreadingHTTPServer(("127.0.0.1", 18080), _UnauthenticatedOldBridgeHandler)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/socketserver.py:457: in __init__
+    self.server_bind()
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/http/server.py:140: in server_bind
+    socketserver.TCPServer.server_bind(self)
+/home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/socketserver.py:478: in server_bind
+    self.socket.bind(self.server_address)
+E   OSError: [Errno 98] Address already in use
+______________ test_table_keeps_full_model_and_dataset_case_count ______________
+tests/test_tier3_history.py:430: in test_table_keeps_full_model_and_dataset_case_count
+    assert model in output.getvalue()
+E   AssertionError: assert 'provider/long-model-name-with-distinct-version' in '                                                                                \n        Run                        ...                1/1               \n                                                                                \n'
+E    +  where '                                                                                \n        Run                        ...                1/1               \n                                                                                \n' = <built-in method getvalue of _io.StringIO object at 0x7f9d20201c00>()
+E    +    where <built-in method getvalue of _io.StringIO object at 0x7f9d20201c00> = <_io.StringIO object at 0x7f9d20201c00>.getvalue
+____________ test_rich_final_frame_marks_a_plan_that_never_resolved ____________
+tests/test_tier3_progress.py:595: in test_rich_final_frame_marks_a_plan_that_never_resolved
+    assert "A public LLM provider is required for live evaluation" in final_frame
+E   AssertionError: assert 'A public LLM provider is required for live evaluation' in '          Harbor Run Configuration  ·  demo  ·  Skill-lift evaluation           \n╭─────────────────┬──────────────┬─...r live evaluation     │          │\n╰─────────────────┴──────────────┴──────────────────────────────────┴──────────╯\n'
+_ test_rich_final_frame_keeps_rows_on_one_line_where_the_detail_column_is_narrow _
+tests/test_tier3_progress.py:695: in test_rich_final_frame_keeps_rows_on_one_line_where_the_detail_column_is_narrow
+    assert max(len(line.split("│")[3]) - 2 for line in wide.splitlines() if line.count("│") == 5) == 20
+E   assert 24 == 20
+E    +  where 24 = max(<generator object test_rich_final_frame_keeps_rows_on_one_line_where_the_detail_column_is_narrow.<locals>.<genexpr> at 0x7f9d8b0c58c0>)
+___ test_default_case_first_display_includes_verdict_and_counts_before_cases ___
+tests/test_tier3_result_display.py:523: in test_default_case_first_display_includes_verdict_and_counts_before_cases
+    assert "FAIL: goal not met (goal accuracy 0.00)" in rendered
+E   AssertionError: assert 'FAIL: goal not met (goal accuracy 0.00)' in 'QUALITY VERDICT: FAIL — 1 of 2 cases failed: 1 goal not met\nOVERALL SKILL LIFT (for reference)   +0.20\nREQUIRED CHE...· skipped after a pass  (0.82) mean score 0-1\n\nBased on 0 scored attempts (0 execution failures, 0 judge failures)\n'
+_________ test_partial_budget_run_collects_real_harbor_results[agent] __________
+tests/tier3/test_run_budget.py:538: in test_partial_budget_run_collects_real_harbor_results
+    assert f"{denied_agent} {denied_jobs[0][0]}-skill not run due to budget" in report
+E   AssertionError: assert 'denied with-skill not run due to budget' in 'Budget exhausted (agent tokens 2,000 of 2,500; next unit estimated 1,000 for 2 \nattempts): 20 of 24 attempts not run...                                 │\n╰──────────────────────────────────────────────────────────────────────────────╯\n'
+----------------------------- Captured stdout call -----------------------------
+WARNING  LLM call failed (HTTP 401 (code=invalid_api_key,                       
+         type=invalid_request_error): Check the selected LLM provider           
+         credentials and model access.) - using fallback response               
+WARNING  Template variable warning: 'dict object' has no attribute 'environment'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'baseline_description'                                                 
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'coverage_notices'                                                     
+WARNING  Template variable warning: No first item, sequence was empty.          
+WARNING  Template variable warning: No first item, sequence was empty.          
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'partial'    
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute 'comparison' 
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'rate_interval'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'rate_interval'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'case_details_truncated'                                               
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'case_details_truncated'                                               
+WARNING  Template variable warning: 'dict object' has no attribute 'tokens'     
+WARNING  Template variable warning: 'dict object' has no attribute 'tokens'     
+WARNING  Template variable warning: 'dict object' has no attribute 'tokens'     
+WARNING  Template variable warning: 'dict object' has no attribute 'tokens'     
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'first_attempt'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'first_attempt'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'skill_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'agent_faults'                                                         
+WARNING  Template variable warning: 'dict object' has no attribute 'description'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'comparison_basis'                                                     
+WARNING  Template variable warning: 'dict object' has no attribute 'description'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'comparison_basis'                                                     
+WARNING  Template variable warning: 'dict object' has no attribute 'description'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'comparison_basis'                                                     
+WARNING  Template variable warning: 'dict object' has no attribute 'description'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'comparison_basis'                                                     
+WARNING  Template variable warning: 'dict object' has no attribute 'description'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'comparison_basis'                                                     
+WARNING  Template variable warning: 'dict object' has no attribute 'description'
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'comparison_basis'                                                     
+WARNING  Template variable warning: 'dict object' has no attribute 'source'     
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: No first item, sequence was empty.          
+WARNING  Template variable warning: 'dict object' has no attribute 'problem'    
+WARNING  Template variable warning: 'dict object' has no attribute 'check'      
+WARNING  Template variable warning: 'dict object' has no attribute              
+         'evidence_text'                                                        
+WARNING  Template variable warning: 'dict object' has no attribute 'evidence'   
+WARNING  Template variable warning: 'dict object' has no attribute 'model'      
+WARNING  Template variable warning: 'dict object' has no attribute 'model_name' 
+WARNING  Template variable warning: 'dict object' has no attribute 'llm_model'  
+WARNING  Template variable warning: 'dict object' has no attribute 'model'      
+WARNING  Template variable warning: 'dict object' has no attribute 'model_name' 
+WARNING  Template variable warning: 'dict object' has no attribute 'llm_model'  
+WARNING  Template variable warning: 'dict object' has no attribute 'environment'
+Budget exhausted (agent tokens 2,000 of 2,500; next unit estimated 1,000 for 2 
+attempts): 20 of 24 attempts not run; results are partial; denied with-skill not
+run due to budget; denied without-skill not run due to budget
+RUN QUALITY VERDICT: INCOMPLETE
+run budget left 20 of 24 planned attempts not run; scores and Skill Lift cover 
+only admitted attempts
+• incomplete   run budget left 20 of 24 planned attempts not run; scores and 
+Skill Lift cover only admitted attempts
+                                                                    denied      
+test case       agent                                               (without →  
+(k=2)           (without → with skill)                              with skill) 
+────────────────────────────────────────────────────────────────────────────────
+case-1          ✗✗ → ✗✗  ·                                          - → -  ?    
+                No skill:                                                       
+                FAIL: goal not met (goal accuracy 0.60)                         
+                WARNING: missed expected behavior (behavior 0.60)               
+                With skill:                                                     
+                FAIL: goal not met (goal accuracy 0.80)                         
+                WARNING: missed expected behavior (behavior 0.80)               
+                                                                                
+success rate    0% → 0%  +0 pp                                      - → -  ?    
+quality score   0.60 → 0.80  +0.20                                  - → -       
+(0-1)                                                                           
+                                                                                
+dimensions                                                                      
+  correctness   0.60 → 0.80  +0.20                                  - → -       
+  discoverabi   0.60 → 0.80  +0.20                                  - → -       
+lity                                                                            
+  effectivene   0.60 → 0.80  +0.20                                  - → -       
+ss                                                                              
+  efficiency    0.60 → 0.80  +0.20                                  - → -       
+  security      0.60 → 0.80  +0.20                                  - → -       
+✓ pass  ✗ fail  ⊘ did not run  · skipped after a pass  ? incomplete
++50 = change in per-attempt success rate, in percentage points
+agent: Pass@2 (supporting reliability: share of cases with a passing attempt, 
+attempt passes at Overall ≥ 0.50): with skill 0.0%, without skill 0.0%; 
+Pass-rate difference +0.0 percentage points. Shared-metric pass-rate difference 
++0.0 percentage points (with skill 0.0%, without skill 0.0%).
+denied: Pass@2 (supporting reliability: share of cases with a passing attempt, 
+attempt passes at Overall ≥ 0.50): with skill N/A, without skill N/A; Pass-rate 
+difference N/A.
+
+agent: Limited evidence: Based on 1 case × 2 attempts = 2 scored attempts (0 
+execution failures, 0 judge failures); by arm: with skill: 1 case, 2 scored 
+attempts (0 execution failures, 0 judge failures); without skill: 1 case, 2 
+scored attempts (0 execution failures, 0 judge failures)
+denied: Based on 0 scored attempts (0 execution failures, 0 judge failures)
+╭──────────────────────────── Results by Evaluator ────────────────────────────╮
+│                                                                              │
+│ QUALITY VERDICT (agent): INCOMPLETE — 1 of 1 cases failed: 1 goal not met, 1 │
+│ security issue                                                               │
+│ OVERALL SKILL LIFT (admitted attempts only) (for reference)   +0.20 · agent  │
+│ Skill Lift compares Overall on the metrics and cases both arms scored, so it │
+│ can differ from subtracting the displayed Overall scores.                    │
+│ REQUIRED CHECKS PASSED (agent)   0/1 | 0/1 | +0                              │
+│ GOALS MET (agent)   0/2 | 0/2 | +0                                           │
+│ SECURITY CLEAN (agent)   0/2 | 0/2 | +0                                      │
+│                                                                              │
+│  Evaluator                                       Conditions                  │
+│ ──────────────────────────────────────────────────────────────────────────── │
+│  Security                                        With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│  Skill Execution                                 With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│  Efficiency                                      With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│  Accuracy                                        With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│  Goal Accuracy                                   With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│  Behavior Check                                  With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│                                                                              │
+│  Skill Lift                                      With Skill 0.80 ████████░░  │
+│                                                  No Skill   0.60 ██████░░░░  │
+│                                                  Lift       +0.20            │
+│       Lift compares the cases scored by both arms for each evaluator.        │
+│                                                                              │
+╰─ Skill Evaluation / agent 2 trial(s) /tmp/pytest-of-ubuntu/pytest-9/test_par─╯
+╭──────────────────────────── Results by Evaluator ────────────────────────────╮
+│                                                                              │
+│ REQUIRED CHECKS PASSED (denied)   N/A                                        │
+│ GOALS MET (denied)   N/A                                                     │
+│ SECURITY CLEAN (denied)   N/A                                                │
+│                                                                              │
+│  Evaluator                                       Conditions                  │
+│ ──────────────────────────────────────────────────────────────────────────── │
+│  Security                                        With Skill skipped          │
+│  Skill Execution                                 With Skill skipped          │
+│  Efficiency                                      With Skill skipped          │
+│  Accuracy                                        With Skill skipped          │
+│  Goal Accuracy                                   With Skill skipped          │
+│  Behavior Check                                  With Skill skipped          │
+│                                                                              │
+╰─ Skill Evaluation / denied 0 trial(s) /tmp/pytest-of-ubuntu/pytest-9/test_pa─╯
+╭──────────────────────────── Results by Dimension ────────────────────────────╮
+│                                                                              │
+│ Dimension                                         Conditions                 │
+│──────────────────────────────────────────────────────────────────────────────│
+│ Agent: agent                                                                 │
+│ Security                                          With Skill 0.80 ████████░░ │
+│                                                   No Skill   0.60 ██████░░░░ │
+│                                                   Lift       +0.20           │
+│ Correctness                                       With Skill 0.80 ████████░░ │
+│                                                   No Skill   0.60 ██████░░░░ │
+│                                                   Lift       +0.20           │
+│ Discoverability                                   With Skill 0.80 ████████░░ │
+│                                                   No Skill   0.60 ██████░░░░ │
+│                                                   Lift       +0.20           │
+│ Effectiveness                                     With Skill 0.80 ████████░░ │
+│                                                   No Skill   0.60 ██████░░░░ │
+│                                                   Lift       +0.20           │
+│ Efficiency                                        With Skill 0.80 ████████░░ │
+│                                                   No Skill   0.60 ██████░░░░ │
+│                                                   Lift       +0.20           │
+│                                                                              │
+│ Agent: denied                                                                │
+│ Security                                          With Skill skipped         │
+│                                                   No Skill   skipped         │
+│                                                   Lift       skipped         │
+│ Correctness                                       With Skill skipped         │
+│                                                   No Skill   skipped         │
+│                                                   Lift       skipped         │
+│ Discoverability                                   With Skill skipped         │
+│                                                   No Skill   skipped         │
+│                                                   Lift       skipped         │
+│ Effectiveness                                     With Skill skipped         │
+│                                                   No Skill   skipped         │
+│                                                   Lift       skipped         │
+│ Efficiency                                        With Skill skipped         │
+│                                                   No Skill   skipped         │
+│                                                   Lift       skipped         │
+│   Each row shows with-skill, no-skill, and dimension lift. Dimensions are    │
+│           report-only rollups; custom metrics do not change them.            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+  Findings from best performing agent/model combination for your skill: agent
+
+------------------------------ Captured log call -------------------------------
+WARNING  skillevaluator.inference.client:client.py:945 LLM call failed (HTTP 401 (code=invalid_api_key, type=invalid_request_error): Check the selected LLM provider credentials and model access.) - using fallback response
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'environment'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'baseline_description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'coverage_notices'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: No first item, sequence was empty.
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: No first item, sequence was empty.
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'partial'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'rate_interval'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'rate_interval'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case_details_truncated'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'case_details_truncated'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'tokens'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'tokens'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'tokens'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'tokens'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'first_attempt'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'first_attempt'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'skill_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'agent_faults'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison_basis'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison_basis'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison_basis'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison_basis'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison_basis'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'description'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'comparison_basis'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'source'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: No first item, sequence was empty.
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'problem'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'check'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence_text'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'evidence'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'model'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'model_name'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'llm_model'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'model'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'model_name'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'llm_model'
+WARNING  test_tier3_source_validation_reporting:runtime.py:941 Template variable warning: 'dict object' has no attribute 'environment'
+=============================== warnings summary ===============================
+tests/golden/test_policy_behavior.py: 26 warnings
+tests/test_catalog_discovery.py: 22 warnings
+tests/test_commands.py: 16 warnings
+  /home/ubuntu/.local/share/uv/python/cpython-3.13.18-linux-x86_64-gnu/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=25966) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+tests/test_hermes_agent.py::test_harbor_trial_run_recovers_missing_hermes_session_as_execution_failure
+  /agent/repos/SkillEvaluator/.venv/lib/python3.13/site-packages/harbor/trial/trial.py:1192: DeprecationWarning: Task.checksum will be deprecated soon. Use TrialLock.task.digest from the trial lock when you need the task content hash.
+    task_checksum=self.task.checksum,
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/ci/test_run_tier1.py::test_ctrl_c_ends_running_scans_and_their_tools
+FAILED tests/ci/test_run_tier1.py::test_second_ctrl_c_does_not_leave_the_runner_waiting
+FAILED tests/ci/test_run_tier1.py::test_ctrl_c_handled_on_a_scan_thread_still_ends_the_run
+FAILED tests/evaluation/test_tier3_feedback_chat.py::test_feedback_cli_escapes_panel_paths
+FAILED tests/harness/test_overlay.py::test_fix_reaches_findings_and_panels - ...
+FAILED tests/reporting/test_rich_markup_escaping.py::test_cli_report_renders_untrusted_text_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_cli_report_renders_untrusted_text_literally[[link=http://x]y[/link]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_trailing_backslashes_render_literally
+FAILED tests/reporting/test_rich_markup_escaping.py::test_report_path_announcement_renders_literally[[/x]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_report_path_announcement_renders_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_tier3_grader_starter_renders_created_path_literally[[/x]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_tier3_grader_starter_renders_created_path_literally[[bold]evil[/bold]]
+FAILED tests/reporting/test_rich_markup_escaping.py::test_harbor_findings_report_renders_skill_and_model_literally
+FAILED tests/reporting/test_terminal_polish.py::test_each_lift_condition_keeps_label_number_and_complete_bar[60]
+FAILED tests/reporting/test_terminal_polish.py::test_direct_tier3_preserves_conditions_and_bars_at_narrow_width[60]
+FAILED tests/reporting/test_terminal_polish.py::test_full_agent_verdict_keeps_displayed_zero_lift_neutral
+FAILED tests/reporting/test_terminal_polish.py::test_agent_eval_summary_shows_required_counts_and_failed_case_reason
+FAILED tests/reporting/test_terminal_polish.py::test_failed_agent_eval_summary_row_shows_verdict_reason_and_lift
+FAILED tests/reporting/test_terminal_polish.py::test_full_summary_shows_completed_agent_eval_counts_without_findings
+FAILED tests/reporting/test_tier3_token_usage_reports.py::test_validate_terminal_prints_agent_rows_and_notes
+FAILED tests/test_harbor_secure_docker_environment.py::test_service_stop_and_sidecar_downloads_scrub_main_compose_environment
+FAILED tests/test_harbor_secure_docker_environment.py::test_service_stop_uses_label_scoped_raw_docker_when_compose_model_requires_secret[main]
+FAILED tests/test_harbor_secure_docker_environment.py::test_service_stop_uses_label_scoped_raw_docker_when_compose_model_requires_secret[helper]
+FAILED tests/test_harbor_secure_docker_environment.py::test_service_stop_accepts_service_declared_by_trusted_compose_include
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_main_downloads_use_scrubbed_docker_env_and_validated_archives
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_removes_output_if_diagnostic_spool_creation_fails
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_enforces_combined_temporary_disk_budget[11-0-True]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_enforces_combined_temporary_disk_budget[0-11-True]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_enforces_combined_temporary_disk_budget[6-5-True]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_enforces_combined_temporary_disk_budget[6-4-False]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_timeout_reaps_process_and_removes_partial_output
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_idle_timeout_resets_while_output_progresses
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_growing_output_exceeding_budget_reaps_process
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_total_timeout_reaps_continuously_progressing_process
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_rejects_process_completion_after_total_deadline
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_error_redacts_exact_short_sensitive_value
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_truncated_error_cannot_expose_secret_suffix
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_truncated_error_with_repeated_secret_cannot_expose_earlier_suffix
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_error_redacts_sensitive_docker_client_environment[DOCKER_AUTH_CONFIG-SYNTHETIC_DOCKER_AUTH_SECRET]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_error_redacts_sensitive_docker_client_environment[DOCKER_HOST-tcp://synthetic-user:synthetic-pass@example.invalid:2376]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_error_redacts_sensitive_docker_client_environment[DOCKER_HOST-tcp://synthetic-user:synthetic-pass@[malformed]
+FAILED tests/test_harbor_secure_docker_environment.py::test_windows_transfer_error_redacts_sensitive_docker_client_environment[HTTPS_PROXY-synthetic-user:synthetic-pass@example.invalid:8080]
+FAILED tests/test_harbor_secure_docker_environment.py::test_secure_handoff_scope_covers_containment_and_resets_after_interrupt[timeout]
+FAILED tests/test_harbor_secure_docker_environment.py::test_secure_handoff_scope_covers_containment_and_resets_after_interrupt[cancel]
+FAILED tests/test_harbor_secure_docker_environment.py::test_raw_docker_creation_cancellation_resolves_process_race_and_reaps_client
+FAILED tests/test_harbor_secure_docker_environment.py::test_raw_docker_creation_timeout_is_total_deadline_bounded_with_late_reaper
+FAILED tests/test_harbor_secure_docker_environment.py::test_raw_docker_command_timeout_kills_and_reaps_client
+FAILED tests/test_nemo_gym_backend.py::test_gym_cli_probe_failure_contains_descendants[interrupt]
+FAILED tests/test_nemo_gym_backend.py::test_successful_gym_teardown_completes_cleanup_progress[True]
+FAILED tests/test_nemo_gym_backend.py::test_stop_failure_during_an_interrupt_keeps_the_interrupt
+FAILED tests/test_nemo_gym_backend.py::test_unconfirmed_gym_stop_launches_nothing_more_and_keeps_finished_arms[1]
+FAILED tests/test_nemo_gym_backend.py::test_detached_inspection_failure_preserves_cancellation[True]
+FAILED tests/test_nvidia_build_bridge.py::test_dynamic_bridge_ignores_prebound_old_port_and_checker_authenticates_health
+FAILED tests/test_tier3_history.py::test_table_keeps_full_model_and_dataset_case_count
+FAILED tests/test_tier3_progress.py::test_rich_final_frame_marks_a_plan_that_never_resolved
+FAILED tests/test_tier3_progress.py::test_rich_final_frame_keeps_rows_on_one_line_where_the_detail_column_is_narrow
+FAILED tests/test_tier3_result_display.py::test_default_case_first_display_includes_verdict_and_counts_before_cases
+FAILED tests/tier3/test_run_budget.py::test_partial_budget_run_collects_real_harbor_results[agent]
+= 58 failed, 39484 passed, 171 skipped, 20 deselected, 65 warnings in 1627.84s (0:27:07) =
+make: *** [Makefile:9: test] Error 1

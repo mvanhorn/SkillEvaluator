@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0
+rootdir: /agent/repos/SkillEvaluator
+configfile: pyproject.toml
+plugins: cov-7.1.0, anyio-4.16.0, xdist-3.8.0
+collected 1 item
+
+tests/test_nvidia_build_bridge.py .                                      [100%]
+
+============================== 1 passed in 2.39s ===============================

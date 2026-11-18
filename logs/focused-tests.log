@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0
+rootdir: /agent/repos/SkillEvaluator
+configfile: pyproject.toml
+plugins: cov-7.1.0, anyio-4.16.0, xdist-3.8.0
+collected 389 items
+
+tests/reporting/test_github_reporter.py ...................              [  4%]
+tests/reporting/test_incomplete_scans.py ..................              [  9%]
+tests/reporting/test_plugin_reports_runtime_composition.py ..........    [ 12%]
+tests/reporting/test_reporters.py ...................................... [ 21%]
+........................................................................ [ 40%]
+........................................................................ [ 58%]
+...........................                                              [ 65%]
+tests/test_cli.py ...................................................... [ 79%]
+........................................................................ [ 98%]
+....                                                                     [ 99%]
+tests/golden/test_cli_surface.py ...                                     [100%]
+
+============================= 389 passed in 3.43s ==============================
